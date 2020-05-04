@@ -26,7 +26,8 @@
         </li>
         {{ end }}
       </ul>
-      <div class="nav-item nav-ext-links">
+      <div class="d-flex">
+        <div class="nav-item nav-ext-links">
         {{ range .Site.Data.social.social_icons }}
           {{- if isset $.Site.Author .id }}
             <a class="nav-icon-link" href="{{ printf .url (index $.Site.Author .id) }}" title="{{ .title }}"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa {{ .icon }} fa-stack-1x fa-inverse"></i></span></a>
@@ -52,6 +53,17 @@
             </span>
           </a>
         {{ end }}
+        </div>
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{ .Language }}
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            {{ range .Site.Home.AllTranslations }}
+            <a href="{{ .Permalink }}" class="dropdown-item">{{ .Language }}</a>
+            {{ end }}
+          </div>
+        </div>
       </div>
     </div>
   </div>
