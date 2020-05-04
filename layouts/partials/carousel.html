@@ -1,0 +1,15 @@
+{{ if isset .Site.Params "carousel" }}
+{{ if gt (len .Site.Params.carousel) 0 }}
+<div class="anchor" id="features"></div>
+<div class="carousel text-light pt-5 pb-3 d-flex flex-row justify-content-around">
+  {{ range sort .Site.Params.carousel "weight" }}
+  <figure class="">
+    <a href="{{ .image }}">
+      <img class="rounded img-thumbnail" src="{{ .image }}" alt="{{ .title }}" style="max-height: 300px;">
+    </a>
+    <figcaption class="mt-2 text-center">{{ .description | markdownify }}</figcaption>
+  </figure>
+  {{ end }}
+</div>
+{{ end }}
+{{ end }}

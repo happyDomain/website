@@ -1,0 +1,79 @@
+- id: slogan
+  translation: "L'interface des noms de domaines."
+
+- id: lead
+  translation: "est une application web libre, moderne, qui veut vous simplifier l'usage des noms de domaines. Connecter un blog, une boutique ou effectuer des opérations avancées devient vraiment facile."
+
+- id: tryit
+  translation: "Essayer en ligne maintenant"
+
+- id: tryhappydns
+  translation: "Essayer happyDNS maintenant"
+
+- id: downloadit
+  translation: "Télécharger"
+
+- id: home
+  translation: "Accueil"
+
+- id: legal-notice
+  translation: "Mentions légales"
+
+- id: features-title
+  translation: |
+    Vous trouvez les <span class="text-hilight">interfaces des hébergeurs</span> de noms de domaine <span class="text-hilight">incompréhensibles</span> ou <span class="text-hilight">inutilisables</span> ?
+
+- id: features-lead
+  translation: |
+    Réconciliez-vous avec vos noms de domaine, grâce à une interface pensée pour vous.
+
+- id: features-col1
+  translation: |
+    Amis **néophytes**, notre interface **simple** saura vous guider dans la configuration de votre nom de domaine, sans passer par la terminologie propre des noms de domaine.
+
+- id: features-col2
+  translation: |
+    **Experts** chevronnés : changez votre point de vue sur le DNS, avec une interface **ergonomique** dans l’ère du temps, qui répondra à toutes vos attentes.
+
+- id: downloads-title
+  translation: |
+    Démonstration en ligne et téléchargements
+
+- id: downloads-text
+  translation: |
+    Vous pouvez essayer happyDNS en ligne, directement [sur nos serveurs](/join).
+
+
+    Une version précompilée sera prochainement proposée au téléchargement, pour une utilisation locale.
+
+    Le code source de notre projet est libre ; il est disponible sous les termes de la [licence CeCILL](http://cecill.info/licences/Licence_CeCILL_V2.1-fr.html) dans notre [dépôt Git](https://git.happydns.org/), hébergé par Framagit.
+
+- id: community-chat
+  translation: "Chat"
+- id: community-chat-text
+  translation: |
+    Rejoignez notre canal IRC `#happydns` sur Freenode, pour partager des idées ou poser des questions.
+
+- id: community-bugs
+  translation: "Bugs et fonctionnalités"
+- id: community-bugs-text
+  translation: |
+    Si vous remarquez un problème ou une fonctionnalité manquante, n'hésitez pas à nous l'indiquer via le formulaire dédié de notre projet.
+
+- id: community-translation
+  translation: "Translations"
+- id: community-translation-text
+  translation: |
+    Nous aurons besoin de votre aide pour traduire happyDNS. Revenez dans quelques semaines, lorsque nous aurons mis en place l'outil de traduction.
+
+- id: community-code
+  translation: "Code"
+- id: community-code-text
+  translation: |
+    Si vous savez programmer, n'hésitez pas à contribuer, via notre [dépôt Git](https://git.happydns.org/) sur Framagit.
+
+- id: community-contact
+  translation: "contact"
+- id: community-contact-text
+  translation: |
+    Contactez notre équipe à `contact at happydns.org` pour toute demande de formation ou commerciale.

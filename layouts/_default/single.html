@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+
+  <body>
+
+    <div id="all">
+
+      {{ partial "nav.html" . }}
+
+      {{ partial "breadcrumbs.html" . }}
+
+      <div id="content" class="mt-5 mb-5">
+        {{ if isset .Params "id" }}
+
+        {{ partial .Params.id . }}
+
+        {{ else }}
+
+        <div class="container">
+
+          <div>
+            {{ .Content }}
+          </div>
+
+        </div>
+        <!-- /.container -->
+
+        {{ end }}
+      </div>
+      <!-- /#content -->
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "footer.html" . }}
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

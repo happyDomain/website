@@ -1,0 +1,78 @@
+- id: slogan
+  translation: "Finally a simple interface for domain names."
+
+- id: lead
+  translation: "is a modern open-source web application, that aims to simplify all your usages of domain names. Connecting a blog, a shop or doing advanced stuff become easy."
+
+- id: tryit
+  translation: "Try it online now"
+
+- id: tryhappydns
+  translation: "Try happyDNS now"
+
+- id: downloadit
+  translation: "Download now"
+
+- id: home
+  translation: "Home"
+
+- id: legal-notice
+  translation: "Legal notice"
+
+- id: features-title
+  translation: |
+    Do you find <span class="text-hilight">hosting providers' interfaces</span> for domain name <span class="text-hilight">incomprehensible</span> or <span class="text-hilight">unusable</span>?
+
+- id: features-lead
+  translation: |
+    Reconcile with your domain names, thanks to an interface designed for you.
+
+- id: features-col1
+  translation: |
+    **Neophyte** friends, our **simple** interface will guide you in the configuration of your domain name, without going through the proper domain name terminology.
+
+- id: features-col2
+  translation: |
+    Recognized **experts:** change your point of view on DNS, with an **ergonomic** interface in the age of time that will meet all your expectations.
+
+- id: downloads-title
+  translation: |
+    Online demo and downloads
+
+- id: downloads-text
+  translation: |
+    You can try happyDNS online directly [on our servers](/join).
+
+    There is no prebuilt binary currently (check back soon).
+
+    Our source code is freely available under the [CeCILL license](http://cecill.info/licences/Licence_CeCILL_V2.1-en.html) in our [git repository](https://git.happydns.org/), hosted by Framagit.
+
+- id: community-chat
+  translation: "Chat"
+- id: community-chat-text
+  translation: |
+    Join our IRC channel `#happydns` on freenode to share ideas or ask questions.
+
+- id: community-bugs
+  translation: "Bugs and Features"
+- id: community-bugs-text
+  translation: |
+    If you notice a problem or a missing feature, feel free to report it on the project's issues page.
+
+- id: community-translation
+  translation: "Translations"
+- id: community-translation-text
+  translation: |
+    We will need you help to translate happyDNS. Come back later, when we've set up the translation tool.
+
+- id: community-code
+  translation: "Code"
+- id: community-code-text
+  translation: |
+    We invite interested developers to contribute code. Check out [our repository](https://git.happydns.org/) on Framagit.
+
+- id: community-contact
+  translation: "contact"
+- id: community-contact-text
+  translation: |
+    You can contact our team at `contact at happydns.org` for any professional requests.

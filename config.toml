@@ -1,0 +1,87 @@
+title = "happyDNS"
+baseURL = "https://happydns.org/"
+
+defaultContentLanguageInSubdir = true
+removePathAccents = true
+
+[Author]
+  name = "happyDNS team"
+  framagit = "happyDNS/"
+
+[languages]
+  [languages.en]
+    title = "happyDNS. Finally a simple interface for domain names."
+    weight = 1
+
+  [languages.fr]
+    title = "happyDNS. L'interface des noms de domaines."
+    weight = 2
+    [languages.fr.menu]
+      [[languages.fr.menu.main]]
+        identifier = "features"
+        name = "Fonctionnalités"
+        url = "/fr/#features"
+        weight = 10
+
+      [[languages.fr.menu.main]]
+        identifier = "downloads"
+        name = "Téléchargements"
+        url = "/fr/#downloads"
+        weight = 20
+
+#      [[languages.fr.menu.main]]
+#        identifier = "blog"
+#        name = "Blog"
+#        url = "https://blog.happydns.org/"
+#        weight = 30
+
+    [languages.fr.params]
+      [[languages.fr.params.carousel]]
+        title = "domains-lists"
+        description = "**Page d'accueil:** liste des domaines, de différents hébergeurs"
+        image = "/img/screenshots/domains-list.png"
+
+      [[languages.fr.params.carousel]]
+        title = "domain-records"
+        description = "Les enregistrements d'une zone"
+        image = "/img/screenshots/domain-records.png"
+
+[params]
+newsletter = "newsletter@happydns.org"
+tryit = "/join"
+
+  [[params.carousel]]
+    title = "domains-lists"
+    description = "**Home page:** domains list on dedicated provider"
+    image = "/img/screenshots/domains-list.png"
+
+  [[params.carousel]]
+    title = "domain-records"
+    description = "Resources record for a zone"
+    image = "/img/screenshots/domain-records.png"
+
+[menu]
+  [[menu.main]]
+    identifier = "features"
+    name = "Features"
+    url = "/en/#features"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "downloads"
+    name = "Downloads"
+    url = "/en/#downloads"
+    weight = 20
+
+#  [[menu.main]]
+#    identifier = "blog"
+#    name = "Blog"
+#    url = "https://blog.happydns.org/"
+#    weight = 30
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+[outputs]
+  home = [ "HTML", "RSS" ]
