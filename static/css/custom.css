@@ -27,7 +27,9 @@ body {
     font-family: Montserrat,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji,sans
 }
 nav.navbar {
-    box-shadow: 0 1px 3px 0 #9720c944;
+    box-shadow: 0 0px 3px 0 #1cb487;
+    border-bottom: 1px solid #1cb487;
+    z-index: 2;
 }
 
 .anchor {
@@ -44,7 +46,5 @@ nav.navbar {
 }
 
 footer {
-    border-top: 3px solid #9720c9;
-    box-shadow: 0 -7px 12px 0 #344a4055;
-    z-index: 2
+    border-top: 3px solid #9332bb;
 }
