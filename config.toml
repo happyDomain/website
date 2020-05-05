@@ -46,6 +46,16 @@ removePathAccents = true
         description = "Les enregistrements d'une zone"
         image = "/img/screenshots/domain-records.png"
 
+      [[languages.fr.params.carousel]]
+        title = "domain-source"
+        description = "Informations sur la source"
+        image = "/img/screenshots/domain-source.png"
+
+      [[languages.fr.params.carousel]]
+        title = "sources"
+        description = "Liste des sources existantes où récupérer les domaines"
+        image = "/img/screenshots/sources.png"
+
 [params]
 newsletter = "newsletter@happydns.org"
 tryit = "/join"
@@ -57,8 +67,18 @@ tryit = "/join"
 
   [[params.carousel]]
     title = "domain-records"
-    description = "Resources record for a zone"
+    description = "Resource records for a zone"
     image = "/img/screenshots/domain-records.png"
+
+  [[params.carousel]]
+    title = "domain-source"
+    description = "Information about the source"
+    image = "/img/screenshots/domain-source.png"
+
+  [[params.carousel]]
+    title = "sources"
+    description = "Existing sources where pull domains"
+    image = "/img/screenshots/sources.png"
 
 [menu]
   [[menu.main]]
