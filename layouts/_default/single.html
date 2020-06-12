@@ -11,7 +11,7 @@
 
       {{ partial "breadcrumbs.html" . }}
 
-      <div id="content" class="mt-5 mb-5">
+      <div id="content" class="mt-5 mb-5" style="min-height: calc(80vh - 180px)">
         {{ if isset .Params "id" }}
 
         {{ partial .Params.id . }}
