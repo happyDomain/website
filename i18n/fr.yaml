@@ -61,7 +61,7 @@
     Si vous remarquez un problème ou une fonctionnalité manquante, n'hésitez pas à nous l'indiquer via le formulaire dédié de notre projet.
 
 - id: community-translation
-  translation: "Translations"
+  translation: "Traductions"
 - id: community-translation-text
   translation: |
     Nous aurons besoin de votre aide pour traduire happyDNS. Revenez dans quelques semaines, lorsque nous aurons mis en place l'outil de traduction.
@@ -73,7 +73,7 @@
     Si vous savez programmer, n'hésitez pas à contribuer, via notre [dépôt Git](https://git.happydns.org/) sur Framagit.
 
 - id: community-contact
-  translation: "contact"
+  translation: "Contact"
 - id: community-contact-text
   translation: |
     Contactez notre équipe à `contact at happydns.org` pour toute demande de formation ou commerciale.

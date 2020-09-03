@@ -42,8 +42,23 @@ removePathAccents = true
         image = "/img/screenshots/domains-list.png"
 
       [[languages.fr.params.carousel]]
+        title = "domain-abstract"
+        description = "Une zone simplifiée"
+        image = "/img/screenshots/domain-abstract.png"
+
+      [[languages.fr.params.carousel]]
+        title = "domain-abstract-list"
+        description = "Une zone simplifiée, sous forme de liste, plus rapide à modifier"
+        image = "/img/screenshots/domain-abstract-list.png"
+
+      [[languages.fr.params.carousel]]
+        title = "zone-diff"
+        description = "Liste les changements avant d'appliquer les modifications"
+        image = "/img/screenshots/zone-diff.png"
+
+      [[languages.fr.params.carousel]]
         title = "domain-records"
-        description = "Les enregistrements d'une zone"
+        description = "Les enregistrements d'une zone, modifiable depuis l'interface"
         image = "/img/screenshots/domain-records.png"
 
       [[languages.fr.params.carousel]]
@@ -66,8 +81,23 @@ tryit = "/join"
     image = "/img/screenshots/domains-list.png"
 
   [[params.carousel]]
+    title = "domain-abstract"
+    description = "Simplified zone: records grouped by services"
+    image = "/img/screenshots/domain-abstract.png"
+
+  [[params.carousel]]
+    title = "domain-abstract-list"
+    description = "Simplified zone in list, for quicker editing"
+    image = "/img/screenshots/domain-abstract-list.png"
+
+  [[params.carousel]]
+    title = "zone-diff"
+    description = "Display zone diff before applying changes"
+    image = "/img/screenshots/zone-diff.png"
+
+  [[params.carousel]]
     title = "domain-records"
-    description = "Resource records for a zone"
+    description = "Resource records for a zone: editable through happyDNS"
     image = "/img/screenshots/domain-records.png"
 
   [[params.carousel]]

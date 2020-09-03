@@ -2,7 +2,7 @@
   translation: "Finally a simple interface for domain names."
 
 - id: lead
-  translation: "is a modern open-source web application, that aims to simplify all your usages of domain names. Connecting a blog, a shop or doing advanced stuff become easy."
+  translation: "is a modern open-source web application, that aims to simplify all your usages of domain names. Connecting a blog, a shop or doing advanced stuff is just a click away."
 
 - id: tryit
   translation: "Try it online now"
@@ -72,7 +72,7 @@
     We invite interested developers to contribute code. Check out [our repository](https://git.happydns.org/) on Framagit.
 
 - id: community-contact
-  translation: "contact"
+  translation: "Contact"
 - id: community-contact-text
   translation: |
     You can contact our team at `contact at happydns.org` for any professional requests.
