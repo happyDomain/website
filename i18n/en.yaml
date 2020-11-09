@@ -37,15 +37,15 @@
 
 - id: downloads-title
   translation: |
-    Online demo and downloads
+    Downloads
 
 - id: downloads-text
   translation: |
-    You can try happyDNS online directly [on our servers](/join).
-
-    There is no prebuilt binary currently (check back soon).
-
     Our source code is freely available under the [CeCILL license](http://cecill.info/licences/Licence_CeCILL_V2.1-en.html) in our [git repository](https://git.happydns.org/), hosted by Framagit.
+
+    You can download the latest [*nightly* version](https://get.happydns.org/master/) of happyDNS for [Linux x86_64](https://get.happydns.org/master/happydns-linux-amd64), [Linux arm64](https://get.happydns.org/master/happydns-linux-arm64) or [macOS x86_64](https://get.happydns.org/master/happydns-darwin-amd64).
+
+    Precompiled binaries are availables on <https://get.happydns.org/>.
 
 - id: community-chat
   translation: "Chat"
