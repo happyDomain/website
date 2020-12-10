@@ -1,5 +1,5 @@
 title = "happyDNS"
-baseURL = "https://happydns.org/"
+baseURL = "https://www.happydns.org/"
 
 defaultContentLanguageInSubdir = true
 removePathAccents = true
