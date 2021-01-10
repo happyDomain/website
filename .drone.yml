@@ -19,8 +19,8 @@ steps:
     settings:
       debug: true
       tar_tmp_path: /tmp/
-      host: www.happydns.org
-      target: /var/www/happydns.org/htdocs
+      host: ${TARGET_HOST:=www.happydns.org}
+      target: ${TARGET_DIRECTORY:=/var/www/happydns.org/htdocs}
       source: public/*
       strip_components: 1
       username:
