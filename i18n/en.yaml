@@ -61,25 +61,25 @@
   translation: "Bugs and Features"
 - id: community-bugs-text
   translation: |
-    If you notice a problem or a missing feature, feel free to report it on the project's issues page.
+    Problem, missing feature? Please, take one minute to report it on the project's issues page.
 
 - id: community-translation
   translation: "Translations"
 - id: community-translation-text
   translation: |
-    We will need you help to translate happyDNS. Come back later, when we've set up the translation tool.
+    You speak another language than French or English? Give a hand to translate happyDNS. Write us at `contact at happydns.org`.
 
 - id: community-code
   translation: "Code"
 - id: community-code-text
   translation: |
-    We invite interested developers to contribute code. Check out [our repository](https://git.happydns.org/) on Framagit.
+    Skilled developer? Contribute to the code! Check out [our repository](https://git.happydns.org/) on Framagit.
 
 - id: community-contact
   translation: "Contact"
 - id: community-contact-text
   translation: |
-    You can contact our team at `contact at happydns.org` for any professional requests.
+    Need more? Contact us at `contact at happydns.org`.
 
 - id: survey-title
   translation: "We're going for it!"
