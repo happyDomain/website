@@ -45,7 +45,11 @@
 
     You can download the latest [*nightly* version](https://get.happydns.org/master/) of happyDNS for [Linux x86_64](https://get.happydns.org/master/happydns-linux-amd64), [Linux arm64](https://get.happydns.org/master/happydns-linux-arm64) or [macOS x86_64](https://get.happydns.org/master/happydns-darwin-amd64).
 
-    Precompiled binaries are availables on <https://get.happydns.org/>.
+    We publish a [Docker image](https://hub.docker.com/r/happydns/happydns/), feel free to test it thanks to:
+
+            docker run -e HAPPYDNS_NO_AUTH=1 -p 8081:8081 happydns/happydns
+
+    Precompiled binaries are also availables on <https://get.happydns.org/>.
 
 - id: community-chat
   translation: "Chat"
