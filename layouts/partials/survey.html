@@ -1,0 +1,19 @@
+<div id="voxppl" style="display: none">
+  <a href="https://framaforms.org/que-pense-la-communaute-dhappydns-1610359677" class="d-flex p-3 text-light row" style="position: fixed; bottom: 5vh; right: 5vw; border-radius: 5px; background-color: #9332bbee">
+    <h1 class="col-auto align-self-center">
+      <i class="fa fa-bullhorn"></i>
+    </h1>
+    <div class="col align-self-center font-weigth-bolder">
+      <button type="button" class="close float-right" aria-label="Close" onclick="document.getElementById('voxppl').style.display = 'none'; return false">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <strong>{{ i18n "survey-title" | markdownify }}</strong><br>
+      {{ i18n "survey-text" | markdownify }}
+    </div>
+  </a>
+</div>
+<script>
+  setTimeout(function() {
+    document.getElementById('voxppl').style.display = 'block'
+  }, 4500)
+</script>

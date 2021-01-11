@@ -80,3 +80,11 @@
 - id: community-contact-text
   translation: |
     You can contact our team at `contact at happydns.org` for any professional requests.
+
+- id: survey-title
+  translation: "We're going for it!"
+
+- id: survey-text
+  translation: |
+    Tell us what you would like to see<br>
+    by filling out our 2-minute survey.
