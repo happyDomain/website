@@ -43,9 +43,9 @@
   translation: |
     Le code source de notre projet est libre ; il est disponible sous les termes de la [licence CeCILL](http://cecill.info/licences/Licence_CeCILL_V2.1-fr.html) dans notre [dépôt Git](https://git.happydns.org/), hébergé par Framagit.
 
-    Vous pouvez télécharger la dernière [version *nightly*](https://get.happydns.org/master/) d'happyDNS pour [Linux x86_64](https://get.happydns.org/master/happydns-linux-amd64), [Linux arm64](https://get.happydns.org/master/happydns-linux-arm64) ou [macOS x86_64](https://get.happydns.org/master/happydns-darwin-amd64).
+    Téléchargez la dernière [version *nightly*](https://get.happydns.org/master/) d'happyDNS pour [Linux x86_64](https://get.happydns.org/master/happydns-linux-amd64), [Linux arm64](https://get.happydns.org/master/happydns-linux-arm64) ou [macOS x86_64](https://get.happydns.org/master/happydns-darwin-amd64).
 
-    Nous avons une [image Docker](https://hub.docker.com/r/happydns/happydns/), n'hésitez pas à l'essayer :
+    Vous préférez une [image Docker](https://hub.docker.com/r/happydns/happydns/) ? Essayez-la
 
             docker run -e HAPPYDNS_NO_AUTH=1 -p 8081:8081 happydns/happydns
 
@@ -61,25 +61,25 @@
   translation: "Bugs et fonctionnalités"
 - id: community-bugs-text
   translation: |
-    Si vous remarquez un problème ou une fonctionnalité manquante, n'hésitez pas à nous l'indiquer via le formulaire dédié de notre projet.
+    Vous remarquez un problème ou une fonctionnalité manquante ? Pensez à nous l'indiquer via le formulaire de notre projet.
 
 - id: community-translation
   translation: "Traductions"
 - id: community-translation-text
   translation: |
-    Nous aurons besoin de votre aide pour traduire happyDNS. Revenez dans quelques semaines, lorsque nous aurons mis en place l'outil de traduction.
+    Vous parlez une langue étrangère ? Traduisez happyDNS. Contactez-nous par email `contact at happydns.org`.
 
 - id: community-code
   translation: "Code"
 - id: community-code-text
   translation: |
-    Si vous savez programmer, n'hésitez pas à contribuer, via notre [dépôt Git](https://git.happydns.org/) sur Framagit.
+    Vous savez programmer ? Contribuez à améliorer le logiciel via notre [dépôt Git](https://git.happydns.org/) sur Framagit.
 
 - id: community-contact
   translation: "Contact"
 - id: community-contact-text
   translation: |
-    Contactez notre équipe à `contact at happydns.org` pour toute demande de formation ou commerciale.
+    Autre chose ? Contactez-nous à `contact at happydns.org`.
 
 - id: survey-title
   translation: "On se lance dans l'aventure !"
