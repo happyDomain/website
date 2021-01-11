@@ -55,7 +55,7 @@
   translation: "Chat"
 - id: community-chat-text
   translation: |
-    Rejoignez notre canal IRC `#happydns` sur Freenode, pour partager des idées ou poser des questions.
+    Rejoignez notre canal [Matrix](https://matrix.to/#/#freenode_#happydns:matrix.org) ou [IRC](https://webchat.freenode.net/#happydns) `#happydns` sur Freenode, pour partager des idées ou poser des questions.
 
 - id: community-bugs
   translation: "Bugs et fonctionnalités"
