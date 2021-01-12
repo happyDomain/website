@@ -41,12 +41,15 @@
       {{ i18n "features-grid-title" }}
     </h3>
   </div>
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
 
     {{ range $.Site.Data.features.features }}
     {{ if index .title $.Language.Lang }}
     <div class="col mb-4">
       <div class="card" id="feature-{{ .id }}">
+        {{ if and .img .img.src }}
+        <img src="{{ .img.src }}" class="card-img-top" alt="{{ index .img.alt $.Language.Lang }}">
+        {{ end }}
         <div class="card-body">
           <h5 class="card-title text-center mb-0">{{ index .title $.Language.Lang }}</h5>
           <hr class="mb-1 mt-2 mr-4 ml-4">

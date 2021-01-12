@@ -1,6 +1,12 @@
 [[features]]
 id = "dynamicDNS"
 
+  [features.img]
+  src = "/img/screenshots/features/dyndns.png"
+    [features.img.alt]
+    fr = "Une interface au dessus de votre serveur existant"
+    en = "An interface on top of your existing server"
+
   [features.title]
   fr = "Gérer les zones de vos serveurs BIND, Knot, PowerDNS, ..."
   en = "Manage your zones backed by BIND, Knot, PowerDNS, ..."
@@ -17,6 +23,12 @@ id = "dynamicDNS"
 
 [[features]]
 id = "registrar"
+
+  [features.img]
+  src = "/img/screenshots/features/hosters.png"
+    [features.img.alt]
+    fr = "Exemple de diff"
+    en = "Sample diff"
 
   [features.title]
   fr = "Gérer les zones hébergées chez des prestataires d'hébergement"
@@ -35,6 +47,12 @@ id = "registrar"
 [[features]]
 id = "rest"
 
+  [features.img]
+  src = "/img/screenshots/features/rest.png"
+    [features.img.alt]
+    fr = "API REST"
+    en = "REST API"
+
   [features.title]
   fr = "Utiliser happyDomain comme API REST"
   en = "Use happyDomain as a API REST"
@@ -51,6 +69,12 @@ id = "rest"
 
 [[features]]
 id = "resolver"
+
+  [features.img]
+  src = "/img/screenshots/features/resolver.png"
+    [features.img.alt]
+    fr = "Résolveur DNS"
+    en = "DNS Resolver"
 
   [features.title]
   fr = "Tester ou déboguer votre zone en ligne"
@@ -69,6 +93,12 @@ id = "resolver"
 [[features]]
 id = "diff"
 
+  [features.img]
+  src = "/img/screenshots/features/diff.png"
+    [features.img.alt]
+    fr = "Exemple de diff"
+    en = "Sample diff"
+
   [features.title]
   fr = "Visualiser clairement les changements"
   en = "Clearly visualize changes"
@@ -80,6 +110,12 @@ id = "diff"
 
 [[features]]
 id = "history"
+
+  [features.img]
+  src = "/img/screenshots/features/history.png"
+    [features.img.alt]
+    fr = "Historique de la zone"
+    en = "Zone's history"
 
   [features.title]
   fr = "Garder une trace des modifications"
