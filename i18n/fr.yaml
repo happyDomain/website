@@ -38,6 +38,9 @@
 - id: features-grid-title
   translation: Que peut faire happyDomain pour vous aujourd'hui ?
 
+- id: features-grid-footer
+  translation: Et nous avons encore bien d'autres fonctionnalités en préparation...
+
 - id: downloads-title
   translation: |
     Téléchargements
