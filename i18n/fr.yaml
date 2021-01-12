@@ -61,7 +61,7 @@
   translation: "Bugs et fonctionnalités"
 - id: community-bugs-text
   translation: |
-    Vous remarquez un problème ou une fonctionnalité manquante ? Pensez à nous l'indiquer via le formulaire de notre projet.
+    Vous remarquez un problème ou une fonctionnalité manquante ? Pensez à nous l'indiquer via le [formulaire de notre projet](https://framagit.org/happyDNS/happydns/-/issues).
 
 - id: community-translation
   translation: "Traductions"

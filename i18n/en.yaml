@@ -61,7 +61,7 @@
   translation: "Bugs and Features"
 - id: community-bugs-text
   translation: |
-    Problem, missing feature? Please, take one minute to report it on the project's issues page.
+    Problem, missing feature? Please, take one minute to report it on [the project's issues page](https://framagit.org/happyDNS/happydns/-/issues).
 
 - id: community-translation
   translation: "Translations"
