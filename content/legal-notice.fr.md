@@ -24,8 +24,15 @@ ABS Pierre-Olivier Mercier<br>
 
 ### Hébergement
 
-Ce site web est hébergé de manière autonome par l’association, sur ses propres infrastructures.
+<!-- Ce site web est hébergé de manière autonome par l’association, sur ses propres infrastructures. -->
 
+Ce site web est hébergé par:
+
+<address style="margin-left: 2em; margin-top: -.5em">
+OVH SAS<br>
+2, rue Kellermann<br>
+59100 Roubaix
+</address>
 
 ## Données personnelles
 

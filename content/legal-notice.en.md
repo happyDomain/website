@@ -23,7 +23,15 @@ ABS Pierre-Olivier Mercier<br>
 
 ### Hosting
 
-This website is hosted by the association, autonomously, on its own infrastructures.
+<!-- This website is hosted by the association, autonomously, on its own infrastructures. -->
+
+This website is hosted by:
+
+<address style="margin-left: 2em; margin-top: -.5em">
+OVH SAS<br>
+2, rue Kellermann<br>
+59100 Roubaix
+</address>
 
 
 ## Personal Data
