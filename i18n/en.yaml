@@ -35,6 +35,9 @@
   translation: |
     Recognized **experts:** change your point of view on DNS, with an **ergonomic** interface in the age of time that will meet all your expectations.
 
+- id: features-grid-title
+  translation: What can happyDomain do for you today?
+
 - id: downloads-title
   translation: |
     Downloads

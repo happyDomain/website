@@ -35,4 +35,30 @@
       </p>
     </div>
   </div>
+
+  <div id="features-grid" class="mt-3">
+    <h3 class="text-center font-weight-bolder mt-5 mb-5" style="line-height: 1.5em;">
+      {{ i18n "features-grid-title" }}
+    </h3>
+  </div>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+
+    {{ range $.Site.Data.features.features }}
+    {{ if index .title $.Language.Lang }}
+    <div class="col mb-4">
+      <div class="card" id="feature-{{ .id }}">
+        <div class="card-body">
+          <h5 class="card-title text-center mb-0">{{ index .title $.Language.Lang }}</h5>
+          <hr class="mb-1 mt-2 mr-4 ml-4">
+          <p class="card-text text-justify">{{ index .content $.Language.Lang }}</p>
+          {{ if and .link .link.link }}
+          <a href="{{ .link.link }}" class="card-link">{{ index .link $.Language.Lang }}</a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    {{ end }}
+    {{ end }}
+
+  </div>
 </div>

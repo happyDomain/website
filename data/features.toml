@@ -1,0 +1,90 @@
+[[features]]
+id = "dynamicDNS"
+
+  [features.title]
+  fr = "Gérer les zones de vos serveurs BIND, Knot, PowerDNS, ..."
+  en = "Manage your zones backed by BIND, Knot, PowerDNS, ..."
+
+  [features.content]
+  fr = "happyDomain peut s'utiliser comme interface au dessus d'un serveur faisant autorité. Il utilise pour cela le Dynamic DNS (RFC 2136), implémenté dans de nombreux logiciels serveurs."
+  en = "happyDomain can be used as an interface above an authoritative name server. It uses the Dynamic DNS (RFC 2136), implemented in many server software."
+
+  [features.link]
+  link = "https://help.happydns.org/fr/deploy/"
+  fr = "Montrez-moi comment m'y connecter !"
+  en = "Show me how to connect!"
+
+
+[[features]]
+id = "registrar"
+
+  [features.title]
+  fr = "Gérer les zones hébergées chez des prestataires d'hébergement"
+  en = "Manage your zones hosted on hosting providers"
+
+  [features.content]
+  fr = "happyDomain peut regrouper les domaines que vous possédez dans différents bureaux d'enregistrement. Nous supportons aujourd'hui OVH, GoDaddy, Gandi et Alwaysdata."
+  en = "happyDomain can group the domains you own in different registrars. We currently support OVH, GoDaddy, Gandi and Alwaysdata."
+
+  [features.link]
+  link = "https://framaforms.org/une-minute-pour-nous-dire-ou-aller-1610359677"
+  fr = "Vous utilisez un autre bureau d'enregistrement ?"
+  en = "Are you using another registrar?"
+
+
+[[features]]
+id = "rest"
+
+  [features.title]
+  fr = "Utiliser happyDomain comme API REST"
+  en = "Use happyDomain as a API REST"
+
+  [features.content]
+  fr = "happyDomain expose une API REST que vous pouvez utiliser pour automatiser des tâches de création de sous-domaine à la volée, par exemple dans votre système de déploiement continu."
+  en = "happyDomain exposes a REST API that you can use to automate sub-domain creation tasks on the fly, for example in your continuous deployment system."
+
+  [features.link]
+  link = "https://help.happydns.org/fr/use-case/ci-cd/"
+  fr = "Montrez-moi un exemple !"
+  en = "Show me an example!"
+
+
+[[features]]
+id = "resolver"
+
+  [features.title]
+  fr = "Tester ou déboguer votre zone en ligne"
+  en = "Test or debug your zone online"
+
+  [features.content]
+  fr = "happyDomain intégre un résolveur DNS simple d'utilisation, qui vous permet de vous connecter sans effort à une cinquantaine de résolveurs publics. Vous pouvez facilement voir la propagation de vos modifications."
+  en = "happyDomain integrates an easy-to-use DNS resolver, which allows you to effortlessly connect to about 50 public resolvers. You can easily see the propagation of your changes."
+
+  [features.link]
+  link = "https://www.happydns.org/tools/client/"
+  fr = "Je veux tester ça de suite !"
+  en = "I want to test this now!"
+
+
+[[features]]
+id = "diff"
+
+  [features.title]
+  fr = "Visualiser clairement les changements"
+  en = "Clearly visualize changes"
+
+  [features.content]
+  fr = "Avant de publier vos modifications, happyDomain vous montre quels seront exactement les changements (ajouts et suppressions) qui seront effectués sur la zone. C'est le bon moment pour se relire."
+  en = "Before publishing your changes, happyDomain shows you exactly what changes (additions and deletions) will be made to the area. This is a good time to reread."
+
+
+[[features]]
+id = "history"
+
+  [features.title]
+  fr = "Garder une trace des modifications"
+  en = "Keeping track of changes"
+
+  [features.content]
+  fr = "happyDomain ne se contente pas de vous montrer votre zone telle qu'elle est publiée. Chaque modification est enregistrée afin de garder un historique de vos changements. En cas de problème, revenez à une version précédente en 2 clics."
+  en = "happyDomain doesn't just show you your zone as it is published. Every modification is saved to keep a history of your changes. In case of problem, go back to a previous version in 2 clicks."
