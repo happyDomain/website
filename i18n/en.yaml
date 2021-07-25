@@ -13,6 +13,30 @@
 - id: downloadit
   translation: "Download now"
 
+- id: learnhow
+  translation: "Learn how"
+
+- id: canhelpyou
+  translation: "can help you:"
+
+- id: freelance
+  translation: "Freelance"
+
+- id: sysadmin
+  translation: "Sys admin."
+
+- id: devops
+  translation: "DevOps"
+
+- id: cio
+  translation: "CIO"
+
+- id: geek
+  translation: "Geek"
+
+- id: goodreasontouse
+  translation: "The tool you won't be able to do without to manage your domains"
+
 - id: home
   translation: "Home"
 
