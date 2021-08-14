@@ -119,19 +119,32 @@ layout = "usage"
         Et si vous ne trouvez pas votre bonheur dans notre interface actuelle, venez en discuter avec nous&nbsp;:
       </p>
 
-    <div class="list-group list-group-horizontal-md">
-      <a href="{{ ref . "/use-happyDNS/freelance" }}" class="list-group-item list-group-item-action text-center font-weight-bold d-flex flex-column">
-        <img src="/img/screenshots/users/survey.svg" alt="{{ i18n "freelance" }}" class="w-100 mb-3 flex-grow-1">
-        <span>Donnez-nous votre avis</span>
-      </a>
-      <a href="{{ ref . "/use-happyDNS/freelance" }}" class="list-group-item list-group-item-action text-center font-weight-bold d-flex flex-column">
-        <img src="/img/screenshots/users/chat.svg" alt="{{ i18n "freelance" }}" class="w-100 mb-3 flex-grow-1">
-        <span>Rendez-vous sur Matrix</span>
-      </a>
-      <a href="{{ ref . "/use-happyDNS/freelance" }}" class="list-group-item list-group-item-action text-center font-weight-bold d-flex flex-column">
-        <img src="/img/screenshots/users/chat.svg" alt="{{ i18n "freelance" }}" class="w-100 mb-3 flex-grow-1">
-        <span>Rendez-vous sur IRC</span>
-      </a>
+      <div class="row cols-1 cols-sm-3">
+        <div class="col">
+          <div class="card h-100">
+            <a href="https://framaforms.org/une-minute-pour-nous-dire-ou-aller-1610359677" class="card-body list-group-item-action text-center font-weight-bold d-flex flex-column">
+              <img src="/img/screenshots/users/survey.svg" alt="{{ i18n "freelance" }}" class="w-100 mb-3 flex-grow-1">
+              <span>Donnez-nous votre avis</span>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a href="https://matrix.to/#/#happyDNS:matrix.org" class="card-body list-group-item-action text-center font-weight-bold d-flex flex-column">
+              <img src="/img/screenshots/users/chat.svg" alt="{{ i18n "freelance" }}" class="w-100 mb-3 flex-grow-1">
+              <span>Rendez-vous sur Matrix</span>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a href="https://web.libera.chat/#happydns" class="card-body list-group-item-action text-center font-weight-bold d-flex flex-column">
+              <img src="/img/screenshots/users/chat.svg" alt="{{ i18n "freelance" }}" class="w-100 mb-3 flex-grow-1">
+              <span>Rendez-vous sur IRC</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
 
     </div>
