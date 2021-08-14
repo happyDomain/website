@@ -85,7 +85,7 @@
   translation: "Chat"
 - id: community-chat-text
   translation: |
-    Join our [Matrix](https://matrix.to/#/#happyDNS:matrix.org) or [IRC](https://webchat.freenode.net/#happydns) channel `#happydns` on Libera.Chat to share ideas or ask questions.
+    Join our [Matrix](https://matrix.to/#/#happyDNS:matrix.org) or [IRC](https://web.libera.chat/#happydns) channel `#happydns` on Libera.Chat to share ideas or ask questions.
 
 - id: community-bugs
   translation: "Bugs and Features"
