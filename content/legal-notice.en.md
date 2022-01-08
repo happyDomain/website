@@ -41,4 +41,4 @@ an identifier, means of account retrieval or possibly the sending of our
 newsletter).
 
 You can contact our data protection officer by e-mail at <code>dpo at
-happydns.org</code> or by mail to our headquarters address.
+happydomain.org</code> or by mail to our headquarters address.

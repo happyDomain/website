@@ -8,7 +8,7 @@
   translation: "Essayer en ligne maintenant"
 
 - id: tryhappydns
-  translation: "Essayer happyDNS maintenant"
+  translation: "Essayer happyDomain maintenant"
 
 - id: downloadit
   translation: "Télécharger"
@@ -71,15 +71,15 @@
 
 - id: downloads-text
   translation: |
-    Le code source de notre projet est libre ; il est disponible sous les termes de la [licence CeCILL](http://cecill.info/licences/Licence_CeCILL_V2.1-fr.html) dans notre [dépôt Git](https://git.happydns.org/), hébergé par Framagit.
+    Le code source de notre projet est libre ; il est disponible sous les termes de la [licence CeCILL](http://cecill.info/licences/Licence_CeCILL_V2.1-fr.html) dans notre [dépôt Git](https://git.happydomain.org/), hébergé par Framagit.
 
-    Téléchargez la dernière [version *nightly*](https://get.happydns.org/master/) d'happyDNS pour [Linux x86_64](https://get.happydns.org/master/happydns-linux-amd64), [Linux arm64](https://get.happydns.org/master/happydns-linux-arm64) ou [macOS x86_64](https://get.happydns.org/master/happydns-darwin-amd64).
+    Téléchargez la dernière [version *nightly*](https://get.happydomain.org/master/) d'happyDomain pour [Linux x86_64](https://get.happydomain.org/master/happydns-linux-amd64), [Linux arm64](https://get.happydomain.org/master/happydns-linux-arm64) ou [macOS x86_64](https://get.happydomain.org/master/happydns-darwin-amd64).
 
     Vous préférez une [image Docker](https://hub.docker.com/r/happydns/happydns/) ? Essayez-la
 
             docker run -e HAPPYDNS_NO_AUTH=1 -p 8081:8081 happydns/happydns
 
-    Les binaires précompilés sont disponibles sur <https://get.happydns.org/>.
+    Les binaires précompilés sont disponibles sur <https://get.happydomain.org/>.
 
 - id: community-chat
   translation: "Chat"
@@ -97,19 +97,19 @@
   translation: "Traductions"
 - id: community-translation-text
   translation: |
-    Vous parlez une langue étrangère ? Traduisez happyDNS. Contactez-nous par email `contact at happydns.org`.
+    Vous parlez une langue étrangère ? Traduisez happyDomain. Contactez-nous par email `contact at happydomain.org`.
 
 - id: community-code
   translation: "Code"
 - id: community-code-text
   translation: |
-    Vous savez programmer ? Contribuez à améliorer le logiciel via notre [dépôt Git](https://git.happydns.org/) sur Framagit.
+    Vous savez programmer ? Contribuez à améliorer le logiciel via notre [dépôt Git](https://git.happydomain.org/) sur Framagit.
 
 - id: community-contact
   translation: "Contact"
 - id: community-contact-text
   translation: |
-    Autre chose ? Contactez-nous à `contact at happydns.org`.
+    Autre chose ? Contactez-nous à `contact at happydomain.org`.
 
 - id: survey-title
   translation: "On se lance dans l'aventure !"

@@ -1,5 +1,5 @@
-title: "happyDNS"
-baseURL: "https://www.happydns.org/"
+title: "happyDomain"
+baseURL: "https://www.happydomain.org/"
 
 defaultContentLanguageInSubdir: true
 removePathAccents: true
@@ -10,11 +10,11 @@ author:
 
 languages:
   en:
-    title: "happyDNS. Finally a simple interface for domain names."
+    title: "happyDomain. Finally a simple interface for domain names."
     weight: 1
 
   fr:
-    title: "happyDNS. L'interface des noms de domaines."
+    title: "happyDomain. L'interface des noms de domaines."
     weight: 2
 
     menu:
@@ -31,7 +31,7 @@ languages:
 
 #      - identifier: "blog"
 #        name: "Blog"
-#        url: "https://blog.happydns.org/"
+#        url: "https://blog.happydomain.org/"
 #        weight: 30
 
     params:
@@ -86,7 +86,7 @@ params:
     image: "/img/screenshots/zone-diff.png"
 
   - title: "domain-records"
-    description: "Resource records for a zone: editable through happyDNS"
+    description: "Resource records for a zone: editable through happyDomain"
     image: "/img/screenshots/domain-records.png"
 
   - title: "domain-source"
@@ -111,7 +111,7 @@ menu:
 
 #  - identifier: "blog"
 #    name: "Blog"
-#    url: "https://blog.happydns.org/"
+#    url: "https://blog.happydomain.org/"
 #    weight: 30
 
 markup:

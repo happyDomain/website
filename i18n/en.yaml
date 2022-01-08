@@ -8,7 +8,7 @@
   translation: "Try it online now"
 
 - id: tryhappydns
-  translation: "Try happyDNS now"
+  translation: "Try happyDomain now"
 
 - id: downloadit
   translation: "Download now"
@@ -73,13 +73,13 @@
   translation: |
     Our source code is freely available under the [CeCILL license](http://cecill.info/licences/Licence_CeCILL_V2.1-en.html) in our [git repository](https://git.happydns.org/), hosted by Framagit.
 
-    You can download the latest [*nightly* version](https://get.happydns.org/master/) of happyDNS for [Linux x86_64](https://get.happydns.org/master/happydns-linux-amd64), [Linux arm64](https://get.happydns.org/master/happydns-linux-arm64) or [macOS x86_64](https://get.happydns.org/master/happydns-darwin-amd64).
+    You can download the latest [*nightly* version](https://get.happydns.org/master/) of happyDomain for [Linux x86_64](https://get.happydomain.org/master/happydns-linux-amd64), [Linux arm64](https://get.happydomain.org/master/happydns-linux-arm64) or [macOS x86_64](https://get.happydomain.org/master/happydns-darwin-amd64).
 
     We publish a [Docker image](https://hub.docker.com/r/happydns/happydns/), feel free to test it thanks to:
 
             docker run -e HAPPYDNS_NO_AUTH=1 -p 8081:8081 happydns/happydns
 
-    Precompiled binaries are also availables on <https://get.happydns.org/>.
+    Precompiled binaries are also availables on <https://get.happydomain.org/>.
 
 - id: community-chat
   translation: "Chat"
@@ -97,7 +97,7 @@
   translation: "Translations"
 - id: community-translation-text
   translation: |
-    You speak another language than French or English? Give a hand to translate happyDNS. Write us at `contact at happydns.org`.
+    You speak another language than French or English? Give a hand to translate happyDomain. Write us at `contact at happydomain.org`.
 
 - id: community-code
   translation: "Code"
@@ -109,7 +109,7 @@
   translation: "Contact"
 - id: community-contact-text
   translation: |
-    Need more? Contact us at `contact at happydns.org`.
+    Need more? Contact us at `contact at happydomain.org`.
 
 - id: survey-title
   translation: "We're going for it!"
