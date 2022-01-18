@@ -73,11 +73,11 @@
   translation: |
     Our source code is freely available under the [CeCILL license](http://cecill.info/licences/Licence_CeCILL_V2.1-en.html) in our [git repository](https://git.happydns.org/), hosted by Framagit.
 
-    You can download the latest [*nightly* version](https://get.happydns.org/master/) of happyDomain for [Linux x86_64](https://get.happydomain.org/master/happydns-linux-amd64), [Linux arm64](https://get.happydomain.org/master/happydns-linux-arm64) or [macOS x86_64](https://get.happydomain.org/master/happydns-darwin-amd64).
+    You can download the latest [*nightly* version](https://get.happydomain.org/master/) of happyDomain for [Linux x86_64](https://get.happydomain.org/master/happydomain-linux-amd64), [Linux arm64](https://get.happydomain.org/master/happydomain-linux-arm64) or [macOS x86_64](https://get.happydomain.org/master/happydomain-darwin-amd64).
 
-    We publish a [Docker image](https://hub.docker.com/r/happydns/happydns/), feel free to test it thanks to:
+    We publish a [Docker image](https://hub.docker.com/r/happydns/happydomain/), feel free to test it thanks to:
 
-            docker run -e HAPPYDNS_NO_AUTH=1 -p 8081:8081 happydns/happydns
+            docker run -e HAPPYDOMAIN_NO_AUTH=1 -p 8081:8081 happydns/happydomain
 
     Precompiled binaries are also availables on <https://get.happydomain.org/>.
 
