@@ -75,9 +75,9 @@
 
     Téléchargez la dernière [version *nightly*](https://get.happydomain.org/master/) d'happyDomain pour [Linux x86_64](https://get.happydomain.org/master/happydomain-linux-amd64), [Linux arm64](https://get.happydomain.org/master/happydomain-linux-arm64) ou [macOS x86_64](https://get.happydomain.org/master/happydomain-darwin-amd64).
 
-    Vous préférez une [image Docker](https://hub.docker.com/r/happydns/happydomain/) ? Essayez-la
+    Vous préférez une [image Docker](https://hub.docker.com/r/happydomain/happydomain/) ? Essayez-la
 
-            docker run -e HAPPYDOMAIN_NO_AUTH=1 -p 8081:8081 happydns/happydomain
+            docker run -e HAPPYDOMAIN_NO_AUTH=1 -p 8081:8081 happydomain/happydomain
 
     Les binaires précompilés sont disponibles sur <https://get.happydomain.org/>.
 
@@ -91,7 +91,7 @@
   translation: "Bugs et fonctionnalités"
 - id: community-bugs-text
   translation: |
-    Vous remarquez un problème ou une fonctionnalité manquante ? Pensez à nous l'indiquer via le [formulaire de notre projet](https://framagit.org/happyDNS/happydns/-/issues).
+    Vous remarquez un problème ou une fonctionnalité manquante ? Pensez à nous l'indiquer via le [formulaire de notre projet](https://framagit.org/happyDomain/happydomain/-/issues).
 
 - id: community-translation
   translation: "Traductions"

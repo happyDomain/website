@@ -71,13 +71,13 @@
 
 - id: downloads-text
   translation: |
-    Our source code is freely available under the [CeCILL license](http://cecill.info/licences/Licence_CeCILL_V2.1-en.html) in our [git repository](https://git.happydns.org/), hosted by Framagit.
+    Our source code is freely available under the [CeCILL license](http://cecill.info/licences/Licence_CeCILL_V2.1-en.html) in our [git repository](https://git.happydomain.org/), hosted by Framagit.
 
     You can download the latest [*nightly* version](https://get.happydomain.org/master/) of happyDomain for [Linux x86_64](https://get.happydomain.org/master/happydomain-linux-amd64), [Linux arm64](https://get.happydomain.org/master/happydomain-linux-arm64) or [macOS x86_64](https://get.happydomain.org/master/happydomain-darwin-amd64).
 
-    We publish a [Docker image](https://hub.docker.com/r/happydns/happydomain/), feel free to test it thanks to:
+    We publish a [Docker image](https://hub.docker.com/r/happydomain/happydomain/), feel free to test it thanks to:
 
-            docker run -e HAPPYDOMAIN_NO_AUTH=1 -p 8081:8081 happydns/happydomain
+            docker run -e HAPPYDOMAIN_NO_AUTH=1 -p 8081:8081 happydomain/happydomain
 
     Precompiled binaries are also availables on <https://get.happydomain.org/>.
 
@@ -91,7 +91,7 @@
   translation: "Bugs and Features"
 - id: community-bugs-text
   translation: |
-    Problem, missing feature? Please, take one minute to report it on [the project's issues page](https://framagit.org/happyDNS/happydns/-/issues).
+    Problem, missing feature? Please, take one minute to report it on [the project's issues page](https://framagit.org/happyDomain/happydomain/-/issues).
 
 - id: community-translation
   translation: "Translations"
@@ -103,7 +103,7 @@
   translation: "Code"
 - id: community-code-text
   translation: |
-    Skilled developer? Contribute to the code! Check out [our repository](https://git.happydns.org/) on Framagit.
+    Skilled developer? Contribute to the code! Check out [our repository](https://git.happydomain.org/) on Framagit.
 
 - id: community-contact
   translation: "Contact"
