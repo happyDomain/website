@@ -56,6 +56,21 @@ nav.navbar.scrolled {
     background-color: yellow;
 }
 
+#voxppl {
+    display: none;
+}
+#voxppl a {
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+    border-radius: 5px;
+    background-color: #9332bbee;
+}
+#voxppl a:hover {
+    text-decoration: none;
+    background-color: #9332bb;
+}
+
 footer {
     border-top: 3px solid #9332bb;
 }
