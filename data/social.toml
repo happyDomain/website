@@ -26,7 +26,7 @@ icon = "fab fa-gitlab"
 id = "framagit"
 url = "https://framagit.org/%s"
 title = "Framagit"
-icon = "fab fa-gitlab"
+icon = "bi-git"
 
 [[social_icons]]
 id = "bitbucket"

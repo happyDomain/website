@@ -17,6 +17,31 @@ nav.navbar {
     border-bottom: 1px solid #1cb487;
     z-index: 2;
 }
+nav.navbar.beginscroll {
+    box-shadow: none;
+    border-bottom: 1px solid #f8f9fa;
+}
+nav.navbar.scrolled {
+    box-shadow: 0 0px 3px 0 #1cb487;
+    border-bottom: 1px solid #1cb487;
+}
+
+.link-rounded, .circle-head {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.8em;
+    line-height: 1em;
+    width: 1.8em;
+    background: #1cb487;
+    border-radius: 100%;
+    color: #f8f9fa;
+    font-size: 1.5rem;
+}
+.link-rounded:hover {
+    background-color: #127255;
+    color: #f8f9fa;
+}
 
 .anchor {
     margin-top: -60px;
