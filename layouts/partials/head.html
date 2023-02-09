@@ -6,7 +6,6 @@
   <meta name="googlebot" content="index,follow,snippet,archive">
   <title>{{ .Title }}</title>
   <meta name="author" content="{{ .Site.Author.name }}" />
-  {{ .Hugo.Generator }}
 
   {{ if .Keywords }}
   <meta name="keywords" content="{{ delimit .Keywords ", " }}">
