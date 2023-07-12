@@ -34,7 +34,7 @@
         <div class="nav-item nav-ext-links">
         {{ range .Site.Data.social.social_icons }}
           {{- if isset $.Site.Author .id }}
-        <a class="nav-icon-link link-rounded umami--click--{{ .id }}" href="{{ printf .url (index $.Site.Author .id) }}" title="{{ .title }}"><i class="bi {{ .icon }}"></i></a>
+        <a class="nav-icon-link link-rounded" data-umami-event="{{ .id }}" href="{{ printf .url (index $.Site.Author .id) }}" title="{{ .title }}"><i class="bi {{ .icon }}"></i></a>
           {{- end -}}
         {{ end }}
         {{ if .Site.Params.rss }}
@@ -47,7 +47,7 @@
             </a>
         {{ end }}
         {{ if .Site.Params.tryit }}
-          <a href="{{ .Site.Params.tryit }}" title="{{ i18n "tryhappydns" }}" class="nav-icon-link link-rounded umami--click--nav-tryit">
+          <a href="{{ .Site.Params.tryit }}" title="{{ i18n "tryhappydns" }}" class="nav-icon-link link-rounded" data-umami-event="nav-tryit">
             <i class="bi bi-arrow-right"></i>
           </a>
         {{ end }}

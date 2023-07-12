@@ -8,8 +8,8 @@
       {{ i18n "lead" | markdownify }}
     </p>
     <p>
-      <a class="btn btn-primary mt-2 umami--click--jumbo-tryit" href="/join">{{ i18n "tryit" }} &#187;</a>
-      <a class="btn btn-outline-secondary mt-2 umami--click--jumbo-downloads" href="#downloads">{{ i18n "downloadit" }} &#187;</a>
+      <a class="btn btn-primary mt-2" data-umami-event="jumbo-tryit" href="/join">{{ i18n "tryit" }} &#187;</a>
+      <a class="btn btn-outline-secondary mt-2" data-umami-event="jumbo-downloads" href="#downloads">{{ i18n "downloadit" }} &#187;</a>
     </p>
   </div>
 
@@ -22,7 +22,7 @@
     <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5">
       <div class="col mb-4">
         <div class="card h-100">
-          <a href="{{ ref . "/use-happyDomain/freelance" }}" class="card-body list-group-item-action text-center font-weight-bold flex-grow-1 d-flex flex-column umami--click--learnmore-freelance">
+          <a href="{{ ref . "/use-happyDomain/freelance" }}" class="card-body list-group-item-action text-center font-weight-bold flex-grow-1 d-flex flex-column" data-umami-event="learnmore-freelance">
             <img src="/img/screenshots/users/freelance.svg" alt="{{ i18n "freelance" }}" class="w-100 mb-3 flex-grow-1">
             <span>{{ i18n "freelance" }}</span>
           </a>
@@ -30,7 +30,7 @@
       </div>
       <div class="col mb-4">
         <div class="card h-100">
-          <a href="{{ ref . "/use-happyDomain/sysadmin" }}" class="card-body list-group-item-action text-center font-weight-bold flex-grow-1 d-flex flex-column umami--click--learnmore-sysadmin">
+          <a href="{{ ref . "/use-happyDomain/sysadmin" }}" class="card-body list-group-item-action text-center font-weight-bold flex-grow-1 d-flex flex-column" data-umami-event="learnmore-sysadmin">
             <img src="/img/screenshots/users/sysadmin.svg" alt="{{ i18n "sysadmin" }}" class="w-100 mb-3 flex-grow-1">
             <span>{{ i18n "sysadmin" }}</span>
           </a>
@@ -38,7 +38,7 @@
       </div>
       <div class="col mb-4">
         <div class="card h-100">
-          <a class="card-body list-group-item-action text-center font-weight-bold disabled flex-grow-1 d-flex flex-column umami--click--learnmore-devops">
+          <a class="card-body list-group-item-action text-center font-weight-bold disabled flex-grow-1 d-flex flex-column" data-umami-event="learnmore-devops">
             <img src="/img/screenshots/users/devops.svg" alt="{{ i18n "devops" }}" class="w-100 mb-3 flex-grow-1">
             <span>{{ i18n "devops" }}</span>
           </a>
@@ -46,7 +46,7 @@
       </div>
       <div class="col mb-4">
         <div class="card h-100">
-          <a href="{{ ref . "/use-happyDomain/cio" }}" class="card-body list-group-item-action text-center font-weight-bold flex-grow-1 d-flex flex-column umami--click--learnmore-cio">
+          <a href="{{ ref . "/use-happyDomain/cio" }}" class="card-body list-group-item-action text-center font-weight-bold flex-grow-1 d-flex flex-column" data-umami-event="learnmore-cio">
             <img src="/img/screenshots/users/cio.svg" alt="{{ i18n "cio" }}" class="w-100 mb-3 flex-grow-1">
             <span>{{ i18n "cio" }}</span>
           </a>
@@ -54,7 +54,7 @@
       </div>
       <div class="col mb-4">
         <div class="card h-100">
-          <a href="{{ ref . "/use-happyDomain/geek" }}" class="card-body list-group-item-action text-center font-weight-bold flex-grow-1 d-flex flex-column umami--click--learnmore-geek">
+          <a href="{{ ref . "/use-happyDomain/geek" }}" class="card-body list-group-item-action text-center font-weight-bold flex-grow-1 d-flex flex-column" data-umami-event="learnmore-geek">
             <img src="/img/screenshots/users/geek.svg" alt="{{ i18n "geek" }}" class="w-100 mb-3 flex-grow-1">
             <span>{{ i18n "geek" }}</span>
           </a>
