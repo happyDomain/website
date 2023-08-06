@@ -1,7 +1,7 @@
 {{ if isset .Site.Params "carousel" }}
 {{ if gt (len .Site.Params.carousel) 0 }}
 <div class="anchor" id="features"></div>
-<div class="carousel text-light p-3 pt-5 d-flex flex-nowrap" style="gap: 1em 1em; overflow-x: scroll">
+<div class="carousel text-light p-4 pt-5 d-flex flex-nowrap" style="gap: 1em 1em; overflow-x: scroll">
   {{ range sort .Site.Params.carousel "weight" }}
   <figure class="" style="min-width: 40vw">
     <a href="{{ .image }}">
