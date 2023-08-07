@@ -1,4 +1,32 @@
 [[features]]
+id = "registrar"
+
+  [features.img]
+  src = "/img/screenshots/features/hosters.png"
+    [features.img.alt]
+    fr = "Choisissez votre fournisseur"
+    en = "Choose your provider"
+
+  [features.title]
+  fr = "Gérer les zones hébergées chez des prestataires d'hébergement"
+  en = "Manage your zones hosted on hosting providers"
+
+  [features.content]
+  fr = "happyDomain peut regrouper les domaines que vous possédez dans différents bureaux d'enregistrement. Nous supportons aujourd'hui 38 founisseurs tels que OVH, Gandi, DigitalOcean, ..."
+  en = "happyDomain can group the domains you own in different registrars. We currently support 38 providers like OVH, Gandi, DigitalOcean, ..."
+
+  [features.link]
+  link = "https://docs.dnscontrol.org/service-providers/providers"
+  fr = "Voir tous les bureaux d'enregistrement supportés"
+  en = "See all supported registrar"
+
+  [features.link2]
+  link = "https://framaforms.org/une-minute-pour-nous-dire-ou-aller-1610359677"
+  fr = "Vous utilisez un autre bureau d'enregistrement ?"
+  en = "Are you using another registrar?"
+
+
+[[features]]
 id = "dynamicDNS"
 
   [features.img]
@@ -12,36 +40,54 @@ id = "dynamicDNS"
   en = "Manage your zones backed by BIND, Knot, PowerDNS, ..."
 
   [features.content]
-  fr = "happyDomain peut s'utiliser comme interface au dessus d'un serveur faisant autorité. Il utilise pour cela le Dynamic DNS (RFC 2136), implémenté dans de nombreux logiciels serveurs."
+  fr = "happyDomain peut s'utiliser comme interface au dessus d'un serveur faisant autorité. Il utilise pour cela le Dynamic DNS (RFC 2136), implémenté dans de nombreux serveurs."
   en = "happyDomain can be used as an interface above an authoritative name server. It uses the Dynamic DNS (RFC 2136), implemented in many server software."
 
   [features.link]
-  link = "https://help.happydns.org/fr/deploy/"
+  link = "https://help.happydomain.org/fr/deploy/"
   fr = "Montrez-moi comment m'y connecter !"
   en = "Show me how to connect!"
 
 
 [[features]]
-id = "registrar"
+id = "diff"
 
   [features.img]
-  src = "/img/screenshots/features/hosters.png"
+  src = "/img/screenshots/features/diff.png"
     [features.img.alt]
     fr = "Exemple de diff"
     en = "Sample diff"
 
   [features.title]
-  fr = "Gérer les zones hébergées chez des prestataires d'hébergement"
-  en = "Manage your zones hosted on hosting providers"
+  fr = "Visualiser clairement les changements"
+  en = "Clearly visualize changes"
 
   [features.content]
-  fr = "happyDomain peut regrouper les domaines que vous possédez dans différents bureaux d'enregistrement. Nous supportons aujourd'hui OVH, GoDaddy, Gandi et Alwaysdata."
-  en = "happyDomain can group the domains you own in different registrars. We currently support OVH, GoDaddy, Gandi and Alwaysdata."
+  fr = "Avant de publier vos modifications, happyDomain vous montre quels seront exactement les changements (ajouts et suppressions) qui seront effectués sur la zone. C'est le bon moment pour se relire."
+  en = "Before publishing your changes, happyDomain shows you exactly what changes (additions and deletions) will be made to the area. This is a good time to reread."
+
+
+[[features]]
+id = "resolver"
+
+  [features.img]
+  src = "/img/screenshots/features/resolver.png"
+    [features.img.alt]
+    fr = "Résolveur DNS"
+    en = "DNS Resolver"
+
+  [features.title]
+  fr = "Tester ou déboguer votre zone en ligne"
+  en = "Test or debug your zone online"
+
+  [features.content]
+  fr = "happyDomain intégre un résolveur DNS simple d'utilisation, qui vous permet de vous connecter sans effort à une cinquantaine de résolveurs publics. Vous pouvez facilement voir la propagation de vos modifications."
+  en = "happyDomain integrates an easy-to-use DNS resolver, which allows you to effortlessly connect to about 50 public resolvers. You can easily see the propagation of your changes."
 
   [features.link]
-  link = "https://framaforms.org/une-minute-pour-nous-dire-ou-aller-1610359677"
-  fr = "Vous utilisez un autre bureau d'enregistrement ?"
-  en = "Are you using another registrar?"
+  link = "https://www.happydomain.org/resolver"
+  fr = "Je veux tester ça de suite !"
+  en = "I want to test this now!"
 
 
 [[features]]
@@ -65,47 +111,6 @@ id = "rest"
   link = "/swagger/index.html"
   fr = "Montrez-moi l'API !"
   en = "Show me the API!"
-
-
-[[features]]
-id = "resolver"
-
-  [features.img]
-  src = "/img/screenshots/features/resolver.png"
-    [features.img.alt]
-    fr = "Résolveur DNS"
-    en = "DNS Resolver"
-
-  [features.title]
-  fr = "Tester ou déboguer votre zone en ligne"
-  en = "Test or debug your zone online"
-
-  [features.content]
-  fr = "happyDomain intégre un résolveur DNS simple d'utilisation, qui vous permet de vous connecter sans effort à une cinquantaine de résolveurs publics. Vous pouvez facilement voir la propagation de vos modifications."
-  en = "happyDomain integrates an easy-to-use DNS resolver, which allows you to effortlessly connect to about 50 public resolvers. You can easily see the propagation of your changes."
-
-  [features.link]
-  link = "https://www.happydns.org/tools/client/"
-  fr = "Je veux tester ça de suite !"
-  en = "I want to test this now!"
-
-
-[[features]]
-id = "diff"
-
-  [features.img]
-  src = "/img/screenshots/features/diff.png"
-    [features.img.alt]
-    fr = "Exemple de diff"
-    en = "Sample diff"
-
-  [features.title]
-  fr = "Visualiser clairement les changements"
-  en = "Clearly visualize changes"
-
-  [features.content]
-  fr = "Avant de publier vos modifications, happyDomain vous montre quels seront exactement les changements (ajouts et suppressions) qui seront effectués sur la zone. C'est le bon moment pour se relire."
-  en = "Before publishing your changes, happyDomain shows you exactly what changes (additions and deletions) will be made to the area. This is a good time to reread."
 
 
 [[features]]

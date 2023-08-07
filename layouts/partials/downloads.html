@@ -1,11 +1,38 @@
-<div class="anchor" id="downloads"></div>
-<div class="jumbotron">
+<div id="downloads" class="jumbotron" style="scroll-margin-top: 2em;">
   <div class="container">
-    <h3 class="font-weight-bolder">
-      {{ i18n "downloads-title" }}
-    </h3>
     <div class="row">
-      <div class="col-md-10 offset-md-1">
+      <div class="col-3 d-none d-md-flex flex-column justify-content-center">
+        <img src="/img/screenshots/users/download.webp" alt="Download section" id="download-house" class="position-relative">
+      </div>
+      <div class="col">
+        <h3 class="font-weight-bolder">
+          {{ i18n "downloads-title" }}
+        </h3>
+        <div class="row row-cols-1 row-cols-sm-3 my-4">
+
+          <div class="col text-center my-2">
+            <a href="https://hub.docker.com/r/happydomain/happydomain/" class="h-100 btn btn-lg btn-success" target="_blank" data-umami-event="download-docker">
+              <i class="bi bi-box"></i>
+              {{ i18n "downloads-docker" }}
+            </a>
+          </div>
+
+          <div class="col text-center my-2">
+            <a href="https://get.happydomain.org/master/" class="h-100 btn btn-lg btn-success" target="_blank" data-umami-event="download-binaries">
+              <i class="bi bi-download"></i>
+              {{ i18n "downloads-binaries" }}
+            </a>
+          </div>
+
+          <div class="col text-center my-2">
+            <a href="https://git.happydomain.org/" class="h-100 btn btn-lg btn-success" target="_blank" data-umami-event="download-sources">
+              <i class="bi bi-git"></i>
+              {{ i18n "downloads-source" }}
+            </a>
+          </div>
+
+        </div>
+
         {{ i18n "downloads-text" | markdownify }}
       </div>
     </div>

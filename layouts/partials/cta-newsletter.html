@@ -1,0 +1,33 @@
+<div class="bg-light">
+  <div class="container pb-5">
+    <div class="card bg-secondary text-light" style="border-radius: 1rem; box-shadow: 3px 3px 5px #999">
+      <div class="card-body p-5">
+        <div class="row">
+          <div class="col-lg-7 d-flex flex-column justify-content-center">
+            <h2 class="font-weight-bold">
+              {{ i18n "cta-newsletter-title" }}
+            </h2>
+            <p class="lead mb-0">
+              {{ i18n "cta-newsletter-text" }}
+            </p>
+          </div>
+          <form
+            class="offset-xl-1 col-xl-4 col-lg-5 d-flex flex-column justify-content-center"
+            method="post"
+            action="https://lists.happydomain.org/subscription/form"
+          >
+            <input type="hidden" name="nonce" />
+            <input type="hidden" name="l" value="b3297dce-4f02-42a5-9918-54499804323e" />
+            <input type="hidden" name="lang" value="{{ .Page.File.Lang }}" />
+            <input type="email" name="email" required placeholder="j.postel@isi.edu" class="form-control my-3">
+            <button type="submit" class="btn btn-lg btn-primary py-2" data-umami-event="cta-newsletter-join">
+              {{ i18n "cta-newsletter-button1" }}
+            </button>
+            <small class="form-text text-justify my-2">
+              {{ i18n "cta-newsletter-no-spam" }}
+            </small>
+          </form>
+        </div>
+      </div>
+    </div>
+</div>

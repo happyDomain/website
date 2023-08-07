@@ -1,57 +1,56 @@
-<div class="container d-flex flex-wrap justify-content-around mb-5" id="community" style="gap: 2em 0;">
-  <div style="width: 28%; min-width: 172px" class="text-center">
-    <h4 class="d-flex justify-content-center">
-      <div class="circle-head" style="background-color: #20a7c9">
-        <i class="bi bi-chat-dots-fill"></i>
-      </div>
-      <div class="align-self-center ml-1">{{ i18n "community-chat" }}</div>
-    </h4>
-    <p>
-      {{ i18n "community-chat-text" | markdownify }}
-    </p>
+<div class="container mt-5 mb-4 pb-5" id="community" style="gap: 2em 0;">
+  <div class="d-flex flex-wrap">
+    <div class="py-4 px-5">
+      <h3 class="display-4 text-center mb-5">
+        🙌 <br>{{ i18n "community-contribute" }}
+      </h3>
+
+      <h4>
+        🧰
+        {{ i18n "community-bugs" }}
+      </h4>
+      <p class="mb-4 text-justify">
+        {{ i18n "community-bugs-text" | markdownify }}
+      </p>
+
+      <h4>
+        🧳
+        {{ i18n "community-translation" }}
+      </h4>
+      <p class="mb-4 text-justify">
+        {{ i18n "community-translation-text" | markdownify }}
+      </p>
+
+      <h4>
+        💻
+        {{ i18n "community-code" }}
+      </h4>
+      <p class="mb-4 text-justify">
+        {{ i18n "community-code-text" | markdownify }}
+      </p>
+    </div>
+
+    <div class="py-4 px-5">
+      <h3 class="display-4 text-center mb-5">
+        ✉️ <br>{{ i18n "community-discuss" }}
+      </h3>
+
+      <h4>
+        💬
+        {{ i18n "community-chat" }}
+      </h4>
+      <p class="mb-4 text-justify">
+        {{ i18n "community-chat-text" | markdownify }}
+      </p>
+
+      <h4>
+        ✍🏼
+        {{ i18n "community-contact" }}
+      </h4>
+      <p class="mb-4 text-justify">
+        {{ i18n "community-contact-text" | markdownify }}
+      </p>
+    </div>
   </div>
-  <div style="width: 28%; min-width: 172px" class="text-center">
-    <h4 class="d-flex justify-content-center">
-      <div class="circle-head" style="background-color: #9720c9">
-        <i class="bi bi-bug-fill"></i>
-      </div>
-      <div class="align-self-center ml-1">{{ i18n "community-bugs" }}</div>
-    </h4>
-    <p>
-      {{ i18n "community-bugs-text" | markdownify }}
-    </p>
-  </div>
-  <div style="width: 28%; min-width: 172px" class="text-center">
-    <h4 class="d-flex justify-content-center">
-      <div class="circle-head" style="background-color: #c92052">
-        <i class="bi bi-translate"></i>
-      </div>
-      <div class="align-self-center ml-1">{{ i18n "community-translation" }}</div>
-    </h4>
-    <p>
-      {{ i18n "community-translation-text" | markdownify }}
-    </p>
-  </div>
-  <div style="width: 28%; min-width: 172px" class="text-center">
-    <h4 class="d-flex justify-content-center">
-      <div class="circle-head" style="background-color: #c99720">
-        <i class="bi bi-braces-asterisk"></i>
-      </div>
-      <div class="align-self-center ml-1">{{ i18n "community-code" }}</div>
-    </h4>
-    <p>
-      {{ i18n "community-code-text" | markdownify }}
-    </p>
-  </div>
-  <div style="width: 28%; min-width: 172px" class="text-center">
-    <h4 class="d-flex justify-content-center">
-      <div class="circle-head" style="background-color: #20c943">
-        <i class="bi bi-envelope-paper-heart"></i>
-      </div>
-      <div class="align-self-center ml-1">{{ i18n "community-contact" }}</div>
-    </h4>
-    <p>
-      {{ i18n "community-contact-text" | markdownify }}
-    </p>
-  </div>
+
 </div>

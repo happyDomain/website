@@ -1,70 +1,41 @@
-<div class="container">
-  <div class="row mt-3">
-    <h3 class="text-center font-weight-bolder mt-5 mb-5 offset-md-2 col-md-8" style="line-height: 1.5em;">
-      {{ i18n "features-title" | safeHTML }}
-    </h3>
-  </div>
-  <div class="row mt-4 mb-5 text-justify">
-    <div class="col-md-4 pt-5">
-      <p class="font-weight-bold" style="font-size: 1.15rem;">
-        {{ i18n "features-lead" }}
-      </p>
+<div id="features" class="bg-light" style="scroll-margin-top: 2em;">
+  <div class="container py-3">
+    <div>
+      <h2 class="text-center font-weight-bolder mt-4 mb-5" style="line-height: 1.5em;">
+        {{ i18n "features-grid-title" }}
+      </h2>
     </div>
-    <div class="col-sm-6 col-md-4">
-      <div class="text-center mb-2">
-        <hr style="margin-top: 21px; margin-bottom: -21px; border-color: #9720c955;">
-        <div class="circle-head" style="background-color: #4b1064">
-          <i class="bi bi-controller"></i>
-        </div>
-      </div>
-      <p>
-        {{ i18n "features-col1" | markdownify }}
-      </p>
-    </div>
-    <div class="col-sm-6 col-md-4">
-      <div class="text-center mb-2">
-        <hr style="margin-top: 21px; margin-bottom: -21px; border-color: #9720c955;">
-        <div class="circle-head" style="background-color: #4b1064">
-          <i class="bi bi-rocket-takeoff"></i>
-        </div>
-      </div>
-      <p>
-        {{ i18n "features-col2" | markdownify }}
-      </p>
-    </div>
-  </div>
 
-  <div id="features-grid" class="mt-3">
-    <h3 class="text-center font-weight-bolder mt-5 mb-5" style="line-height: 1.5em;">
-      {{ i18n "features-grid-title" }}
-    </h3>
-  </div>
-  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-
-    {{ range $.Site.Data.features.features }}
-    {{ if index .title $.Language.Lang }}
-    <div class="col mb-4">
-      <div class="card" id="feature-{{ .id }}">
-        {{ if and .img .img.src }}
-        <img src="{{ .img.src }}" class="card-img-top" alt="{{ index .img.alt $.Language.Lang }}">
-        {{ end }}
-        <div class="card-body">
-          <h5 class="card-title text-center mb-0">{{ index .title $.Language.Lang }}</h5>
-          <hr class="mb-1 mt-2 mr-4 ml-4">
-          <p class="card-text text-justify">{{ index .content $.Language.Lang }}</p>
-          {{ if and .link .link.link }}
-          <a href="{{ .link.link }}" class="card-link" data-umami-event="features-{{ .id }}">{{ index .link $.Language.Lang }}</a>
-          {{ end }}
+    {{ range $index, $element := $.Site.Data.features.features }}
+      {{ if index .title $.Language.Lang }}
+        <div class="mb-5">
+          <div class="card" id="feature-{{ .id }}">
+            <div class="card-body row">
+            {{ if and .img .img.src }}
+              <div class="col-md {{ if not (modBool $index 2) }}order-md-2{{ end }}">
+                <img src="{{ .img.src }}" class="card-img-top" alt="{{ index .img.alt $.Language.Lang }}">
+              </div>
+            {{ end }}
+            <div class="col-md d-flex flex-column justify-content-center py-4">
+              <h4 class="card-title font-weight-bolder">{{ index .title $.Language.Lang }}</h4>
+              <p class="card-text text-justify">{{ index .content $.Language.Lang }}</p>
+              {{ if and .link .link.link }}
+                <a href="{{ .link.link }}" class="card-link" data-umami-event="features-{{ .id }}">{{ index .link $.Language.Lang }}</a>
+              {{ end }}
+              {{ if and .link2 .link2.link }}
+                <br><a href="{{ .link2.link }}" class="card-link mt-2" data-umami-event="features-{{ .id }}-2">{{ index .link2 $.Language.Lang }}</a>
+              {{ end }}
+            </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    {{ end }}
+      {{ end }}
     {{ end }}
 
-  </div>
-  <div class="mt-3">
-    <h3 class="text-center font-weight-bolder mt-5 mb-5" style="line-height: 1.5em;">
-      {{ i18n "features-grid-footer" }}
-    </h3>
+    <div class="mt-3">
+      <h3 class="text-center font-weight-bolder mt-5 mb-5" style="line-height: 1.5em;">
+        {{ i18n "features-grid-footer" }}
+      </h3>
+    </div>
   </div>
 </div>

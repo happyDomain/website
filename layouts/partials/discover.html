@@ -1,0 +1,74 @@
+<div class="container">
+  <div class="row mt-3">
+    <h3 class="text-center font-weight-bolder mt-5 mb-5 offset-md-2 col-md-8" style="line-height: 1.5em;">
+      {{ i18n "features-title" | safeHTML }}
+    </h3>
+  </div>
+  <div class="row mt-4 mb-5 text-justify">
+    <div class="col-md-4 pt-5">
+      <p class="font-weight-bold" style="font-size: 1.15rem;">
+        {{ i18n "features-lead" }}
+      </p>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="text-center mb-2">
+        <hr style="margin-top: 21px; margin-bottom: -21px; border-color: #9720c955;">
+        <div class="circle-head" style="background-color: #4b1064">
+          <i class="bi bi-controller"></i>
+        </div>
+      </div>
+      <p>
+        {{ i18n "features-col1" | markdownify }}
+      </p>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="text-center mb-2">
+        <hr style="margin-top: 21px; margin-bottom: -21px; border-color: #9720c955;">
+        <div class="circle-head" style="background-color: #4b1064">
+          <i class="bi bi-rocket-takeoff"></i>
+        </div>
+      </div>
+      <p>
+        {{ i18n "features-col2" | markdownify }}
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+    <h3 class="text-center mb-5">
+      {{ i18n "learnhow" }} happy<strong>Domain</strong> {{ i18n "canhelpyou" }}
+    </h3>
+    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 justify-content-center">
+      <div class="col mb-4">
+        <a href="{{ ref . "/use-happyDomain/freelance" }}" class="card h-100" data-umami-event="learnmore-freelance">
+          <img src="/img/screenshots/users/freelance.webp" alt="{{ i18n "freelance" }}" class="img-top flex-grow-1">
+          <h3 class="text-center mt-1">{{ i18n "freelance" }}</h3>
+        </a>
+      </div>
+      <div class="col mb-4">
+        <a href="{{ ref . "/use-happyDomain/sysadmin" }}" class="card h-100" data-umami-event="learnmore-sysadmin">
+          <img src="/img/screenshots/users/sysadmin.webp" alt="{{ i18n "sysadmin" }}" class="img-top flex-grow-1">
+          <h3 class="text-center mt-1">{{ i18n "sysadmin" }}</h3>
+        </a>
+      </div>
+      <div class="col mb-4">
+        <a href="{{ ref . "/use-happyDomain/devops" }}" class="card h-100" data-umami-event="learnmore-devops">
+          <img src="/img/screenshots/users/devops.webp" alt="{{ i18n "devops" }}" class="img-top flex-grow-1">
+          <h3 class="text-center mt-1">{{ i18n "devops" }}</h3>
+        </a>
+      </div>
+      <div class="col mb-4">
+        <a href="{{ ref . "/use-happyDomain/cio" }}" class="card h-100" data-umami-event="learnmore-cio">
+          <img src="/img/screenshots/users/cio.webp" alt="{{ i18n "cio" }}" class="img-top flex-grow-1">
+          <h3 class="text-center mt-1">{{ i18n "cio" }}</h3>
+        </a>
+      </div>
+      <div class="col mb-4">
+        <a href="{{ ref . "/use-happyDomain/geek" }}" class="card h-100" data-umami-event="learnmore-geek">
+          <img src="/img/screenshots/users/geek.webp" alt="{{ i18n "geek" }}" class="img-top flex-grow-1">
+          <h3 class="text-center mt-1">{{ i18n "geek" }}</h3>
+        </a>
+      </div>
+    </div>
+</div>

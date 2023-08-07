@@ -32,24 +32,13 @@
       </ul>
       <div class="d-flex">
         <div class="nav-item nav-ext-links">
-        {{ range .Site.Data.social.social_icons }}
-          {{- if isset $.Site.Author .id }}
-        <a class="nav-icon-link link-rounded" data-umami-event="{{ .id }}" href="{{ printf .url (index $.Site.Author .id) }}" title="{{ .title }}"><i class="bi {{ .icon }}"></i></a>
-          {{- end -}}
-        {{ end }}
-        {{ if .Site.Params.rss }}
-          {{ if .RSSLink }}
-          <a href="{{ .RSSLink }}" title="RSS" class="nav-icon-link link-rounded">
-          {{ else }}
-          <a href="{{ .Site.RSSLink }}" title="RSS" class="nav-icon-link link-rounded">
-          {{ end }}
-            <i class="bi bi-rss-fill"></i>
-            </a>
-        {{ end }}
-        {{ if .Site.Params.tryit }}
-          <a href="{{ .Site.Params.tryit }}" title="{{ i18n "tryhappydns" }}" class="nav-icon-link link-rounded" data-umami-event="nav-tryit">
-            <i class="bi bi-arrow-right"></i>
+        {{ if .Site.Params.others_links }}
+          {{ range .Site.Params.others_links }}
+          <a href="{{ .href }}" title="{{ .text }}" class="nav-icon-link {{ .class }}" data-umami-event="nav-{{ .id }}">
+            <i class="bi {{ .icon }}"></i>
+            {{ .text }}
           </a>
+          {{ end }}
         {{ end }}
         </div>
         <div class="nav-item dropdown">

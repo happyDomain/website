@@ -10,7 +10,7 @@ html {
     background-color: #343a40;
 }
 body {
-    font-family: Montserrat,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji,sans
+    font-family: Montserrat,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji,sans;
 }
 nav.navbar {
     box-shadow: 0 0px 3px 0 #1cb487;
@@ -24,6 +24,15 @@ nav.navbar.beginscroll {
 nav.navbar.scrolled {
     box-shadow: 0 0px 3px 0 #1cb487;
     border-bottom: 1px solid #1cb487;
+}
+
+a.card {
+    background: #f6f7f8;
+    transition: transform 250ms;
+}
+a.card:hover {
+    background: #e9ecef;
+    transform: scale(1.14);
 }
 
 .link-rounded, .circle-head {
@@ -40,6 +49,8 @@ nav.navbar.scrolled {
 }
 .link-rounded:hover {
     background-color: #127255;
+}
+.link-rounded:hover > div {
     color: #f8f9fa;
 }
 
@@ -49,7 +60,7 @@ nav.navbar.scrolled {
 }
 
 .carousel {
-    background-color: #300940;
+    background-color: #430c59;
 }
 
 .text-hilight {
@@ -73,4 +84,30 @@ nav.navbar.scrolled {
 
 footer {
     border-top: 3px solid #9332bb;
+}
+
+#download-house {
+    animation: floatinghouse 6s linear infinite;
+}
+@keyframes floatinghouse {
+    0% { top: 0; left: 0; }
+    10% { top: -2px; }
+    20% { top: -4px; }
+    30% { top: -6px; }
+    40% { top: -2px; }
+    50% { top: 0px;  }
+    60% { top: 4px;  }
+    70% { top: 6px;  }
+    80% { top: 8px;  }
+    90% { top: 4px;  }
+    100% { top: 0;   }
+}
+
+@media (min-width: 768px) {
+    #community > div > div {
+        width: 50% !important;
+    }
+    #community > div > div:first-child {
+        border-right: 1px solid #9332bb;
+    }
 }

@@ -7,9 +7,6 @@
 - id: tryit
   translation: "Essayer en ligne maintenant"
 
-- id: tryhappydns
-  translation: "Essayer happyDomain maintenant"
-
 - id: downloadit
   translation: "Télécharger"
 
@@ -17,7 +14,7 @@
   translation: "Découvrez comment"
 
 - id: canhelpyou
-  translation: "peut vous aider :"
+  translation: "peut vous aider :"
 
 - id: freelance
   translation: "Freelance"
@@ -45,7 +42,7 @@
 
 - id: features-title
   translation: |
-    Vous trouvez les <span class="text-hilight">interfaces des hébergeurs</span> de noms de domaine <span class="text-hilight">incompréhensibles</span> ou <span class="text-hilight">inutilisables</span> ?
+    Vous trouvez les <span class="text-hilight">interfaces des hébergeurs</span> de noms de domaine <span class="text-hilight">incompréhensibles</span> ou <span class="text-hilight">inutilisables</span> ?
 
 - id: features-lead
   translation: |
@@ -57,7 +54,7 @@
 
 - id: features-col2
   translation: |
-    **Experts** chevronnés : changez votre point de vue sur le DNS, avec une interface **ergonomique** dans l’air du temps, qui répondra à toutes vos attentes.
+    **Experts** chevronnés : changez votre point de vue sur le DNS, avec une interface **ergonomique** dans l’air du temps, qui répondra à toutes vos attentes.
 
 - id: features-grid-title
   translation: Que peut faire happyDomain pour vous aujourd'hui ?
@@ -69,52 +66,122 @@
   translation: |
     Téléchargements
 
+- id: downloads-docker
+  translation: |
+    Image Docker
+- id: downloads-binaries
+  translation: |
+    Exécutables
+- id: downloads-source
+  translation: |
+    Code source
+
 - id: downloads-text
   translation: |
-    Le code source de notre projet est libre ; il est disponible sous les termes de la [licence CeCILL](http://cecill.info/licences/Licence_CeCILL_V2.1-fr.html) dans notre [dépôt Git](https://git.happydomain.org/), hébergé par Framagit.
+    Le code source de notre projet est libre ; il est disponible sous les termes de la [licence CeCILL](http://cecill.info/licences/Licence_CeCILL_V2.1-fr.html) dans notre [dépôt Git](https://git.happydomain.org/), hébergé par Framagit.
 
     Téléchargez la dernière [version *nightly*](https://get.happydomain.org/master/) d'happyDomain pour [Linux x86_64](https://get.happydomain.org/master/happydomain-linux-amd64), [Linux arm64](https://get.happydomain.org/master/happydomain-linux-arm64) ou [macOS x86_64](https://get.happydomain.org/master/happydomain-darwin-amd64).
 
-    Vous préférez une [image Docker](https://hub.docker.com/r/happydomain/happydomain/) ? Essayez-la
+    Vous préférez une [image Docker](https://hub.docker.com/r/happydomain/happydomain/) ? Essayez-la
 
             docker run -e HAPPYDOMAIN_NO_AUTH=1 -p 8081:8081 happydomain/happydomain
 
     Les binaires précompilés sont disponibles sur <https://get.happydomain.org/>.
 
+- id: community-contribute
+  translation: "Contribuez"
+- id: community-discuss
+  translation: "Discutons"
+
 - id: community-chat
   translation: "Chat"
 - id: community-chat-text
   translation: |
-    Rejoignez notre canal [Matrix](https://matrix.to/#/#happyDNS:matrix.org) ou [IRC](https://web.libera.chat/#happydns) `#happydns` sur Libera.Chat, pour partager des idées ou poser des questions.
+    Rejoignez notre canal [Matrix](https://matrix.to/#/#happyDNS:matrix.org) ou [IRC](https://web.libera.chat/#happydns) `#happydomain` sur Libera.Chat, pour partager des idées ou poser des questions.
 
 - id: community-bugs
   translation: "Bugs et fonctionnalités"
 - id: community-bugs-text
   translation: |
-    Vous remarquez un problème ou une fonctionnalité manquante ? Pensez à nous l'indiquer via le [formulaire de notre projet](https://framagit.org/happyDomain/happydomain/-/issues).
+    Vous remarquez un problème ou une fonctionnalité manquante ? Pensez à nous l'indiquer via le [formulaire de notre projet](https://framagit.org/happyDomain/happydomain/-/issues).
 
 - id: community-translation
   translation: "Traductions"
 - id: community-translation-text
   translation: |
-    Vous parlez une langue étrangère ? Traduisez happyDomain. Contactez-nous par email `contact at happydomain.org`.
+    Vous parlez une langue étrangère ? Traduisez happyDomain. Contactez-nous par email `contact at happydomain.org`.
 
 - id: community-code
   translation: "Code"
 - id: community-code-text
   translation: |
-    Vous savez programmer ? Contribuez à améliorer le logiciel via notre [dépôt Git](https://git.happydomain.org/) sur Framagit.
+    Vous savez programmer ? Contribuez à améliorer le logiciel via notre [dépôt Git](https://git.happydomain.org/) sur Framagit.
 
 - id: community-contact
   translation: "Contact"
 - id: community-contact-text
   translation: |
-    Autre chose ? Contactez-nous à `contact at happydomain.org`.
+    Autre chose ? Contactez-nous à `contact at happydomain.org`.
 
 - id: survey-title
-  translation: "On se lance dans l'aventure !"
+  translation: "On se lance dans l'aventure !"
 
 - id: survey-text
   translation: |
     Dites-nous ce que vous souhaiteriez avoir dans<br>
     happyDomain en remplissant en 2 minutes notre sondage.
+
+- id: footer-try-title-line1
+  translation: |
+    Essayez happyDomain maintenant !
+- id: footer-try-title-line2
+  translation: |
+    C'est un projet libre (et gratuit).
+- id: footer-try-text
+  translation: |
+    est un projet libre que vous pouvez utiliser en ligne, mais que vous pouvez aussi installer sur votre machine.
+- id: footer-discuss-text
+  translation: |
+    Et si vous ne trouvez pas votre bonheur dans notre interface actuelle, venez en discuter avec nous :
+- id: footer-discuss-feedback
+  translation: "Donnez-nous votre avis"
+- id: footer-discuss-matrix
+  translation: "Parlons-en sur Matrix"
+- id: footer-discuss-irc
+  translation: "Rendez-vous sur IRC"
+- id: footer-us-title
+  translation: "Qui sommes-nous ?"
+- id: footer-us-text-lead
+  translation: "Nous sommes une équipe d'administrateurs systèmes/DevOps passionnés!"
+- id: footer-us-text-1
+  translation: "Nous avons pour ambition de rendre les noms de domaines "
+- id: footer-us-text-hilight
+  translation: "accessibles et utilisables par tous"
+- id: footer-us-text-2
+  translation: " !"
+- id: footer-us-button
+  translation: "Découvrez l'équipe"
+- id: footer-us-button-link
+  translation: "/fr/qui-sommes-nous/"
+
+- id: cta-account-title
+  translation: "Ajoutez vos noms de domaines"
+- id: cta-account-text
+  translation: "Créez en 3 minutes votre nouvel espace préféré de gestion des noms de domaine."
+- id: cta-account-button1
+  translation: "Créer mon espace en ligne"
+- id: cta-account-or
+  translation: "ou"
+- id: cta-account-button2
+  translation: "Installer chez moi"
+- id: cta-account-button2-link
+  translation: "https://help.happydomain.org/fr/deploy/testing/"
+
+- id: cta-newsletter-title
+  translation: "Gardez une longueur d'avance !"
+- id: cta-newsletter-text
+  translation: "Ne manquez pas l'occasion d'être à l'avant-garde de la gestion des noms de domaine ! Nous vous dévoilons des stratégies, des astuces et des conseils exclusifs dans notre newsletter."
+- id: cta-newsletter-button1
+  translation: "Rejoindre notre newsletter"
+- id: cta-newsletter-no-spam
+  translation: "Pas de spam, pas de revente ; uniquement des informations sélectionnées sur les noms de domaine."

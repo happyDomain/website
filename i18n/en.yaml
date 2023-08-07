@@ -7,9 +7,6 @@
 - id: tryit
   translation: "Try it online now"
 
-- id: tryhappydns
-  translation: "Try happyDomain now"
-
 - id: downloadit
   translation: "Download now"
 
@@ -69,6 +66,16 @@
   translation: |
     Downloads
 
+- id: downloads-docker
+  translation: |
+    Docker image
+- id: downloads-binaries
+  translation: |
+    Binaries
+- id: downloads-source
+  translation: |
+    Source code
+
 - id: downloads-text
   translation: |
     Our source code is freely available under the [CeCILL license](http://cecill.info/licences/Licence_CeCILL_V2.1-en.html) in our [git repository](https://git.happydomain.org/), hosted by Framagit.
@@ -81,11 +88,16 @@
 
     Precompiled binaries are also availables on <https://get.happydomain.org/>.
 
+- id: community-contribute
+  translation: "Contribute"
+- id: community-discuss
+  translation: "Discuss"
+
 - id: community-chat
   translation: "Chat"
 - id: community-chat-text
   translation: |
-    Join our [Matrix](https://matrix.to/#/#happyDNS:matrix.org) or [IRC](https://web.libera.chat/#happydns) channel `#happydns` on Libera.Chat to share ideas or ask questions.
+    Join our [Matrix](https://matrix.to/#/#happyDNS:matrix.org) or [IRC](https://web.libera.chat/#happydns) channel `#happydomain` on Libera.Chat to share ideas or ask questions.
 
 - id: community-bugs
   translation: "Bugs and Features"
@@ -118,3 +130,58 @@
   translation: |
     Tell us what you would like to see in<br>
     happyDomain by filling out our 2-minute survey.
+
+- id: footer-try-title-line1
+  translation: |
+    Try happyDomain now!
+- id: footer-try-title-line2
+  translation: |
+    It's free software.
+- id: footer-try-text
+  translation: |
+    is a free project that you can use online, but you can also install on your machine.
+- id: footer-discuss-text
+  translation: |
+    And if you do not find your happiness in our current interface, come and discuss it with us:
+- id: footer-discuss-feedback
+  translation: "Give us your feedback"
+- id: footer-discuss-matrix
+  translation: "Join us on Matrix"
+- id: footer-discuss-irc
+  translation: "Get in touch on IRC"
+- id: footer-us-title
+  translation: "About us?"
+- id: footer-us-text-lead
+  translation: "We are a team of passionate system administrators/DevOps!"
+- id: footer-us-text-1
+  translation: "Our ambition is to make domain names "
+- id: footer-us-text-hilight
+  translation: "accessible and usable for everyone"
+- id: footer-us-text-2
+  translation: "!"
+- id: footer-us-button
+  translation: "Discover the team"
+- id: footer-us-button-link
+  translation: "/en/who-we-are/"
+
+- id: cta-account-title
+  translation: "Add your domain names"
+- id: cta-account-text
+  translation: "3 minutes to create your new preferred domain name management space."
+- id: cta-account-button1
+  translation: "Create my online space"
+- id: cta-account-or
+  translation: "or"
+- id: cta-account-button2
+  translation: "On premise setup"
+- id: cta-account-button2-link
+  translation: "https://help.happydomain.org/en/deploy/docker/"
+
+- id: cta-newsletter-title
+  translation: "Stay a step ahead!"
+- id: cta-newsletter-text
+  translation: "Don't miss your chance to be at the forefront of domain name management! We reveal exclusive strategies, tips and advice in our newsletter."
+- id: cta-newsletter-button1
+  translation: "Join our newsletter"
+- id: cta-newsletter-no-spam
+  translation: "No spam, not resold; only selected infos about domain names."

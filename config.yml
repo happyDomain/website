@@ -35,6 +35,16 @@ languages:
 #        weight: 30
 
     params:
+      others_links:
+      - text: "S'inscrire"
+        href: "/join"
+        class: "btn btn-secondary"
+        icon: "bi-person-plus-fill"
+      - text: "S'identifier"
+        href: "/login"
+        class: "btn btn-outline-primary"
+        icon: "bi-person-check-fill"
+
       carousel:
       - title: "domains-lists"
         description: "**Page d'accueil:** liste des domaines, de différents hébergeurs"
@@ -67,6 +77,16 @@ languages:
 params:
   newsletter: "newsletter@happydns.org"
   tryit: "/join"
+
+  others_links:
+  - text: "Sign up"
+    href: "/join"
+    class: "btn btn-secondary"
+    icon: "bi-person-plus-fill"
+  - text: "Sign in"
+    href: "/login"
+    class: "btn btn-outline-primary"
+    icon: "bi-person-check-fill"
 
   carousel:
   - title: "domains-lists"
