@@ -29,10 +29,10 @@ languages:
         url: "/fr/#downloads"
         weight: 20
 
-#      - identifier: "blog"
-#        name: "Blog"
-#        url: "https://blog.happydomain.org/"
-#        weight: 30
+      - identifier: "blog"
+        name: "Blog"
+        url: "https://blog.happydomain.org/fr/"
+        weight: 30
 
     params:
       others_links:
@@ -129,10 +129,10 @@ menu:
     url: "/en/#downloads"
     weight: 20
 
-#  - identifier: "blog"
-#    name: "Blog"
-#    url: "https://blog.happydomain.org/"
-#    weight: 30
+  - identifier: "blog"
+    name: "Blog"
+    url: "https://blog.happydomain.org/"
+    weight: 30
 
 markup:
   goldmark:
