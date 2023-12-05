@@ -185,3 +185,12 @@
   translation: "Join our newsletter"
 - id: cta-newsletter-no-spam
   translation: "No spam, not resold; only selected infos about domain names."
+
+- id: conf-ose23-title
+  translation: "We'll be present at the Open Source Experience 2023"
+- id: conf-ose23-body-1
+  translation: "Come and meet us at the conference"
+- id: conf-ose23-link
+  translation: "How can we make the words DNS and simplicity compatible?"
+- id: conf-ose23-body-2
+  translation: "This Thursday, December 7 at 2:45 p.m. at the Palais des Congrès in Paris!"
