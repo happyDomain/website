@@ -187,10 +187,12 @@
   translation: "Pas de spam, pas de revente ; uniquement des informations sélectionnées sur les noms de domaine."
 
 - id: conf-ose23-title
-  translation: "Nous serons présents à l'Open Source Experience 2023"
+  translation: "Nous étions présents à l'Open Source Experience 2023"
 - id: conf-ose23-body-1
-  translation: "Venez à notre rencontre lors de la conférence"
+  translation: "Retrouvez notre présentation"
 - id: conf-ose23-link
   translation: "Comment rendre compatibles les mots DNS et simplicité ?"
+- id: conf-ose23-href
+  translation: "https://blog.happydomain.org/fr/open-source-experience-2023/"
 - id: conf-ose23-body-2
-  translation: "Ce jeudi 7 décembre à 14h45 au palais des Congrès de Paris !"
+  translation: "sur notre blog (captation à venir)."
