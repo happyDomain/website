@@ -129,7 +129,7 @@ menu:
     url: "/en/#downloads"
     weight: 20
 
-  - identifier: "blog"
+  - identifier: "News"
     name: "Blog"
     url: "https://blog.happydomain.org/"
     weight: 30
