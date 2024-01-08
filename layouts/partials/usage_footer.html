@@ -13,7 +13,7 @@
 
       <p>
 
-        <a class="btn btn-primary mt-2 mx-3" data-umami-event="cta-{{ .Page.File.ContentBaseName }}-tryit" data-umami-event-lang="{{ .Page.File.Lang }}" href="/join">
+        <a class="btn btn-primary mt-2 mx-3" data-umami-event="cta-{{ .Page.File.ContentBaseName }}-tryit" data-umami-event-lang="{{ .Page.File.Lang }}" href="{{ .Site.Params.tryit }}">
           {{ i18n "tryit" }} &#187;
         </a>
         <a class="btn btn-outline-secondary mt-2 mx-3" data-umami-event="cta-{{ .Page.File.ContentBaseName }}-downloads" data-umami-event-lang="{{ .Page.File.Lang }}" href="/#downloads">

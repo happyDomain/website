@@ -76,7 +76,7 @@ languages:
 
 params:
   newsletter: "newsletter@happydns.org"
-  tryit: "/join"
+  tryit: "https://try.happydomain.org/"
 
   others_links:
   - text: "Sign up"
