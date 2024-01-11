@@ -78,7 +78,7 @@
 
 - id: downloads-text
   translation: |
-    Our source code is freely available under the [CeCILL license](http://cecill.info/licences/Licence_CeCILL_V2.1-en.html) in our [git repository](https://git.happydomain.org/), hosted by Framagit.
+    Our source code is freely available under the [AGPL license](https://spdx.org/licenses/AGPL-3.0-or-later.html) in our [git repository](https://git.happydomain.org/), hosted by Framagit.
 
     You can download the latest [*nightly* version](https://get.happydomain.org/master/) of happyDomain for [Linux x86_64](https://get.happydomain.org/master/happydomain-linux-amd64), [Linux arm64](https://get.happydomain.org/master/happydomain-linux-arm64) or [macOS x86_64](https://get.happydomain.org/master/happydomain-darwin-amd64).
 
