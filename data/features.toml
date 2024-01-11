@@ -2,7 +2,7 @@
 id = "registrar"
 
   [features.img]
-  src = "/img/screenshots/features/hosters.png"
+  src = "/img/screenshots/features/providers.webp"
     [features.img.alt]
     fr = "Choisissez votre fournisseur"
     en = "Choose your provider"
@@ -53,7 +53,7 @@ id = "dynamicDNS"
 id = "diff"
 
   [features.img]
-  src = "/img/screenshots/features/diff.png"
+  src = "/img/screenshots/features/diff.webp"
     [features.img.alt]
     fr = "Exemple de diff"
     en = "Sample diff"
@@ -63,8 +63,8 @@ id = "diff"
   en = "Clearly visualize changes"
 
   [features.content]
-  fr = "Avant de publier vos modifications, happyDomain vous montre quels seront exactement les changements (ajouts et suppressions) qui seront effectués sur la zone. C'est le bon moment pour se relire."
-  en = "Before publishing your changes, happyDomain shows you exactly what changes (additions and deletions) will be made to the area. This is a good time to reread."
+  fr = "Avant de publier vos modifications, happyDomain vous montre quels seront exactement les changements (ajouts, modifications, suppressions, ...) qui seront effectués sur la zone. C'est le bon moment pour se relire."
+  en = "Before publishing your changes, happyDomain shows you exactly what changes (additions, modifications, deletions, ...) will be made to your zone. This is a good time to reread."
 
 
 [[features]]
