@@ -50,19 +50,19 @@ languages:
       carousel:
       - title: "domains-lists"
         description: "**Page d'accueil:** liste des domaines, de différents hébergeurs"
-        image: "/img/screenshots/domains-list.png"
+        image: "/img/screenshots/domains-list.webp"
 
       - title: "domain-abstract"
         description: "Une zone simplifiée"
-        image: "/img/screenshots/domain-abstract.png"
+        image: "/img/screenshots/domain-abstract.webp"
 
       - title: "domain-abstract-list"
         description: "Une zone simplifiée, sous forme de liste, plus rapide à modifier"
-        image: "/img/screenshots/domain-abstract-list.png"
+        image: "/img/screenshots/domain-abstract-list.webp"
 
       - title: "zone-diff"
         description: "Liste les changements avant d'appliquer les modifications"
-        image: "/img/screenshots/zone-diff.png"
+        image: "/img/screenshots/zone-diff.webp"
 
       - title: "domain-records"
         description: "Les enregistrements d'une zone, modifiable depuis l'interface"
@@ -94,19 +94,19 @@ params:
   carousel:
   - title: "domains-lists"
     description: "**Home page:** domains list on dedicated provider"
-    image: "/img/screenshots/domains-list.png"
+    image: "/img/screenshots/domains-list.webp"
 
   - title: "domain-abstract"
     description: "Simplified zone: records grouped by services"
-    image: "/img/screenshots/domain-abstract.png"
+    image: "/img/screenshots/domain-abstract.webp"
 
   - title: "domain-abstract-list"
     description: "Simplified zone in list, for quicker editing"
-    image: "/img/screenshots/domain-abstract-list.png"
+    image: "/img/screenshots/domain-abstract-list.webp"
 
   - title: "zone-diff"
     description: "Display zone diff before applying changes"
-    image: "/img/screenshots/zone-diff.png"
+    image: "/img/screenshots/zone-diff.webp"
 
   - title: "domain-records"
     description: "Resource records for a zone: editable through happyDomain"
