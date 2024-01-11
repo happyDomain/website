@@ -35,6 +35,8 @@ languages:
         weight: 30
 
     params:
+      DefaultDescription: "L'interface des noms de domaines."
+
       others_links:
       - text: "S'inscrire"
         href: "/join"
@@ -75,6 +77,7 @@ languages:
         image: "/img/screenshots/sources.png"
 
 params:
+  DefaultDescription: "Finally a simple interface for domain names."
   newsletter: "newsletter@happydns.org"
   tryit: "https://try.happydomain.org/"
 

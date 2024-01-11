@@ -19,6 +19,21 @@
   <meta name="description" content="{{ .Site.Params.DefaultDescription }}">
   {{ end }}
 
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="{{ .Site.BaseURL }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="happyDomain">
+  <meta property="og:description" content="{{ .Site.Params.DefaultDescription }}">
+  <meta property="og:image" content="{{ .Site.BaseURL }}img/og.webp">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="happydomain.org">
+  <meta property="twitter:url" content="{{ .Site.BaseURL }}">
+  <meta name="twitter:title" content="happyDomain">
+  <meta name="twitter:description" content="{{ .Site.Params.DefaultDescription }}">
+  <meta name="twitter:image" content="{{ .Site.BaseURL }}img/og.webp">
+
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/icons/bootstrap-icons.css">
 
