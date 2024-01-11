@@ -10,7 +10,7 @@
       {{ if index .title $.Language.Lang }}
         <div class="mb-5">
           <div class="card" id="feature-{{ .id }}">
-            <div class="card-body row">
+            <div class="card-body row align-items-center">
             {{ if and .img .img.src }}
               <div class="col-md {{ if not (modBool $index 2) }}order-md-2{{ end }}">
                 <img src="{{ .img.src }}" class="card-img-top" alt="{{ index .img.alt $.Language.Lang }}">
