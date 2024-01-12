@@ -56,21 +56,29 @@ languages:
         description: "Une zone simplifiée"
         image: "/img/screenshots/domain-abstract.webp"
 
-      - title: "domain-abstract-list"
-        description: "Une zone simplifiée, sous forme de liste, plus rapide à modifier"
-        image: "/img/screenshots/domain-abstract-list.webp"
+      - title: "service-caa"
+        description: "Des formulaires clairs vous aident pour choisir les meilleurs paramètres"
+        image: "/img/screenshots/service-caa.webp"
 
       - title: "zone-diff"
         description: "Liste les changements avant d'appliquer les modifications"
         image: "/img/screenshots/zone-diff.webp"
 
-      - title: "domain-records"
-        description: "Les enregistrements d'une zone, modifiable depuis l'interface"
-        image: "/img/screenshots/domain-records.png"
+      - title: "domain-history"
+        description: "Retrouvez tous vos changements en un coup d'œil"
+        image: "/img/screenshots/domain-history.webp"
 
-      - title: "domain-source"
-        description: "Informations sur la source"
-        image: "/img/screenshots/domain-source.png"
+      - title: "domain-services"
+        description: "Ajoutez facilement de nouveaux usages à vos zones"
+        image: "/img/screenshots/domain-services.webp"
+
+      - title: "domain-logs"
+        description: "Le journal d'action de la zone garde un trace de qui à fait quoi, quand"
+        image: "/img/screenshots/domain-logs.webp"
+
+      - title: "domain-abstract-list"
+        description: "Une zone simplifiée, sous forme de liste, plus rapide à modifier"
+        image: "/img/screenshots/domain-abstract-list.webp"
 
       - title: "sources"
         description: "Liste des sources existantes où récupérer les domaines"
@@ -100,21 +108,29 @@ params:
     description: "Simplified zone: records grouped by services"
     image: "/img/screenshots/domain-abstract.webp"
 
-  - title: "domain-abstract-list"
-    description: "Simplified zone in list, for quicker editing"
-    image: "/img/screenshots/domain-abstract-list.webp"
+  - title: "service-caa"
+    description: "Clear forms help you choose the best settings"
+    image: "/img/screenshots/service-caa.webp"
 
   - title: "zone-diff"
     description: "Display zone diff before applying changes"
     image: "/img/screenshots/zone-diff.webp"
 
-  - title: "domain-records"
-    description: "Resource records for a zone: editable through happyDomain"
-    image: "/img/screenshots/domain-records.png"
+  - title: "domain-history"
+    description: "All your changes at a glance"
+    image: "/img/screenshots/domain-history.webp"
 
-  - title: "domain-source"
-    description: "Information about the source"
-    image: "/img/screenshots/domain-source.png"
+  - title: "domain-services"
+    description: "Easily add new uses to your zones"
+    image: "/img/screenshots/domain-services.webp"
+
+  - title: "domain-logs"
+    description: "The zone action log keeps track of who did what, when"
+    image: "/img/screenshots/domain-logs.webp"
+
+  - title: "domain-abstract-list"
+    description: "Simplified zone in list, for quicker editing"
+    image: "/img/screenshots/domain-abstract-list.webp"
 
   - title: "sources"
     description: "Existing sources where pull domains"
