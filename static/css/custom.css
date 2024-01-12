@@ -82,6 +82,10 @@ a.card:hover {
     background-color: #9332bb;
 }
 
+img {
+    max-width: 100%;
+}
+
 footer {
     border-top: 3px solid #9332bb;
 }
