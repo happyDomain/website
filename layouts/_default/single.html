@@ -20,6 +20,15 @@
 
         <div class="container">
 
+          {{ if .Params.toc }}
+          <aside>
+            <header>
+              <h1>{{ .Title }}</h1>
+            </header>
+            {{ .TableOfContents }}
+          </aside>
+          {{ end }}
+
           <div>
             {{ .Content }}
           </div>
