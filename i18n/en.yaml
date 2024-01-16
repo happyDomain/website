@@ -40,6 +40,9 @@
 - id: legal-notice
   translation: "Legal notice"
 
+- id: press-kit
+  translation: "Press Kit"
+
 - id: features-title
   translation: |
     Do you find <span class="text-hilight">hosting providers' interfaces</span> for domain name <span class="text-hilight">incomprehensible</span> or <span class="text-hilight">unusable</span>?

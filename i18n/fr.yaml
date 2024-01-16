@@ -40,6 +40,9 @@
 - id: legal-notice
   translation: "Mentions légales"
 
+- id: press-kit
+  translation: "Dossier de presse"
+
 - id: features-title
   translation: |
     Vous trouvez les <span class="text-hilight">interfaces des hébergeurs</span> de noms de domaine <span class="text-hilight">incompréhensibles</span> ou <span class="text-hilight">inutilisables</span> ?
