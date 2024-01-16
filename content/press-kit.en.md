@@ -170,17 +170,17 @@ Don't hesitate to contact us at <press@happydomain.org> for any details or press
 
 ## Frequently Asked Questions
 
-### Do you sell domain names?
+##### Do you sell domain names?
 
 No, happyDomain does not sell domains yet.
-To start using our interface, you need to buy a domain from one of our supported providers.
+To start using our interface, you need to buy a domain from one of our [supported providers](https://www.happydomain.org/providers/features).
 
 
-### I don't want to rely on my domain name hosting provider anymore. Can I host my domain name on your infrastructure?
+##### I don't want to rely on my domain name hosting provider anymore. Can I host my domain name on your infrastructure?
 
 We'll provide such a feature in the near future, as it's on our manifest. We choose to focus first on spreading the word that domain names are accessibles to everyone through this sweet interface, before targeting privacy, censorship, …
 
 
-### I have my own infrastructure. Can I use happyDomain as a secondary authoritative server?
+##### I have my own infrastructure. Can I use happyDomain as a secondary authoritative server?
 
 We'll provide such feature in a near future, as soon as our name server infrastructure is ready.
