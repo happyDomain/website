@@ -189,13 +189,13 @@
 - id: cta-newsletter-no-spam
   translation: "Pas de spam, pas de revente ; uniquement des informations sélectionnées sur les noms de domaine."
 
-- id: conf-ose23-title
-  translation: "Nous étions présents à l'Open Source Experience 2023"
-- id: conf-ose23-body-1
-  translation: "Retrouvez notre présentation"
-- id: conf-ose23-link
-  translation: "Comment rendre compatibles les mots DNS et simplicité ?"
-- id: conf-ose23-href
-  translation: "https://blog.happydomain.org/fr/open-source-experience-2023/"
-- id: conf-ose23-body-2
-  translation: "sur notre blog (captation à venir)."
+- id: conf-fosdem24-title
+  translation: "Nous serons présents au FOSDEM 2024"
+- id: conf-fosdem24-body-1
+  translation: "Venez à notre rencontre lors de la conférence"
+- id: conf-fosdem24-link
+  translation: "Comment rendre compatibles les mots DNS et simplicité ?"
+- id: conf-fosdem24-href
+  translation: "https://fosdem.org/2024/schedule/event/fosdem-2024-2316-let-s-make-people-love-domain-names-again/"
+- id: conf-fosdem24-body-2
+  translation: "Ce samedi 3 février à 17h00 au campus Solbosch de l'Université Libre de Bruxelles !"
