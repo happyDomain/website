@@ -87,6 +87,7 @@ languages:
 params:
   DefaultDescription: "Finally a simple interface for domain names."
   newsletter: "newsletter@happydns.org"
+  survey: "https://feedback.happydomain.org/"
   tryit: "https://try.happydomain.org/"
 
   others_links:
