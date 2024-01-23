@@ -39,11 +39,11 @@ languages:
 
       others_links:
       - text: "S'inscrire"
-        href: "/join"
+        href: "//app.happydomain.org/join"
         class: "btn btn-secondary"
         icon: "bi-person-plus-fill"
       - text: "S'identifier"
-        href: "/login"
+        href: "//app.happydomain.org/login"
         class: "btn btn-outline-primary"
         icon: "bi-person-check-fill"
 
@@ -91,11 +91,11 @@ params:
 
   others_links:
   - text: "Sign up"
-    href: "/join"
+    href: "//app.happydomain.org/join"
     class: "btn btn-secondary"
     icon: "bi-person-plus-fill"
   - text: "Sign in"
-    href: "/login"
+    href: "//app.happydomain.org/login"
     class: "btn btn-outline-primary"
     icon: "bi-person-check-fill"
 
