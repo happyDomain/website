@@ -1,7 +1,7 @@
 <footer class="pt-3 pb-3 bg-dark text-light">
   <div class="container">
     <div class="row">
-      <div class="col-md">
+      <div class="col-md-6">
         &copy;
         <svg version="1.1" viewBox="7 5 100 15" aria-labelledby="title" height="1.1em">
           <title>happyDomain</title>
@@ -10,9 +10,31 @@
         </svg>
         2019-2024
       </div>
-      <div class="col-md d-flex flex-column">
-        <a href="/{{ .Site.Language.Lang }}/legal-notice/" class="text-muted">
+      <div class="col-sm-6 col-md-3 d-flex flex-column">
+        <a href="/{{ .Site.Language.Lang }}/legal-notice/" class="text-light">
           {{ i18n "legal-notice" }}
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-3 d-flex justify-content-end" style="margin-top: -.5em; gap: .5em; font-size: 2em">
+        <a href="https://framagit.org/happyDomain/happydomain" class="text-light" target="_blank">
+          <i class="bi bi-gitlab"></i>
+        </a>
+        <a href="https://github.com/happyDomain/happydomain" class="text-light" target="_blank">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://feedback.happydomain.org/" class="text-light" target="_blank">
+          <i class="bi bi-lightbulb-fill"></i>
+        </a>
+        <a href="https://floss.social/@happyDomain" class="text-light" target="_blank">
+          <i class="bi bi-mastodon"></i>
+        </a>
+        <a
+          href="#"
+          data-contact="Y29udGFjdEBoYXBweWRvbWFpbi5vcmc="
+          onfocus="this.href = 'mailto:' + atob(this.dataset.contact)"
+          class="text-light"
+        >
+          <i class="bi bi-envelope-at"></i>
         </a>
       </div>
     </div>
