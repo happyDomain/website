@@ -190,12 +190,12 @@
   translation: "No spam, not resold; only selected infos about domain names."
 
 - id: conf-fosdem24-title
-  translation: "We'll be present at the FOSDEM 2024"
+  translation: "We were present at the FOSDEM 2024"
 - id: conf-fosdem24-body-1
-  translation: "Come and meet us at the conference"
+  translation: "See our presentation on"
 - id: conf-fosdem24-link
   translation: "Let's make people love domain names again"
 - id: conf-fosdem24-href
   translation: "https://fosdem.org/2024/schedule/event/fosdem-2024-2316-let-s-make-people-love-domain-names-again/"
 - id: conf-fosdem24-body-2
-  translation: "This Saturday, February 3 at 5:00pm at the Solbosch campus of the Université Libre de Bruxelles!"
+  translation: "on the FOSDEM website, along with the video."
