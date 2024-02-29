@@ -1,0 +1,3 @@
+/domains/* https://app.happydomain.org/domains/:splat
+/join https://app.happydomain.org/join
+/login https://app.happydomain.org/login
