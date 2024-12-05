@@ -4,10 +4,6 @@ baseURL: "https://www.happydomain.org/"
 defaultContentLanguageInSubdir: true
 removePathAccents: true
 
-author:
-  name: "happyDNS team"
-  framagit: "happyDomain/"
-
 languages:
   en:
     title: "happyDomain. Finally a simple interface for domain names."
@@ -85,6 +81,10 @@ languages:
         image: "/img/screenshots/sources.png"
 
 params:
+  author:
+    name: "happyDNS team"
+    framagit: "happyDomain/"
+
   DefaultDescription: "Finally a simple interface for domain names."
   newsletter: "newsletter@happydns.org"
   survey: "https://feedback.happydomain.org/"
