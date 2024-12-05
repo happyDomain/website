@@ -108,7 +108,7 @@ id = "rest"
   en = "happyDomain exposes a REST API that you can use to automate sub-domain creation tasks on the fly, for example in your continuous deployment system."
 
   [features.link]
-  link = "/swagger/index.html"
+  link = "https://app.happydomain.org/swagger/index.html"
   fr = "Montrez-moi l'API !"
   en = "Show me the API!"
 
