@@ -85,7 +85,7 @@ id = "resolver"
   en = "happyDomain integrates an easy-to-use DNS resolver, which allows you to effortlessly connect to about 50 public resolvers. You can easily see the propagation of your changes."
 
   [features.link]
-  link = "https://www.happydomain.org/resolver"
+  link = "https://app.happydomain.org/resolver"
   fr = "Je veux tester ça de suite !"
   en = "I want to test this now!"
 
