@@ -10,6 +10,20 @@ steps:
     settings:
       hugo_version: 0.119.0
 
+  deploy-on-ovh:
+    image: nemunaire/drone-ftps
+    settings:
+      hostname: ftp.cluster021.hosting.ovh.net
+      ftp_username:
+        from_secret: ovh_ftp_username
+      ftp_password:
+        from_secret: ovh_ftp_password
+      clean_dir: true
+      pre_action: 'ftp:passive-mode true'
+      secure: false
+      src_dir: /public/
+      dest_dir: /www/
+
   publish-on-s3:
     image: woodpeckerci/plugin-s3
     settings:
