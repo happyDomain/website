@@ -104,6 +104,8 @@ a.card:hover {
     right: 5vw;
     border-radius: 5px;
     background-color: #9332bbee;
+    z-index: 1023;
+    max-width: 98%;
 }
 #voxppl a:hover {
     text-decoration: none;
