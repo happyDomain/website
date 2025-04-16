@@ -1,22 +1,27 @@
-<div class="jumbotron bg-light mt-n1 mb-0">
-  <div class="container">
+<section class="jumbotron mt-n1 mb-0" style="background: linear-gradient(135deg, var(--primary-ultralight) 0%, white 100%)">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-md-3 d-flex flex-column mb-4">
+      <div class="col-md-3 d-flex flex-column mb-5">
         <img src="/img/screenshots/happydomain-rounded.webp" alt="happyDomain logo">
       </div>
       <div class="col">
-        <h2 class="display-5 text-center text-muted">
+        <h2 class="display-4 text-center text-dark font-weight-bold">
           {{ i18n "slogan" }}
         </h2>
-        <p class="mt-4 lead">
+        <p class="mt-5 lead text-center text-muted">
           happy<strong>Domain</strong>
           {{ i18n "lead" | markdownify }}
         </p>
-        <p class="mt-4">
-          <a class="btn btn-primary mt-2" data-umami-event="jumbo-tryit" href="{{ .Site.Params.tryit }}">{{ i18n "tryit" }} &#187;</a>
-          <a class="btn btn-outline-secondary mt-2" data-umami-event="jumbo-downloads" href="#downloads">{{ i18n "downloadit" }} &#187;</a>
-        </p>
-        <div class="mt-5 card bg-secondary text-light flex-row align-items-center" style="border-radius: .3rem">
+        <div class="mt-5 py-2 d-none d-md-flex justify-content-center">
+          <a class="btn btn-lg btn-primary px-4 mr-3" data-umami-event="jumbo-tryit" href="{{ .Site.Params.tryit }}" style="border-radius: 2em">{{ i18n "tryit" }} &#187;</a>
+          <a class="btn btn-lg btn-outline-secondary px-4 ml-3" data-umami-event="jumbo-downloads" href="#downloads" style="border-radius: 2em">{{ i18n "downloadit" }}</a>
+        </div>
+        <div class="container mt-5 py-2 d-flex d-md-none flex-column justify-content-center">
+          <a class="btn btn-lg btn-primary px-4 mb-3" data-umami-event="jumbo-tryit" href="{{ .Site.Params.tryit }}" style="border-radius: 2em">{{ i18n "tryit" }} &#187;</a>
+          <a class="btn btn-lg btn-outline-secondary px-4" data-umami-event="jumbo-downloads" href="#downloads" style="border-radius: 2em">{{ i18n "downloadit" }}</a>
+        </div>
+
+        <!--div class="mt-5 card bg-secondary text-light flex-row align-items-center" style="border-radius: .3rem">
           <div class="card-body">
             <h3>{{ i18n "conf-fosdem24-title" }}</h3>
             <p class="card-text">
@@ -26,8 +31,9 @@
             </p>
           </div>
           <img src="/img/assets/FOSDEM24_logo.png" alt="FOSDEM 2024" style="height: 10em">
-        </div>
+        </div-->
+
       </div>
     </div>
   </div>
-</div>
+</section>

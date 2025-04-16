@@ -1,28 +1,14 @@
-<div class="bg-light">
-  <div class="container pb-5">
-    <div class="card bg-secondary text-light" style="border-radius: 1rem; box-shadow: 3px 3px 5px #999">
-      <div class="card-body px-5 py-4">
-        <div class="row">
-          <div class="col-md-7 d-flex flex-column justify-content-center my-4">
-            <h2 class="font-weight-bold">
-              {{ i18n "cta-account-title" }}
-            </h2>
-            <p class="lead mb-0">
-              {{ i18n "cta-account-text" }}
-            </p>
-          </div>
-          <div class="offset-xl-1 col-xl-4 col-md-5 d-flex flex-column justify-content-center">
-            <a href="/join" class="btn btn-lg btn-primary py-2 mt-2" data-umami-event="cta-account-join">
-              {{ i18n "cta-account-button1" }}
-            </a>
-            <div class="text-center py-2">
-              &ndash; {{ i18n "cta-account-or" }} &ndash;
-            </div>
-            <a href="{{ i18n "cta-account-button2-link" }}" target="_blank" class="btn btn-lg btn-outline-info py-2 mb-2" data-umami-event="cta-account-download">
-              {{ i18n "cta-account-button2" }}
-            </a>
-          </div>
-        </div>
+<!-- Call to Action Section -->
+<section id="cta">
+  <div class="container">
+    <div class="cta-content">
+      <h2 class="display-5 font-weight-bold mb-4">{{ i18n "cta-account-title" }}</h2>
+      <div class="row mb-4">
+        <p class="offset-sm-1 col-sm-10 offset-md-2 col-md-8 lead text-light">
+          {{ i18n "cta-account-text" }}
+        </p>
       </div>
+      <a href="/join" class="btn btn-lg btn-light px-4" style="border-radius: 2em">{{ i18n "cta-account-button" }}</a>
     </div>
-</div>
+  </div>
+</section>

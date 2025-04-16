@@ -1,8 +1,8 @@
 - id: slogan
-  translation: "Finally a simple interface for domain names."
+  translation: "Manage all your domain names in one place."
 
 - id: lead
-  translation: "is a modern open-source web application, that aims to simplify all your usages of domain names. Connecting a blog, a shop or doing advanced stuff is just a click away."
+  translation: "is a free web application that centralizes the management of your domain names from different registrars and hosts."
 
 - id: tryit
   translation: "Try it online now"
@@ -44,20 +44,11 @@
   translation: "Press Kit"
 
 - id: features-title
-  translation: |
-    Do you find <span class="text-hilight">hosting providers' interfaces</span> for domain name <span class="text-hilight">incomprehensible</span> or <span class="text-hilight">unusable</span>?
+  translation: "Main features"
 
 - id: features-lead
   translation: |
-    Reconcile with your domain names, thanks to an interface designed for you.
-
-- id: features-col1
-  translation: |
-    **Neophyte** friends, our **simple** interface will guide you in the configuration of your domain name, without going through the proper domain name terminology.
-
-- id: features-col2
-  translation: |
-    Recognized **experts:** change your point of view on DNS, with an **ergonomic** interface in the age of time that will meet all your expectations.
+    Find out how happyDomain can simplify your domain name management.
 
 - id: features-grid-title
   translation: What can happyDomain do for you today?
@@ -65,9 +56,30 @@
 - id: features-grid-footer
   translation: And we have many other features in preparation...
 
+- id: discover-title
+  translation: "How it works"
+- id: discover-lead
+  translation: "A simple approach to efficient domain management."
+
+- id: discover-1-title
+  translation: "Connect your accounts"
+- id: discover-1-text
+  translation: "Add your access information to the various registrars and DNS hosts."
+- id: discover-2-title
+  translation: "Import your domains"
+- id: discover-2-text
+  translation: "Automatically import all your domain names and configurations into happyDomain."
+- id: discover-3-title
+  translation: "Manage with efficiently"
+- id: discover-3-text
+  translation: "Edit, add and synchronize all your DNS records from a single interface."
+
 - id: downloads-title
   translation: |
-    Downloads
+    Downloads.
+- id: downloads-subtitle
+  translation: |
+    happyDomain on premise.
 
 - id: downloads-docker
   translation: |
@@ -167,18 +179,43 @@
 - id: footer-us-button-link
   translation: "/en/who-we-are/"
 
+- id: footer-happydomain-features
+  translation: "Features"
+- id: footer-happydomain-testimonials
+  translation: "Testimonials"
+- id: footer-happydomain-downloads
+  translation: "Downloads"
+- id: footer-happydomain-prices
+  translation: "Pricing"
+- id: footer-happydomain-github
+  translation: "GitHub"
+- id: footer-resources
+  translation: "Resources"
+- id: footer-resources-docs
+  translation: "Documentation"
+- id: footer-resources-api
+  translation: "API"
+- id: footer-resources-blog
+  translation: "Blog"
+- id: footer-resources-community
+  translation: "Contribute"
+- id: footer-resources-faq
+  translation: "FAQ"
+- id: footer-company
+  translation: "Our association"
+- id: footer-company-about
+  translation: "About us"
+- id: footer-company-contact
+  translation: "Contact"
+- id: footer-follow
+  translation: "Follow us"
+
 - id: cta-account-title
-  translation: "Add your domain names"
+  translation: "Ready to simplify your domain management?"
 - id: cta-account-text
-  translation: "3 minutes to create your new preferred domain name management space."
-- id: cta-account-button1
+  translation: "Join hundreds of users who trust happyDomain to centralize and facilitate their domain name management."
+- id: cta-account-button
   translation: "Create my online space"
-- id: cta-account-or
-  translation: "or"
-- id: cta-account-button2
-  translation: "On premise setup"
-- id: cta-account-button2-link
-  translation: "https://help.happydomain.org/en/deploy/docker/"
 
 - id: cta-newsletter-title
   translation: "Stay a step ahead!"

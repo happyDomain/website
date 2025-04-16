@@ -45,11 +45,11 @@ languages:
 
       carousel:
       - title: "domains-lists"
-        description: "**Page d'accueil:** liste des domaines, de différents hébergeurs"
+        description: "**Page d'accueil :** liste des domaines, de différents hébergeurs"
         image: "/img/screenshots/domains-list.webp"
 
       - title: "domain-abstract"
-        description: "Une zone simplifiée"
+        description: "**La gestion d'une zone :** groupé par sous-domaines et services"
         image: "/img/screenshots/domain-abstract.webp"
 
       - title: "service-caa"
@@ -77,7 +77,7 @@ languages:
         image: "/img/screenshots/domain-abstract-list.webp"
 
       - title: "sources"
-        description: "Liste des sources existantes où récupérer les domaines"
+        description: "Liste des hébergeurs existantes où récupérer les domaines"
         image: "/img/screenshots/sources.png"
 
 params:
@@ -106,7 +106,7 @@ params:
     image: "/img/screenshots/domains-list.webp"
 
   - title: "domain-abstract"
-    description: "Simplified zone: records grouped by services"
+    description: "**Manage a zone:** records are grouped by subdomain and service"
     image: "/img/screenshots/domain-abstract.webp"
 
   - title: "service-caa"
@@ -134,7 +134,7 @@ params:
     image: "/img/screenshots/domain-abstract-list.webp"
 
   - title: "sources"
-    description: "Existing sources where pull domains"
+    description: "Existing name service providers where pull domains"
     image: "/img/screenshots/sources.png"
 
 menu:

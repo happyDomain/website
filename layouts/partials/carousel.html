@@ -1,14 +1,14 @@
 {{ if isset .Site.Params "carousel" }}
 {{ if gt (len .Site.Params.carousel) 0 }}
-<div class="carousel text-light p-4 pt-5 d-flex flex-nowrap align-items-center" style="gap: 1em 1em; overflow-x: scroll">
+<section id="screenshots" class="carousel text-light p-4 pt-5 d-flex flex-nowrap align-items-center" style="gap: 1em 1em; overflow-x: scroll">
   {{ range sort .Site.Params.carousel "weight" }}
-  <figure class="" style="min-width: 40vw">
+  <figure class="my-5 mr-5 text-center" style="min-width: 65vw">
     <a href="{{ .image }}">
-      <img class="rounded img-thumbnail" src="{{ .image }}" alt="{{ .title }}">
+      <img class="rounded img-thumbnail" src="{{ .image }}" alt="{{ .title }}" style="max-height: 80vh;">
     </a>
     <figcaption class="mt-2 text-center">{{ .description | markdownify }}</figcaption>
   </figure>
   {{ end }}
-</div>
+</section>
 {{ end }}
 {{ end }}

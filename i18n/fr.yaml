@@ -1,11 +1,11 @@
 - id: slogan
-  translation: "L'interface des noms de domaines."
+  translation: "Gérez tous vos noms de domaine en un seul endroit."
 
 - id: lead
-  translation: "est une application web libre, moderne, qui veut vous simplifier l'usage des noms de domaines. Connecter un blog, une boutique ou effectuer des opérations avancées devient vraiment facile."
+  translation: "est une application web libre qui centralise la gestion de vos noms de domaine provenant de différents bureaux d'enregistrement et hébergeurs."
 
 - id: tryit
-  translation: "Essayer en ligne maintenant"
+  translation: "Essayer maintenant"
 
 - id: downloadit
   translation: "Télécharger"
@@ -44,20 +44,10 @@
   translation: "Dossier de presse"
 
 - id: features-title
-  translation: |
-    Vous trouvez les <span class="text-hilight">interfaces des hébergeurs</span> de noms de domaine <span class="text-hilight">incompréhensibles</span> ou <span class="text-hilight">inutilisables</span> ?
+  translation: "Fonctionnalités principales"
 
 - id: features-lead
-  translation: |
-    Réconciliez-vous avec vos noms de domaine, grâce à une interface pensée pour vous.
-
-- id: features-col1
-  translation: |
-    Amis **néophytes**, notre interface **simple** saura vous guider dans la configuration de votre nom de domaine, sans passer par la terminologie propre des noms de domaine.
-
-- id: features-col2
-  translation: |
-    **Experts** chevronnés : changez votre point de vue sur le DNS, avec une interface **ergonomique** dans l’air du temps, qui répondra à toutes vos attentes.
+  translation: "Découvrez comment happyDomain peut simplifier la gestion de vos noms de domaine."
 
 - id: features-grid-title
   translation: Que peut faire happyDomain pour vous aujourd'hui ?
@@ -65,9 +55,30 @@
 - id: features-grid-footer
   translation: Et nous avons encore bien d'autres fonctionnalités en préparation...
 
+- id: discover-title
+  translation: "Comment ça marche"
+- id: discover-lead
+  translation: "Une approche simple pour une gestion de domaine efficace."
+
+- id: discover-1-title
+  translation: "Connectez vos comptes"
+- id: discover-1-text
+  translation: "Ajoutez vos informations d'accès aux différents bureaux d'enregistrement et hébergeurs DNS."
+- id: discover-2-title
+  translation: "Importez vos domaines"
+- id: discover-2-text
+  translation: "Importez automatiquement tous vos noms de domaine et leurs configurations dans happyDomain."
+- id: discover-3-title
+  translation: "Gérez efficacement"
+- id: discover-3-text
+  translation: "Modifiez, ajoutez et synchronisez tous vos enregistrements DNS depuis une seule interface."
+
 - id: downloads-title
   translation: |
-    Téléchargements
+    Téléchargements.
+- id: downloads-subtitle
+  translation: |
+    happyDomain chez vous.
 
 - id: downloads-docker
   translation: |
@@ -167,18 +178,43 @@
 - id: footer-us-button-link
   translation: "/fr/qui-sommes-nous/"
 
+- id: footer-happydomain-features
+  translation: "Fonctionnalités"
+- id: footer-happydomain-testimonials
+  translation: "Témoignages"
+- id: footer-happydomain-downloads
+  translation: "Téléchargements"
+- id: footer-happydomain-prices
+  translation: "Tarification"
+- id: footer-happydomain-github
+  translation: "GitHub"
+- id: footer-resources
+  translation: "Ressources"
+- id: footer-resources-docs
+  translation: "Documentation"
+- id: footer-resources-api
+  translation: "API"
+- id: footer-resources-blog
+  translation: "Blog"
+- id: footer-resources-community
+  translation: "Contribuez"
+- id: footer-resources-faq
+  translation: "FAQ"
+- id: footer-company
+  translation: "L'association"
+- id: footer-company-about
+  translation: "À propos"
+- id: footer-company-contact
+  translation: "Contact"
+- id: footer-follow
+  translation: "Suivez-nous"
+
 - id: cta-account-title
-  translation: "Ajoutez vos noms de domaines"
+  translation: "Prêt à simplifier votre gestion de domaines ?"
 - id: cta-account-text
-  translation: "Créez en 3 minutes votre nouvel espace préféré de gestion des noms de domaine."
-- id: cta-account-button1
+  translation: "Rejoignez des centaines d'utilisateurs qui font confiance à happyDomain pour centraliser et faciliter leur gestion de noms de domaine."
+- id: cta-account-button
   translation: "Créer mon espace en ligne"
-- id: cta-account-or
-  translation: "ou"
-- id: cta-account-button2
-  translation: "Installer chez moi"
-- id: cta-account-button2-link
-  translation: "https://help.happydomain.org/fr/deploy/testing/"
 
 - id: cta-newsletter-title
   translation: "Gardez une longueur d'avance !"
