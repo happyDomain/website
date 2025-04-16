@@ -125,7 +125,7 @@ img {
     border-top: 4px solid var(--primary);
 }
 
-#features .card:nth-child(even) {
+#features .col:nth-child(even) .card {
     border-top: 4px solid var(--secondary);
 }
 
