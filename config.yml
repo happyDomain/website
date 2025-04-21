@@ -86,7 +86,6 @@ params:
     framagit: "happyDomain/"
 
   DefaultDescription: "Finally an interface that makes you happy to manage your domain names."
-  newsletter: "newsletter@happydns.org"
   survey: "https://feedback.happydomain.org/"
   tryit: "https://try.happydomain.org/"
 

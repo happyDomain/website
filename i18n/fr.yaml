@@ -196,6 +196,8 @@
   translation: "API"
 - id: footer-resources-blog
   translation: "Blog"
+- id: footer-resources-newsletter
+  translation: "Newsletter"
 - id: footer-resources-community
   translation: "Contribuez"
 - id: footer-resources-faq
