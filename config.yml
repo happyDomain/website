@@ -6,11 +6,11 @@ removePathAccents: true
 
 languages:
   en:
-    title: "happyDomain. Finally a simple interface for domain names."
+    title: "happyDomain. Propagating Happiness, One Domain at a Time."
     weight: 1
 
   fr:
-    title: "happyDomain. L'interface des noms de domaines."
+    title: "happyDomain. Propageons le bonheur, un domaine après l'autre."
     weight: 2
 
     menu:
@@ -31,7 +31,7 @@ languages:
         weight: 30
 
     params:
-      DefaultDescription: "L'interface des noms de domaines."
+      DefaultDescription: "L'interface qui vous rend heureux de gérer vos noms de domaines."
 
       others_links:
       - text: "S'inscrire"
@@ -85,7 +85,7 @@ params:
     name: "happyDNS team"
     framagit: "happyDomain/"
 
-  DefaultDescription: "Finally a simple interface for domain names."
+  DefaultDescription: "Finally an interface that makes you happy to manage your domain names."
   newsletter: "newsletter@happydns.org"
   survey: "https://feedback.happydomain.org/"
   tryit: "https://try.happydomain.org/"
