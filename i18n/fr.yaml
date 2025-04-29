@@ -44,10 +44,10 @@
   translation: "Dossier de presse"
 
 - id: features-title
-  translation: "Fonctionnalités principales"
+  translation: "Principales fonctionnalités"
 
 - id: features-lead
-  translation: "Découvrez comment happyDomain peut simplifier la gestion de vos noms de domaine."
+  translation: "Découvrez comment happyDomain peut faciliter la gestion de vos noms de domaine."
 
 - id: features-wip-lead
   translation: "happyDomain est fonctionnel mais encore très imparfait : c'est une preuve de concept soignée qui évolue grâce à vos retours !"
