@@ -11,6 +11,22 @@
       </div>
     </div>
 
+    <div class="alert alert-warning my-5 d-flex">
+      <div class="display-2">🏗️</div>
+      <div class="ml-2 flex-fill">
+        <p class="lead">
+          {{ i18n "features-wip-lead" }}
+        </p>
+        <p>
+          {{ i18n "features-wip-p1-start" }}
+           <strong>{{ i18n "features-wip-p1-strong" }} <a href="https://github.com/happyDomain/happydomain/" target="_blank" data-umami-event="goto-issue">{{ i18n "features-wip-p1-link" }}</a>.</strong> {{ i18n "features-wip-p1-end" }}
+        </p>
+        <p>
+          <a href="https://feedback.happydomain.org" target="_blank" data-umami-event="goto-feedback">{{ i18n "features-wip-p2-feedback" }}</a> {{ i18n "features-wip-p2-start" }} <u>{{ i18n "features-wip-p2-emph" }}</u>{{ i18n "features-wip-p2-end" }}
+        </p>
+      </div>
+    </div>
+
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
       {{ range $index, $element := $.Site.Data.features.features }}
         {{ if index .title $.Language.Lang }}

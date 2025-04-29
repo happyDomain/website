@@ -61,6 +61,25 @@
 - id: discover-lead
   translation: "A simple approach to efficient domain management."
 
+- id: features-wip-lead
+  translation: "happyDomain is functional but still very much a work in progress: it's a carefully crafted proof of concept that evolves thanks to your feedbacks!"
+- id: features-wip-p1-start
+  translation: Given the diversity of DNS configurations and user needs, we haven't yet identified all the bugs.
+- id: features-wip-p1-strong
+  translation: "If something doesn't work, please don't leave: "
+- id: features-wip-p1-link
+  translation: "tell us what's wrong"
+- id: features-wip-p1-end
+  translation: "We're highly responsive and each reported bug helps us improve the tool for everyone."
+- id: features-wip-p2-feedback
+  translation: "Whether it works for you or not, we need your feedback!"
+- id: features-wip-p2-start
+  translation: "What do you think of our approach to simplifying domain name management? Your impressions at this stage help us guide the project according to"
+- id: features-wip-p2-emph
+  translation: "your actual expectations"
+- id: features-wip-p2-end
+  translation: "."
+
 - id: discover-1-title
   translation: "Connect your accounts"
 - id: discover-1-text

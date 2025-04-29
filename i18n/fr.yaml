@@ -49,6 +49,25 @@
 - id: features-lead
   translation: "Découvrez comment happyDomain peut simplifier la gestion de vos noms de domaine."
 
+- id: features-wip-lead
+  translation: "happyDomain est fonctionnel mais encore très imparfait : c'est une preuve de concept soignée qui évolue grâce à vos retours !"
+- id: features-wip-p1-start
+  translation: Face à la diversité de vos configurations DNS et de vos besoins, nous n'avons pas encore identifié tous les bugs.
+- id: features-wip-p1-strong
+  translation: "Si quelque chose ne fonctionne pas, ne partez pas : "
+- id: features-wip-p1-link
+  translation: "dites-nous ce qui cloche"
+- id: features-wip-p1-end
+  translation: "Nous sommes super réactifs et chaque bug signalé permet d'améliorer l'outil pour tous."
+- id: features-wip-p2-feedback
+  translation: "Que ça fonctionne ou non, nous avons besoin de votre avis !"
+- id: features-wip-p2-start
+  translation: "Comment trouvez-vous notre approche pour simplifier la gestion des noms de domaine ? Votre ressenti à ce stade nous permet d'orienter le projet selon"
+- id: features-wip-p2-emph
+  translation: "vos véritables attentes"
+- id: features-wip-p2-end
+  translation: "."
+
 - id: features-grid-title
   translation: Que peut faire happyDomain pour vous aujourd'hui ?
 
