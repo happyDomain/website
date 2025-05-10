@@ -1,5 +1,6 @@
 - id: slogan
-  translation: "Gérez tous vos noms de domaine en un seul endroit."
+  translation: |
+    <span class="font-weight-bolder" style="color: var(--secondary-subtle)">Tous</span> vos noms de domaine<br>en <span class="font-weight-bolder" style="color: var(--secondary-subtle)">un seul</span> endroit.
 
 - id: lead
   translation: "est une application web libre qui centralise la gestion de vos noms de domaine provenant de différents bureaux d'enregistrement et hébergeurs."
