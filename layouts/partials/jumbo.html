@@ -17,11 +17,11 @@
           {{ i18n "lead" | markdownify }}
         </p>
         <div class="mt-5 py-2 d-none d-md-flex justify-content-center">
-          <a class="btn btn-lg btn-primary px-4 mr-3" data-umami-event="jumbo-tryit" href="{{ .Site.Params.tryit }}" style="border-radius: 2em">{{ i18n "tryit" }} &#187;</a>
+          <a class="btn btn-lg btn-primary px-4 mr-3" data-umami-event="jumbo-tryit" href="{{ .Site.Params.tryit }}?lang={{ .Language }}" style="border-radius: 2em">{{ i18n "tryit" }} &#187;</a>
           <a class="btn btn-lg btn-outline-secondary px-4 ml-3" data-umami-event="jumbo-downloads" href="#downloads" style="border-radius: 2em">{{ i18n "downloadit" }}</a>
         </div>
         <div class="container mt-5 py-2 d-flex d-md-none flex-column justify-content-center">
-          <a class="btn btn-lg btn-primary px-4 mb-3" data-umami-event="jumbo-tryit" href="{{ .Site.Params.tryit }}" style="border-radius: 2em">{{ i18n "tryit" }} &#187;</a>
+          <a class="btn btn-lg btn-primary px-4 mb-3" data-umami-event="jumbo-tryit" href="{{ .Site.Params.tryit }}?lang={{ .Language }}" style="border-radius: 2em">{{ i18n "tryit" }} &#187;</a>
           <a class="btn btn-lg btn-outline-secondary px-4" data-umami-event="jumbo-downloads" href="#downloads" style="border-radius: 2em">{{ i18n "downloadit" }}</a>
         </div>
 
