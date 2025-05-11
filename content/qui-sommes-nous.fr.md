@@ -1,8 +1,5 @@
 ---
 title: Qui sommes-nous ?
-menu:
-  main:
-    name: Qui sommes-nous ?
 ---
 
 # Simplifions l'usage des noms de domaine : une révolution à venir 🚀

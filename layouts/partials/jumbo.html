@@ -1,13 +1,17 @@
 <section class="jumbotron mt-n1 mb-0" style="background: linear-gradient(135deg, var(--primary-ultralight) 0%, white 100%)">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-3 d-flex flex-column mb-5">
-        <img src="/img/screenshots/happydomain-rounded.webp" alt="happyDomain logo">
+      <div class="col-md-3 d-flex flex-column mb-5 align-items-center">
+        <img src="/img/screenshots/happydomain-rounded.webp" alt="happyDomain logo" style="width: 100%; max-width: 40vw">
       </div>
       <div class="col">
-        <h2 class="display-4 text-center text-dark font-weight-bold">
-          {{ i18n "slogan" | safeHTML }}
-        </h2>
+        <div class="row">
+          <div class="col col-sm-8 offset-sm-2 col-md-10 offset-md-1 col-xl-8 offset-xl-2">
+            <h2 class="display-4 text-center text-dark font-weight-bold">
+              {{ i18n "slogan" | safeHTML }}
+            </h2>
+          </div>
+        </div>
         <p class="mt-5 lead text-center text-muted">
           happy<strong>Domain</strong>
           {{ i18n "lead" | markdownify }}

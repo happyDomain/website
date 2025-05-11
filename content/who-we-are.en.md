@@ -1,8 +1,5 @@
 ---
 title: Who we are?
-menu:
-  main:
-    name: Who we are?
 ---
 
 # Simplifying the use of domain names: a revolution to come 🚀
