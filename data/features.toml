@@ -16,7 +16,7 @@ id = "registrar"
   en = "happyDomain can group the domains you own in different registrars. We currently support 38 providers like OVH, Gandi, DigitalOcean, ..."
 
   [features.link]
-  link = "https://docs.dnscontrol.org/service-providers/providers"
+  link = "https://app.happydomain.org/providers/features"
   fr = "Voir tous les bureaux d'enregistrement supportés"
   en = "See all supported registrar"
 
