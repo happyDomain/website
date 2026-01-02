@@ -5,12 +5,14 @@ when:
     - cron
 
 steps:
-  build:
-    image: registry.nemunai.re/plugins/hugo
-    settings:
-      hugo_version: 0.119.0
+  - name: build
+    image: hugomods/hugo:base
+    commands:
+      - hugo
+    environment:
+      HUGO_ENVIRONMENT: production
 
-  deploy-on-ovh:
+  - name: deploy on ovh
     image: nemunaire/drone-ftps
     settings:
       hostname: ftp.cluster021.hosting.ovh.net
