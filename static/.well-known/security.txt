@@ -1,0 +1,5 @@
+Contact: mailto:security@happydomain.org
+Expires: 2027-03-01T00:00:00Z
+Preferred-Languages: en, fr
+Canonical: https://happydomain.org/.well-known/security.txt
+Policy: https://happydomain.org/security-disclosure-policy/
