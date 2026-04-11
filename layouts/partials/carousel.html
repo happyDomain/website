@@ -4,7 +4,7 @@
   {{ range sort .Site.Params.carousel "weight" }}
   <figure class="my-5 mr-5 text-center" style="min-width: 65vw">
     <a href="{{ .image }}">
-      <img class="rounded img-thumbnail" src="{{ .image }}" alt="{{ .title }}" style="max-height: 80vh;">
+      <img class="rounded img-thumbnail" src="{{ .image }}" alt="{{ .title }}" loading="lazy" style="max-height: 80vh;">
     </a>
     <figcaption class="mt-2 text-center">{{ .description | markdownify }}</figcaption>
   </figure>
