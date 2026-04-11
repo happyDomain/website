@@ -12,29 +12,29 @@
         <ul class="footer-links">
           <li><a href="#features">{{ i18n "footer-happydomain-features" }}</a></li>
           <li><a href="#discover">{{ i18n "discover-title" }}</a></li>
-          <li><a href="https://try.happydomain.org/">{{ i18n "tryit" }}</a></li>
+          <li><a href="https://try.happydomain.org/" data-umami-event="footer-tryit">{{ i18n "tryit" }}</a></li>
           <!--li><a href="#testimonials">{{ i18n "footer-happydomain-testimonials" }}</a></li-->
           <li><a href="#downloads">{{ i18n "footer-happydomain-downloads" }}</a></li>
           <!--li><a href="#">{{ i18n "footer-happydomain-prices" }}</a></li-->
-          <li><a href="https://github.com/happyDomain/happydomain/">{{ i18n "footer-happydomain-github" }}</a></li>
+          <li><a href="https://github.com/happyDomain/happydomain/" data-umami-event="footer-github">{{ i18n "footer-happydomain-github" }}</a></li>
         </ul>
       </div>
       <div class="col">
         <h3>{{ i18n "footer-resources" }}</h3>
         <ul class="footer-links">
-          <li><a href="https://help.happydomain.org/{{ .Site.Language.Lang }}/" target="_blank">{{ i18n "footer-resources-docs" }}</a></li>
-          <li><a href="https://app.happydomain.org/swagger/index.html" target="_blank">{{ i18n "footer-resources-api" }}</a></li>
-          <li><a href="https://blog.happydomain.org/">{{ i18n "footer-resources-blog" }}</a></li>
-          <li><a href="/{{ .Site.Language.Lang }}/newsletter/">{{ i18n "footer-resources-newsletter" }}</a></li>
-          <li><a href="/{{ .Site.Language.Lang }}/community/">{{ i18n "footer-resources-community" }}</a></li>
+          <li><a href="https://help.happydomain.org/{{ .Site.Language.Lang }}/" target="_blank" data-umami-event="footer-docs">{{ i18n "footer-resources-docs" }}</a></li>
+          <li><a href="https://app.happydomain.org/swagger/index.html" target="_blank" data-umami-event="footer-api">{{ i18n "footer-resources-api" }}</a></li>
+          <li><a href="https://blog.happydomain.org/" data-umami-event="footer-blog">{{ i18n "footer-resources-blog" }}</a></li>
+          <li><a href="/{{ .Site.Language.Lang }}/newsletter/" data-umami-event="footer-newsletter">{{ i18n "footer-resources-newsletter" }}</a></li>
+          <li><a href="/{{ .Site.Language.Lang }}/community/" data-umami-event="footer-community">{{ i18n "footer-resources-community" }}</a></li>
           <!--li><a href="#">{{ i18n "footer-resources-faq" }}</a></li-->
         </ul>
       </div>
       <div class="col">
         <h3>{{ i18n "footer-company" }}</h3>
         <ul class="footer-links">
-          <li><a href="{{ i18n "footer-us-button-link" }}">{{ i18n "footer-company-about" }}</a></li>
-          <li><a href="/{{ .Site.Language.Lang }}/community/">{{ i18n "footer-company-contact" }}</a></li>
+          <li><a href="{{ i18n "footer-us-button-link" }}" data-umami-event="footer-about">{{ i18n "footer-company-about" }}</a></li>
+          <li><a href="/{{ .Site.Language.Lang }}/community/" data-umami-event="footer-contact">{{ i18n "footer-company-contact" }}</a></li>
           <li><a href="/{{ .Site.Language.Lang }}/legal-notice/">
               {{ i18n "legal-notice" }}
           </a></li>
@@ -43,22 +43,23 @@
       <div class="col">
         <h3>{{ i18n "footer-follow" }}</h3>
         <div class="d-flex flex-wrap justify-content-between footer-links" style="gap: .5em; font-size: 2em">
-          <a href="https://framagit.org/happyDomain/happydomain" target="_blank">
+          <a href="https://framagit.org/happyDomain/happydomain" target="_blank" data-umami-event="footer-framagit">
             <i class="bi bi-gitlab"></i>
           </a>
-          <a href="https://github.com/happyDomain/happydomain" target="_blank">
+          <a href="https://github.com/happyDomain/happydomain" target="_blank" data-umami-event="footer-github-social">
             <i class="bi bi-github"></i>
           </a>
-          <a href="https://feedback.happydomain.org/" target="_blank">
+          <a href="https://feedback.happydomain.org/" target="_blank" data-umami-event="footer-feedback">
             <i class="bi bi-lightbulb-fill"></i>
           </a>
-          <a href="https://floss.social/@happyDomain" target="_blank">
+          <a href="https://floss.social/@happyDomain" target="_blank" data-umami-event="footer-mastodon">
             <i class="bi bi-mastodon"></i>
           </a>
           <a
             href="#"
             data-contact="Y29udGFjdEBoYXBweWRvbWFpbi5vcmc="
             onfocus="this.href = 'mailto:' + atob(this.dataset.contact)"
+            data-umami-event="footer-email"
           >
             <i class="bi bi-envelope-at"></i>
           </a>

@@ -27,7 +27,7 @@
 
       <div class="row cols-1 cols-sm-3 mt-4">
         <div class="col">
-          <a href="{{ .Site.Params.survey }}" class="card h-100 pb-2 justify-content-between">
+          <a href="{{ .Site.Params.survey }}" class="card h-100 pb-2 justify-content-between" data-umami-event="cta-{{ .Page.File.ContentBaseName }}-survey">
             <div class="d-flex flex-fill justify-content-center flex-column">
               <img src="/img/screenshots/users/survey.webp" alt="{{ i18n "footer-discuss-feedback" }}" class="w-100 mb-3 flex-grow-1">
             </div>
@@ -35,7 +35,7 @@
           </a>
         </div>
         <div class="col">
-          <a href="https://matrix.to/#/#happyDNS:matrix.org" class="card h-100 p-2 justify-content-between">
+          <a href="https://matrix.to/#/#happyDNS:matrix.org" class="card h-100 p-2 justify-content-between" data-umami-event="cta-{{ .Page.File.ContentBaseName }}-matrix">
             <div class="d-flex flex-fill justify-content-center flex-column">
               <img src="/img/screenshots/users/matrix-logo.svg" alt="{{ i18n "footer-discuss-matrix" }}" class="w-100 mb-3">
             </div>
@@ -43,7 +43,7 @@
           </a>
         </div>
         <div class="col">
-          <a href="https://web.libera.chat/#happydns" class="card h-100 p-2 justify-content-between">
+          <a href="https://web.libera.chat/#happydns" class="card h-100 p-2 justify-content-between" data-umami-event="cta-{{ .Page.File.ContentBaseName }}-irc">
             <div class="d-flex flex-fill justify-content-center flex-column">
               <img src="/img/screenshots/users/libera-color.svg" alt="{{ i18n "footer-discuss-irc" }}" class="w-100 mb-3">
             </div>
@@ -70,7 +70,7 @@
         <p>
           {{ i18n "footer-us-text-1" }}<span class="text-dark text-hilight px-1">{{ i18n "footer-us-text-hilight" }}</span>{{ i18n "footer-us-text-2" }}
         </p>
-        <a href="{{ i18n "footer-us-button-link" }}" class="btn btn-outline-light">
+        <a href="{{ i18n "footer-us-button-link" }}" class="btn btn-outline-light" data-umami-event="cta-{{ .Page.File.ContentBaseName }}-about">
           {{ i18n "footer-us-button" }}
         </a>
       </div>
