@@ -12,8 +12,8 @@ id = "registrar"
   en = "Manage your zones hosted on hosting providers"
 
   [features.content]
-  fr = "happyDomain peut regrouper les domaines que vous possédez dans différents bureaux d'enregistrement. Nous supportons aujourd'hui 38 founisseurs tels que OVH, Gandi, DigitalOcean, ..."
-  en = "happyDomain can group the domains you own in different registrars. We currently support 38 providers like OVH, Gandi, DigitalOcean, ..."
+  fr = "happyDomain peut regrouper les domaines que vous possédez dans différents bureaux d'enregistrement. Nous supportons aujourd'hui plus de 55 fournisseurs tels que OVH, Gandi, DigitalOcean, ..."
+  en = "happyDomain can group the domains you own in different registrars. We currently support 55+ providers like OVH, Gandi, DigitalOcean, ..."
 
   [features.link]
   link = "https://app.happydomain.org/providers/features"
