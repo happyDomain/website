@@ -1,5 +1,6 @@
 ---
 title: Dossier de presse happyDomain
+description: "Ressources presse pour happyDomain : logos, couleurs de marque, historique du projet et informations clés sur la plateforme open source de gestion de noms de domaine."
 toc: yes
 ---
 

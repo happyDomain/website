@@ -1,5 +1,6 @@
 ---
 title: Qui sommes-nous ?
+description: "Découvrez l'équipe derrière happyDomain. Notre mission : démocratiser la gestion des noms de domaine grâce au logiciel libre."
 ---
 
 # Simplifions l'usage des noms de domaine : une révolution à venir 🚀

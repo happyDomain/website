@@ -1,5 +1,6 @@
 ---
 title: Who we are?
+description: "Meet the team behind happyDomain. Learn about our mission to democratize domain name management with open-source software."
 ---
 
 # Simplifying the use of domain names: a revolution to come 🚀

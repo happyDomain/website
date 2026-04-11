@@ -1,5 +1,6 @@
 ---
 title: happyDomain Press Kit
+description: "Press resources for happyDomain: logos, brand colors, project history, and key facts about the open-source domain name management platform."
 toc: yes
 ---
 
