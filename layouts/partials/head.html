@@ -76,5 +76,65 @@
 
   <link rel="alternate" href="{{ "/index.xml" | absURL }}" type="application/rss+xml" title="{{ .Site.Title }}">
 
+  <!-- Structured Data (JSON-LD) -->
+  {{ if .IsHome }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "{{ .Site.BaseURL }}#organization",
+        "name": "happyDomain",
+        "url": "{{ .Site.BaseURL }}",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ .Site.BaseURL }}img/happydomain.png"
+        },
+        "sameAs": [
+          "https://floss.social/@happyDomain",
+          "https://github.com/happyDomain/happydomain",
+          "https://framagit.org/happyDomain/happydomain"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "{{ .Site.BaseURL }}#website",
+        "name": "happyDomain",
+        "url": "{{ .Site.BaseURL }}",
+        "description": "{{ $description }}",
+        "inLanguage": ["en", "fr"],
+        "publisher": {
+          "@id": "{{ .Site.BaseURL }}#organization"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "{{ .Site.BaseURL }}#software",
+        "name": "happyDomain",
+        "url": "{{ .Site.BaseURL }}",
+        "description": "{{ $description }}",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Linux, Windows, macOS, Docker",
+        "license": "https://www.gnu.org/licenses/agpl-3.0.html",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "screenshot": "{{ .Site.BaseURL }}img/og.webp",
+        "softwareHelp": {
+          "@type": "WebPage",
+          "url": "https://help.happydomain.org/"
+        },
+        "author": {
+          "@id": "{{ .Site.BaseURL }}#organization"
+        }
+      }
+    ]
+  }
+  </script>
+  {{ end }}
+
   <script async defer data-website-id="a10b2ee8-ed13-4acb-a017-0b9a661f31c3" src="https://pythagore.p0m.fr/pythagore.js"></script>
 </head>
