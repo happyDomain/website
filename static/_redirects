@@ -1,3 +1,4 @@
 /domains/* https://app.happydomain.org/domains/:splat
-/join https://app.happydomain.org/join
+/join https://app.happydomain.org/register
 /login https://app.happydomain.org/login
+/register https://app.happydomain.org/register

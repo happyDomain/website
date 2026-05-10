@@ -15,70 +15,70 @@ languages:
 
     menu:
       main:
-      - identifier: "features"
-        name: "Fonctionnalités"
-        url: "/fr/#features"
-        weight: 10
+        - identifier: "features"
+          name: "Fonctionnalités"
+          url: "/fr/#features"
+          weight: 10
 
-      - identifier: "downloads"
-        name: "Téléchargements"
-        url: "/fr/#downloads"
-        weight: 20
+        - identifier: "downloads"
+          name: "Téléchargements"
+          url: "/fr/#downloads"
+          weight: 20
 
-      - identifier: "blog"
-        name: "Blog"
-        url: "https://blog.happydomain.org/fr/"
-        weight: 30
+        - identifier: "blog"
+          name: "Blog"
+          url: "https://blog.happydomain.org/fr/"
+          weight: 30
 
     params:
       DefaultDescription: "L'interface qui vous rend heureux de gérer vos noms de domaines."
 
       others_links:
-      - text: "S'inscrire"
-        href: "//app.happydomain.org/join"
-        class: "btn btn-secondary"
-        icon: "bi-person-plus-fill"
-      - text: "S'identifier"
-        href: "//app.happydomain.org/login"
-        class: "btn btn-outline-primary"
-        icon: "bi-person-check-fill"
+        - text: "S'inscrire"
+          href: "//app.happydomain.org/register"
+          class: "btn btn-secondary"
+          icon: "bi-person-plus-fill"
+        - text: "S'identifier"
+          href: "//app.happydomain.org/login"
+          class: "btn btn-outline-primary"
+          icon: "bi-person-check-fill"
 
       carousel:
-      - title: "domains-lists"
-        description: "**Page d'accueil :** liste des domaines, de différents hébergeurs"
-        image: "/img/screenshots/domains-list.webp"
+        - title: "domains-lists"
+          description: "**Page d'accueil :** liste des domaines, de différents hébergeurs"
+          image: "/img/screenshots/domains-list.webp"
 
-      - title: "domain-abstract"
-        description: "**La gestion d'une zone :** groupé par sous-domaines et services"
-        image: "/img/screenshots/domain-abstract.webp"
+        - title: "domain-abstract"
+          description: "**La gestion d'une zone :** groupé par sous-domaines et services"
+          image: "/img/screenshots/domain-abstract.webp"
 
-      - title: "service-caa"
-        description: "Des formulaires clairs vous aident pour choisir les meilleurs paramètres"
-        image: "/img/screenshots/service-caa.webp"
+        - title: "service-caa"
+          description: "Des formulaires clairs vous aident pour choisir les meilleurs paramètres"
+          image: "/img/screenshots/service-caa.webp"
 
-      - title: "zone-diff"
-        description: "Liste les changements avant d'appliquer les modifications"
-        image: "/img/screenshots/zone-diff.webp"
+        - title: "zone-diff"
+          description: "Liste les changements avant d'appliquer les modifications"
+          image: "/img/screenshots/zone-diff.webp"
 
-      - title: "domain-history"
-        description: "Retrouvez tous vos changements en un coup d'œil"
-        image: "/img/screenshots/domain-history.webp"
+        - title: "domain-history"
+          description: "Retrouvez tous vos changements en un coup d'œil"
+          image: "/img/screenshots/domain-history.webp"
 
-      - title: "domain-services"
-        description: "Ajoutez facilement de nouveaux usages à vos zones"
-        image: "/img/screenshots/domain-services.webp"
+        - title: "domain-services"
+          description: "Ajoutez facilement de nouveaux usages à vos zones"
+          image: "/img/screenshots/domain-services.webp"
 
-      - title: "domain-logs"
-        description: "Le journal d'action de la zone garde un trace de qui à fait quoi, quand"
-        image: "/img/screenshots/domain-logs.webp"
+        - title: "domain-logs"
+          description: "Le journal d'action de la zone garde un trace de qui à fait quoi, quand"
+          image: "/img/screenshots/domain-logs.webp"
 
-      - title: "domain-abstract-list"
-        description: "Une zone simplifiée, sous forme de liste, plus rapide à modifier"
-        image: "/img/screenshots/domain-abstract-list.webp"
+        - title: "domain-abstract-list"
+          description: "Une zone simplifiée, sous forme de liste, plus rapide à modifier"
+          image: "/img/screenshots/domain-abstract-list.webp"
 
-      - title: "sources"
-        description: "Liste des hébergeurs existantes où récupérer les domaines"
-        image: "/img/screenshots/sources.png"
+        - title: "sources"
+          description: "Liste des hébergeurs existantes où récupérer les domaines"
+          image: "/img/screenshots/sources.png"
 
 params:
   author:
@@ -90,68 +90,68 @@ params:
   tryit: "https://try.happydomain.org/"
 
   others_links:
-  - text: "Sign up"
-    href: "//app.happydomain.org/join"
-    class: "btn btn-secondary"
-    icon: "bi-person-plus-fill"
-  - text: "Sign in"
-    href: "//app.happydomain.org/login"
-    class: "btn btn-outline-primary"
-    icon: "bi-person-check-fill"
+    - text: "Sign up"
+      href: "//app.happydomain.org/register"
+      class: "btn btn-secondary"
+      icon: "bi-person-plus-fill"
+    - text: "Sign in"
+      href: "//app.happydomain.org/login"
+      class: "btn btn-outline-primary"
+      icon: "bi-person-check-fill"
 
   carousel:
-  - title: "domains-lists"
-    description: "**Home page:** domains list on dedicated provider"
-    image: "/img/screenshots/domains-list.webp"
+    - title: "domains-lists"
+      description: "**Home page:** domains list on dedicated provider"
+      image: "/img/screenshots/domains-list.webp"
 
-  - title: "domain-abstract"
-    description: "**Manage a zone:** records are grouped by subdomain and service"
-    image: "/img/screenshots/domain-abstract.webp"
+    - title: "domain-abstract"
+      description: "**Manage a zone:** records are grouped by subdomain and service"
+      image: "/img/screenshots/domain-abstract.webp"
 
-  - title: "service-caa"
-    description: "Clear forms help you choose the best settings"
-    image: "/img/screenshots/service-caa.webp"
+    - title: "service-caa"
+      description: "Clear forms help you choose the best settings"
+      image: "/img/screenshots/service-caa.webp"
 
-  - title: "zone-diff"
-    description: "Display zone diff before applying changes"
-    image: "/img/screenshots/zone-diff.webp"
+    - title: "zone-diff"
+      description: "Display zone diff before applying changes"
+      image: "/img/screenshots/zone-diff.webp"
 
-  - title: "domain-history"
-    description: "All your changes at a glance"
-    image: "/img/screenshots/domain-history.webp"
+    - title: "domain-history"
+      description: "All your changes at a glance"
+      image: "/img/screenshots/domain-history.webp"
 
-  - title: "domain-services"
-    description: "Easily add new uses to your zones"
-    image: "/img/screenshots/domain-services.webp"
+    - title: "domain-services"
+      description: "Easily add new uses to your zones"
+      image: "/img/screenshots/domain-services.webp"
 
-  - title: "domain-logs"
-    description: "The zone action log keeps track of who did what, when"
-    image: "/img/screenshots/domain-logs.webp"
+    - title: "domain-logs"
+      description: "The zone action log keeps track of who did what, when"
+      image: "/img/screenshots/domain-logs.webp"
 
-  - title: "domain-abstract-list"
-    description: "Simplified zone in list, for quicker editing"
-    image: "/img/screenshots/domain-abstract-list.webp"
+    - title: "domain-abstract-list"
+      description: "Simplified zone in list, for quicker editing"
+      image: "/img/screenshots/domain-abstract-list.webp"
 
-  - title: "sources"
-    description: "Existing name service providers where pull domains"
-    image: "/img/screenshots/sources.png"
+    - title: "sources"
+      description: "Existing name service providers where pull domains"
+      image: "/img/screenshots/sources.png"
 
 menu:
   main:
-  - identifier: "features"
-    name: "Features"
-    url: "/en/#features"
-    weight: 10
+    - identifier: "features"
+      name: "Features"
+      url: "/en/#features"
+      weight: 10
 
-  - identifier: "downloads"
-    name: "Downloads"
-    url: "/en/#downloads"
-    weight: 20
+    - identifier: "downloads"
+      name: "Downloads"
+      url: "/en/#downloads"
+      weight: 20
 
-  - identifier: "News"
-    name: "Blog"
-    url: "https://blog.happydomain.org/"
-    weight: 30
+    - identifier: "News"
+      name: "Blog"
+      url: "https://blog.happydomain.org/"
+      weight: 30
 
 markup:
   goldmark:
@@ -159,4 +159,4 @@ markup:
       unsafe: true
 
 outputs:
-  home: [ "HTML", "RSS" ]
+  home: ["HTML", "RSS"]
