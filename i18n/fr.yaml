@@ -1,6 +1,6 @@
 - id: slogan
   translation: |
-    <span class="font-weight-bolder" style="color: var(--secondary-subtle)">Tous</span> vos domaines. <span class="font-weight-bolder" style="color: var(--secondary-subtle)">Une</span> interface.
+    <span class="font-weight-bolder" style="color: var(--bs-plum)">Tous</span> vos domaines. <span class="font-weight-bolder" style="color: var(--bs-plum)">Une</span> interface.
 
 - id: lead
   translation: "est une interface web libre qui rassemble tous vos noms de domaine dans un endroit simple."
@@ -257,3 +257,8 @@
   translation: "https://fosdem.org/2024/schedule/event/fosdem-2024-2316-let-s-make-people-love-domain-names-again/"
 - id: conf-fosdem24-body-2
   translation: "sur le site du FOSDEM, avec la captation vidéo !"
+
+- id: usage-discover-pre
+  translation: "Découvrez"
+- id: usage-discover-post
+  translation: "pour :"

@@ -6,8 +6,9 @@ when:
 
 steps:
   - name: build
-    image: hugomods/hugo:base
+    image: hugomods/hugo:exts
     commands:
+      - npm ci
       - hugo
     environment:
       HUGO_ENVIRONMENT: production
@@ -21,7 +22,7 @@ steps:
       ftp_password:
         from_secret: ovh_ftp_password
       clean_dir: true
-      pre_action: 'set ftp:passive-mode true'
+      pre_action: "set ftp:passive-mode true"
       secure: false
       src_dir: /public/
       dest_dir: /www/

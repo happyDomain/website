@@ -1,0 +1,11 @@
+{
+  "name": "happydomain-website",
+  "private": true,
+  "dependencies": {
+    "@fontsource-variable/hanken-grotesk": "^5.2.8",
+    "@fontsource-variable/jetbrains-mono": "^5.2.8",
+    "@fontsource-variable/quicksand": "^5.2.10",
+    "bootstrap": "^5.3.0",
+    "bootstrap-icons": "^1.13.0"
+  }
+}

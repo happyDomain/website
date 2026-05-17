@@ -49,15 +49,21 @@
     <!-- Mastodon proof -->
     <link rel="me" href="https://floss.social/@happyDomain">
 
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/icons/font/bootstrap-icons.min.css">
+    <!-- Variable fonts (Hanken Grotesk, JetBrains Mono, Quicksand) — served from node_modules via Hugo mounts -->
+    <link rel="stylesheet" href="/fonts/hanken-grotesk/wght.css">
+    <link rel="stylesheet" href="/fonts/jetbrains-mono/wght.css">
+    <link rel="stylesheet" href="/fonts/quicksand/wght.css">
 
-    <!-- Theme stylesheet, if possible do not edit this stylesheet -->
-    {{ if and (isset .Site.Params "style") .Site.Params.style }}
-    <link href="{{ .Site.BaseURL }}css/style.{{ .Site.Params.style }}.css" rel="stylesheet" id="theme-stylesheet">
-    {{ else }}
-    <link href="{{ .Site.BaseURL }}css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+    <!-- Bootstrap (compiled from SCSS) -->
+    {{ $scss := resources.Get "scss/bootstrap.scss" }}
+    {{ $opts := dict "transpiler" "libsass" "includePaths" (slice "node_modules") }}
+    {{ $css := $scss | css.Sass $opts }}
+    {{ if hugo.IsProduction }}
+    {{ $css = $css | minify | fingerprint }}
     {{ end }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+
+    <link rel="stylesheet" href="/icons/font/bootstrap-icons.min.css">
 
     <!-- Custom stylesheet - for your changes -->
     <link href="{{ .Site.BaseURL }}css/custom.css" rel="stylesheet">
