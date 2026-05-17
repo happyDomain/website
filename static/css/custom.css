@@ -543,6 +543,104 @@ footer {
     }
 }
 
+/* ── Trust strip ── */
+.trust {
+    padding: 20px 0;
+    border-top: 1px solid var(--bs-border-color);
+    border-bottom: 1px solid var(--bs-border-color);
+    background: var(--hd-bg-canvas);
+}
+
+.trust-grid {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.trust-tag {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--hd-accent);
+    white-space: nowrap;
+}
+
+.trust-tag .dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--hd-accent);
+    animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(0.75);
+    }
+}
+
+.trust-list {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.trust-list span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid color-mix(in srgb, currentColor 20%, transparent);
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--hd-fg-3);
+    background: transparent;
+    transition:
+        border-color 0.2s,
+        color 0.2s,
+        background 0.2s;
+}
+
+.trust-list span:hover {
+    border-color: var(--hd-accent);
+    color: var(--hd-accent);
+    background: color-mix(in srgb, var(--hd-accent) 8%, transparent);
+}
+
+.trust-list span i {
+    font-size: 0.9em;
+    opacity: 0.7;
+}
+
+.trust-more {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--hd-accent);
+    white-space: nowrap;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.trust-more:hover {
+    opacity: 0.7;
+}
+
 @media (min-width: 768px) {
     #community > div > div {
         width: 50% !important;

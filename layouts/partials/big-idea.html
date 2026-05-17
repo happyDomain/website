@@ -1,0 +1,72 @@
+<!-- ── The big idea: services not records ─────────────── -->
+<section class="section section--paper" id="idea">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="dot"></span>The big idea</span>
+      <h2 class="h2">Stop reading zone files.<br>Start managing services.</h2>
+      <p class="lede">DNS records are an implementation detail. happyDomain groups them by what they actually <em>do</em> — your email, your website, your delegation — so you can edit with intent instead of decoding RFCs.</p>
+    </div>
+
+    <div class="idea-grid">
+      <div class="idea-col">
+        <div class="idea-tag"><span class="num">A</span>Without happyDomain</div>
+        <h3><span class="strike">happydomain.org</span> · zone file</h3>
+<pre class="zone-pre"><span class="c">; Zone: happydomain.org.</span>
+<span class="c">; TTL = 3600</span>
+
+@      IN <span class="k">SOA</span>   ns1 admin 2024010101 3600 900 604800 300
+@      IN <span class="k">NS</span>    ns1.happydomain.org.
+@      IN <span class="k">NS</span>    ns2.happydomain.org.
+@      IN <span class="k">A</span>     <span class="v">93.184.216.34</span>
+@      IN <span class="k">AAAA</span>  <span class="v">2606:2800:220:1:248:1893:25c8:1946</span>
+@      IN <span class="k">MX</span>    10 mail.happydomain.org.
+@      IN <span class="k">TXT</span>   <span class="v">"v=spf1 include:_spf.eu ~all"</span>
+_dmarc IN <span class="k">TXT</span>   <span class="v">"v=DMARC1; p=none; rua=…"</span>
+mail   IN <span class="k">A</span>     <span class="v">93.184.216.40</span>
+www    IN <span class="k">CNAME</span> @
+@      IN <span class="k">CAA</span>   <span class="v">0 issue "letsencrypt.org"</span></pre>
+      </div>
+      <div class="idea-col">
+        <div class="idea-tag"><span class="num">B</span>With happyDomain</div>
+        <h3>happydomain.org · services</h3>
+        <div class="svc">
+          <div class="svc-row">
+            <div class="svc-l">
+              <div class="svc-ico"><i class="bi bi-globe2"></i></div>
+              <div><div class="svc-name">Website</div><div class="svc-desc">A, AAAA on @ · CNAME on www</div></div>
+            </div>
+            <div class="svc-r"><span class="svc-cnt">3</span><span class="svc-ok"><i class="bi bi-check-circle-fill"></i> OK</span></div>
+          </div>
+        </div>
+        <div class="svc">
+          <div class="svc-row">
+            <div class="svc-l">
+              <div class="svc-ico"><i class="bi bi-envelope"></i></div>
+              <div><div class="svc-name">Email</div><div class="svc-desc">MX, SPF and DMARC policy</div></div>
+            </div>
+            <div class="svc-r"><span class="svc-cnt">3</span><span class="svc-ok"><i class="bi bi-check-circle-fill"></i> OK</span></div>
+          </div>
+        </div>
+        <div class="svc">
+          <div class="svc-row">
+            <div class="svc-l">
+              <div class="svc-ico"><i class="bi bi-diagram-3"></i></div>
+              <div><div class="svc-name">Delegation</div><div class="svc-desc">2 nameservers</div></div>
+            </div>
+            <div class="svc-r"><span class="svc-cnt">2</span><span class="svc-ok"><i class="bi bi-check-circle-fill"></i> OK</span></div>
+          </div>
+        </div>
+        <div class="svc">
+          <div class="svc-row">
+            <div class="svc-l">
+              <div class="svc-ico"><i class="bi bi-shield-check"></i></div>
+              <div><div class="svc-name">TLS / Security</div><div class="svc-desc">CAA · Let's Encrypt only</div></div>
+            </div>
+            <div class="svc-r"><span class="svc-cnt">1</span><span class="svc-ok"><i class="bi bi-check-circle-fill"></i> OK</span></div>
+          </div>
+        </div>
+        <p style="font-size:12.5px; color: var(--fg-3); margin: 16px 0 0;">Same zone. Edit by intent, not by record type.</p>
+      </div>
+    </div>
+  </div>
+</section>
