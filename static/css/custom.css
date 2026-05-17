@@ -219,23 +219,81 @@ footer {
     border-top: 3px solid var(--hd-plum-400);
 }
 
+.footer-tagline {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.55;
+    max-width: 260px;
+    margin-bottom: 0;
+}
+
+.footer-heading {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.45);
+    margin-bottom: 1rem;
+}
+
 .footer-links {
     list-style: none;
     padding: 0;
-}
-
-.footer-links li {
-    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
 }
 
 .footer-links a {
     color: rgba(255, 255, 255, 0.7);
+    font-size: 0.875rem;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.2s;
 }
 
 .footer-links a:hover {
     color: white;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s, border-color 0.2s, background-color 0.2s;
+}
+
+.footer-social a:hover {
+    color: white;
+    border-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer-bottom-text {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.footer-git-link {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-git-link:hover {
+    color: rgba(255, 255, 255, 0.8);
 }
 
 #download-house {
