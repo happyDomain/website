@@ -1,21 +1,38 @@
 <div id="voxppl">
-  <a href="{{ .Site.Params.survey }}" class="d-flex p-3 text-light row" data-umami-event="survey" target="_blank" rel="noopener">
-    <h1 class="col-auto align-self-center m-0 p-0">
-      <div class="circle-head" style="background-color: #430c59; font-size: 1.1em;">
-        <i class="bi bi-megaphone-fill"></i>
-      </div>
-    </h1>
-    <div class="col align-self-center font-weigth-bolder">
-      <button type="button" class="close float-right" aria-label="Close" onclick="document.getElementById('voxppl').style.display = 'none'; return false">
-        <span aria-hidden="true">&times;</span>
-      </button>
-      <strong>{{ i18n "survey-title" | markdownify }}</strong><br>
-      {{ i18n "survey-text" | markdownify }}
-    </div>
-  </a>
+    <a
+        href="{{ .Site.Params.survey }}"
+        class="d-flex p-3 text-light row"
+        data-umami-event="survey"
+        target="_blank"
+        rel="noopener"
+    >
+        <h1 class="col-auto align-self-center m-0 p-0">
+            <div
+                class="circle-head"
+                style="background-color: #430c59; font-size: 1.1em"
+            >
+                <i class="bi bi-megaphone-fill"></i>
+            </div>
+        </h1>
+        <div class="col align-self-center font-weigth-bolder">
+            <button
+                type="button"
+                class="close float-right"
+                aria-label="Close"
+                onclick="
+                    document.getElementById('voxppl').style.display = 'none';
+                    return false;
+                "
+            >
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <strong>{{ i18n "survey-title" | markdownify }}</strong><br />
+            {{ i18n "survey-text" | markdownify }}
+        </div>
+    </a>
 </div>
 <script>
-  setTimeout(function() {
-    document.getElementById('voxppl').style.display = 'block'
-  }, 4500)
+    setTimeout(function () {
+        document.getElementById("voxppl").style.display = "block";
+    }, 4500);
 </script>

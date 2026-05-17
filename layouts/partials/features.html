@@ -1,56 +1,90 @@
-<section id="features" class="bg-light" style="scroll-margin-top: 2em;">
-  <div class="container py-4">
-    <div class="section-title text-center mt-5 mb-5">
-      <h2 class="mb-3 display-4">
-        {{ i18n "features-title" }}
-      </h2>
-      <div class="row">
-        <p class="offset-sm-1 col-sm-10 offset-md-2 col-md-8 text-muted" style="font-size: 1.15rem;">
-          {{ i18n "features-lead" }}
-        </p>
-      </div>
-    </div>
-
-    <div class="alert alert-warning my-5 d-flex">
-      <div class="display-2">🏗️</div>
-      <div class="ml-2 flex-fill">
-        <p class="lead">
-          {{ i18n "features-wip-lead" }}
-        </p>
-        <p>
-          {{ i18n "features-wip-p1-start" }}
-           <strong>{{ i18n "features-wip-p1-strong" }} <a href="https://github.com/happyDomain/happydomain/" target="_blank" rel="noopener" data-umami-event="goto-issue">{{ i18n "features-wip-p1-link" }}</a>.</strong> {{ i18n "features-wip-p1-end" }}
-        </p>
-        <p>
-          <a href="https://feedback.happydomain.org" target="_blank" rel="noopener" data-umami-event="goto-feedback">{{ i18n "features-wip-p2-feedback" }}</a> {{ i18n "features-wip-p2-start" }} <u>{{ i18n "features-wip-p2-emph" }}</u>{{ i18n "features-wip-p2-end" }}
-        </p>
-      </div>
-    </div>
-
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-      {{ range $index, $element := $.Site.Data.features.features }}
-        {{ if index .title $.Language.Lang }}
-          <div class="col mb-5">
-            <div class="h-100 card" id="feature-{{ .id }}">
-              {{ if and .img .img.src }}
-              <img src="{{ .img.src }}" class="card-img-top" alt="{{ index .img.alt $.Language.Lang }}">
-              {{ end }}
-              <div class="card-body align-items-center">
-              <div class="d-flex flex-column justify-content-center">
-                <h4 class="card-title font-weight-bolder">{{ index .title $.Language.Lang }}</h4>
-                <p class="card-text text-justify">{{ index .content $.Language.Lang }}</p>
-                {{ if and .link .link.link }}
-                  <a href="{{ .link.link }}" class="card-link" data-umami-event="features-{{ .id }}">{{ index .link $.Language.Lang }}</a>
-                {{ end }}
-                {{ if and .link2 .link2.link }}
-                  <br><a href="{{ .link2.link }}" class="card-link mt-2" data-umami-event="features-{{ .id }}-2">{{ index .link2 $.Language.Lang }}</a>
-                {{ end }}
-              </div>
-              </div>
+<section id="features" class="bg-light" style="scroll-margin-top: 2em">
+    <div class="container py-4">
+        <div class="section-title text-center mt-5 mb-5">
+            <h2 class="mb-3 display-4">{{ i18n "features-title" }}</h2>
+            <div class="row">
+                <p
+                    class="offset-sm-1 col-sm-10 offset-md-2 col-md-8 text-muted"
+                    style="font-size: 1.15rem"
+                >
+                    {{ i18n "features-lead" }}
+                </p>
             </div>
-          </div>
-        {{ end }}
-      {{ end }}
+        </div>
+
+        <div class="alert alert-warning my-5 d-flex">
+            <div class="display-2">🏗️</div>
+            <div class="ml-2 flex-fill">
+                <p class="lead">{{ i18n "features-wip-lead" }}</p>
+                <p>
+                    {{ i18n "features-wip-p1-start" }}
+                    <strong
+                        >{{ i18n "features-wip-p1-strong" }}
+                        <a
+                            href="https://github.com/happyDomain/happydomain/"
+                            target="_blank"
+                            rel="noopener"
+                            data-umami-event="goto-issue"
+                            >{{ i18n "features-wip-p1-link" }}</a
+                        >.</strong
+                    >
+                    {{ i18n "features-wip-p1-end" }}
+                </p>
+                <p>
+                    <a
+                        href="https://feedback.happydomain.org"
+                        target="_blank"
+                        rel="noopener"
+                        data-umami-event="goto-feedback"
+                        >{{ i18n "features-wip-p2-feedback" }}</a
+                    >
+                    {{ i18n "features-wip-p2-start" }}
+                    <u>{{ i18n "features-wip-p2-emph" }}</u>{{ i18n
+                    "features-wip-p2-end" }}
+                </p>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+            {{ range $index, $element := $.Site.Data.features.features }} {{ if
+            index .title $.Language.Lang }}
+            <div class="col mb-5">
+                <div class="h-100 card" id="feature-{{ .id }}">
+                    {{ if and .img .img.src }}
+                    <img
+                        src="{{ .img.src }}"
+                        class="card-img-top"
+                        alt="{{ index .img.alt $.Language.Lang }}"
+                    />
+                    {{ end }}
+                    <div class="card-body align-items-center">
+                        <div class="d-flex flex-column justify-content-center">
+                            <h4 class="card-title font-weight-bolder">
+                                {{ index .title $.Language.Lang }}
+                            </h4>
+                            <p class="card-text text-justify">
+                                {{ index .content $.Language.Lang }}
+                            </p>
+                            {{ if and .link .link.link }}
+                            <a
+                                href="{{ .link.link }}"
+                                class="card-link"
+                                data-umami-event="features-{{ .id }}"
+                                >{{ index .link $.Language.Lang }}</a
+                            >
+                            {{ end }} {{ if and .link2 .link2.link }}
+                            <br /><a
+                                href="{{ .link2.link }}"
+                                class="card-link mt-2"
+                                data-umami-event="features-{{ .id }}-2"
+                                >{{ index .link2 $.Language.Lang }}</a
+                            >
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ end }} {{ end }}
+        </div>
     </div>
-  </div>
 </section>
