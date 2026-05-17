@@ -6,8 +6,9 @@ when:
 
 steps:
   - name: build
-    image: hugomods/hugo:base
+    image: hugomods/hugo:exts-node
     commands:
+      - npm ci
       - hugo
     environment:
       HUGO_ENVIRONMENT: production

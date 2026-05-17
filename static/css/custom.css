@@ -1,86 +1,66 @@
-:root {
-    --primary: #1cb487;
-    --primary-dark: #169c73;
-    --primary-light: #5ed1b0;
-    --primary-ultralight: #e7f7f2;
-    --secondary: #360b48;
-    --secondary-dark: #29083a;
-    --secondary-subtle: #871cb4;
-    --secondary-light: #4e1566;
-    --secondary-ultralight: #f0e6f3;
-    --dark: #2c3e50;
-    --light: #f8f9fa;
-    --gray: #6c757d;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Montserrat'), local('Montserrat-Regular'), url(/fonts/Montserrat.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-html {
-    background-color: #343a40;
-}
-body {
-    font-family: Montserrat,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji,sans;
-}
 nav.navbar {
-    background: var(--light);
-    box-shadow: 0 0px 3px 0 #1cb487;
-    border-bottom: 1px solid #1cb487;
+    background: var(--hd-bg-subtle);
+    box-shadow: 0 0px 3px 0 var(--hd-accent);
+    border-bottom: 1px solid var(--hd-accent);
     z-index: 1024;
     transition: background 1s linear;
 }
 nav.navbar.beginscroll {
-    background: linear-gradient(90deg, var(--primary-ultralight) 0%, white 150%);
+    background: linear-gradient(
+        90deg,
+        var(--hd-accent-subtle) 0%,
+        white 150%
+    );
     box-shadow: none;
     border-bottom: none;
 }
 nav.navbar.scrolled {
-    background: var(--light);
-    box-shadow: 0 0px 3px 0 #1cb487;
-    border-bottom: 1px solid #1cb487;
+    background: var(--hd-bg-subtle);
+    box-shadow: 0 0px 3px 0 var(--hd-accent);
+    border-bottom: 1px solid var(--hd-accent);
 }
 
 a.card {
-    background: #f6f7f8;
+    background: var(--hd-bg-subtle);
     transition: transform 250ms;
 }
 a.card:hover {
-    background: #e9ecef;
+    background: var(--hd-bg-inset);
     transform: scale(1.14);
 }
 
 .section-title::after {
-    content: '';
+    content: "";
     width: 120px;
     height: 4px;
-    background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+    background: linear-gradient(
+        90deg,
+        var(--hd-accent) 0%,
+        var(--hd-brand-dark) 100%
+    );
     display: block;
     margin: 10px auto 0;
     border-radius: 2px;
 }
 
-.link-rounded, .circle-head {
+.link-rounded,
+.circle-head {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     height: 1.8em;
     line-height: 1em;
     width: 1.8em;
-    background: #1cb487;
+    background: var(--hd-accent);
     border-radius: 100%;
-    color: #f8f9fa;
+    color: var(--hd-accent-fg);
     font-size: 1.5rem;
 }
 .link-rounded:hover {
-    background-color: #127255;
+    background-color: var(--hd-green-800);
 }
 .link-rounded:hover > div {
-    color: #f8f9fa;
+    color: var(--hd-accent-fg);
 }
 
 .anchor {
@@ -89,7 +69,7 @@ a.card:hover {
 }
 
 .carousel {
-    background-color: #430c59;
+    background-color: var(--hd-plum-700);
 }
 
 .text-hilight {
@@ -104,13 +84,13 @@ a.card:hover {
     bottom: 5vh;
     right: 5vw;
     border-radius: 5px;
-    background-color: #9332bbee;
+    background-color: color-mix(in srgb, var(--hd-plum-400) 93%, transparent);
     z-index: 1023;
     max-width: 98%;
 }
 #voxppl a:hover {
     text-decoration: none;
-    background-color: #9332bb;
+    background-color: var(--hd-plum-400);
 }
 
 img {
@@ -118,22 +98,21 @@ img {
 }
 
 #features .card {
-    background-color: white;
+    background-color: var(--hd-bg-canvas);
     border-radius: 10px;
     padding-top: 3px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s;
-    border-top: 4px solid var(--primary);
+    border-top: 4px solid var(--hd-accent);
 }
 
 #features .col:nth-child(even) .card {
-    border-top: 4px solid var(--secondary);
+    border-top: 4px solid var(--hd-brand-dark);
 }
 
 #features .card:hover {
     transform: translateY(-10px);
 }
-
 
 #discover .steps {
     display: flex;
@@ -144,13 +123,17 @@ img {
 }
 
 #discover .steps::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 25px;
     left: 10%;
     width: 80%;
     height: 2px;
-    background: linear-gradient(to right, var(--primary) 0%, var(--secondary) 100%);
+    background: linear-gradient(
+        to right,
+        var(--hd-accent) 0%,
+        var(--hd-brand-dark) 100%
+    );
     z-index: 1;
 }
 
@@ -162,7 +145,11 @@ img {
 }
 
 #discover .step-number {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    background: linear-gradient(
+        135deg,
+        var(--hd-accent) 0%,
+        var(--hd-brand-dark) 100%
+    );
     color: white;
     width: 50px;
     height: 50px;
@@ -181,20 +168,25 @@ img {
 }
 
 #discover .step p {
-    color: var(--gray);
+    color: var(--hd-fg-3);
 }
 
 #cta {
     padding: 100px 0;
-    background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+    background: linear-gradient(
+        135deg,
+        var(--hd-brand-dark) 0%,
+        var(--hd-accent) 100%
+    );
     color: white;
     text-align: center;
     position: relative;
     overflow: hidden;
 }
 
-#cta::before, #cta::after {
-    content: '';
+#cta::before,
+#cta::after {
+    content: "";
     position: absolute;
     width: 300px;
     height: 300px;
@@ -224,7 +216,7 @@ img {
 }
 
 footer {
-    border-top: 3px solid #9332bb;
+    border-top: 3px solid var(--hd-plum-400);
 }
 
 .footer-links {
@@ -250,17 +242,40 @@ footer {
     animation: floatinghouse 6s linear infinite;
 }
 @keyframes floatinghouse {
-    0% { top: 0; left: 0; }
-    10% { top: -2px; }
-    20% { top: -4px; }
-    30% { top: -6px; }
-    40% { top: -2px; }
-    50% { top: 0px;  }
-    60% { top: 4px;  }
-    70% { top: 6px;  }
-    80% { top: 8px;  }
-    90% { top: 4px;  }
-    100% { top: 0;   }
+    0% {
+        top: 0;
+        left: 0;
+    }
+    10% {
+        top: -2px;
+    }
+    20% {
+        top: -4px;
+    }
+    30% {
+        top: -6px;
+    }
+    40% {
+        top: -2px;
+    }
+    50% {
+        top: 0px;
+    }
+    60% {
+        top: 4px;
+    }
+    70% {
+        top: 6px;
+    }
+    80% {
+        top: 8px;
+    }
+    90% {
+        top: 4px;
+    }
+    100% {
+        top: 0;
+    }
 }
 
 @media (min-width: 768px) {
@@ -268,6 +283,6 @@ footer {
         width: 50% !important;
     }
     #community > div > div:first-child {
-        border-right: 1px solid #9332bb;
+        border-right: 1px solid var(--hd-plum-400);
     }
 }

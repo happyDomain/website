@@ -1,6 +1,6 @@
 - id: slogan
   translation: |
-    <span class="font-weight-bolder" style="color: var(--secondary-subtle)">Tous</span> vos domaines. <span class="font-weight-bolder" style="color: var(--secondary-subtle)">Une</span> interface.
+    <span class="font-weight-bolder" style="color: var(--bs-plum)">Tous</span> vos domaines. <span class="font-weight-bolder" style="color: var(--bs-plum)">Une</span> interface.
 
 - id: lead
   translation: "est une interface web libre qui rassemble tous vos noms de domaine dans un endroit simple."

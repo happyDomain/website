@@ -1,51 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ .Site.LanguageCode }}">
+    {{ partial "head.html" . }}
 
-  {{ partial "head.html" . }}
+    <body>
+        <div id="all">
+            {{ partial "nav.html" . }} {{ partial "breadcrumbs.html" . }}
 
-  <body>
+            <div
+                id="content"
+                class="mt-5 mb-5"
+                style="min-height: calc(80vh - 152px)"
+            >
+                {{ if isset .Params "id" }} {{ partial .Params.id . }} {{ else
+                }}
 
-    <div id="all">
+                <div class="container">
+                    {{ if .Params.toc }}
+                    <aside>
+                        <header>
+                            <h1>{{ .Title }}</h1>
+                        </header>
+                        {{ .TableOfContents }}
+                    </aside>
+                    {{ end }}
 
-      {{ partial "nav.html" . }}
+                    <div>{{ .Content }}</div>
+                </div>
+                <!-- /.container -->
 
-      {{ partial "breadcrumbs.html" . }}
-
-      <div id="content" class="mt-5 mb-5" style="min-height: calc(80vh - 180px)">
-        {{ if isset .Params "id" }}
-
-        {{ partial .Params.id . }}
-
-        {{ else }}
-
-        <div class="container">
-
-          {{ if .Params.toc }}
-          <aside>
-            <header>
-              <h1>{{ .Title }}</h1>
-            </header>
-            {{ .TableOfContents }}
-          </aside>
-          {{ end }}
-
-          <div>
-            {{ .Content }}
-          </div>
-
+                {{ end }}
+            </div>
+            <!-- /#content -->
         </div>
-        <!-- /.container -->
+        <!-- /#all -->
 
-        {{ end }}
-      </div>
-      <!-- /#content -->
-
-    </div>
-    <!-- /#all -->
-
-    {{ partial "footer.html" . }}
-
-    {{ partial "scripts.html" . }}
-
-  </body>
+        {{ partial "footer.html" . }} {{ partial "scripts.html" . }}
+    </body>
 </html>
