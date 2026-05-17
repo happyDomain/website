@@ -45,12 +45,15 @@
 - id: press-kit
   translation: "Press Kit"
 
-- id: features-title
+- id: features-eyebrow
   translation: "Main features"
+
+- id: features-title
+  translation: "Everything DNS, calm and connected."
 
 - id: features-lead
   translation: |
-    Find out how happyDomain can simplify your domain name management.
+    happyDomain works as a smart layer above your existing infrastructure: connecting to registrars, hosting providers and authoritative servers so you can manage them all from one place.
 
 - id: features-grid-title
   translation: What can happyDomain do for you today?

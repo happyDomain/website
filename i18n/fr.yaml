@@ -45,8 +45,11 @@
 - id: press-kit
   translation: "Dossier de presse"
 
-- id: features-title
+- id: features-eyebrow
   translation: "Principales fonctionnalités"
+
+- id: features-title
+  translation: "Tout le DNS, sereinement connecté."
 
 - id: features-lead
   translation: "Découvrez comment happyDomain peut faciliter la gestion de vos noms de domaine."

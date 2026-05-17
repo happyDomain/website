@@ -34,14 +34,12 @@ languages:
       DefaultDescription: "L'interface qui vous rend heureux de gérer vos noms de domaines."
 
       others_links:
-        - text: "S'inscrire"
-          href: "//app.happydomain.org/register"
-          class: "btn btn-secondary"
-          icon: "bi-person-plus-fill"
         - text: "S'identifier"
           href: "//app.happydomain.org/login"
-          class: "btn btn-outline-primary"
-          icon: "bi-person-check-fill"
+          class: "btn btn-link text-dark"
+        - text: "Essayer en ligne →"
+          href: "//try.happydomain.org/"
+          class: "btn btn-primary btn-sm"
 
       carousel:
         - title: "domains-lists"
@@ -90,14 +88,12 @@ params:
   tryit: "https://try.happydomain.org/"
 
   others_links:
-    - text: "Sign up"
-      href: "//app.happydomain.org/register"
-      class: "btn btn-secondary"
-      icon: "bi-person-plus-fill"
     - text: "Sign in"
       href: "//app.happydomain.org/login"
-      class: "btn btn-outline-primary"
-      icon: "bi-person-check-fill"
+      class: "btn btn-link text-dark"
+    - text: "Try it online →"
+      href: "//try.happydomain.org/"
+      class: "btn btn-primary btn-sm"
 
   carousel:
     - title: "domains-lists"

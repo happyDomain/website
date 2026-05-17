@@ -1,7 +1,4 @@
-<nav
-    class="navbar navbar-expand-md sticky-top navbar-light bg-light"
-    id="mainnav"
->
+<nav class="navbar navbar-expand-md fixed-top" id="mainnav">
     <div class="container">
         <a
             class="h1 navbar-brand d-flex align-items-top gap-2 mb-0"
@@ -55,7 +52,29 @@
                 </li>
                 {{ end }}
             </ul>
-            <div class="d-flex">
+            <div class="d-flex align-items-center">
+                <div class="nav-item dropdown">
+                    <a
+                        class="btn btn-sm btn-outline-secondary dropdown-toggle"
+                        href="#"
+                        id="navbarLangDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                    >
+                        <i class="bi bi-translate"></i> {{ .Language.Lang | upper }}
+                    </a>
+                    <div
+                        class="dropdown-menu dropdown-menu-end"
+                        aria-labelledby="navbarLangDropdown"
+                    >
+                        {{ range .Site.Home.AllTranslations }}
+                        <a href="{{ .Permalink }}" class="dropdown-item">
+                            {{ .Language }}
+                        </a>
+                        {{ end }}
+                    </div>
+                </div>
                 <div class="nav-item nav-ext-links">
                     {{ if .Site.Params.others_links }} {{ range
                     .Site.Params.others_links }}
@@ -65,32 +84,12 @@
                         class="nav-icon-link {{ .class }}"
                         data-umami-event="nav-{{ .id }}"
                     >
+                        {{ if .icon }}
                         <i class="bi {{ .icon }}"></i>
+                        {{ end }}
                         {{ .text }}
                     </a>
                     {{ end }} {{ end }}
-                </div>
-                <div class="nav-item dropdown">
-                    <a
-                        class="btn btn-outline-secondary dropdown-toggle"
-                        href="#"
-                        id="navbarLangDropdown"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                    >
-                        <i class="bi bi-globe"></i> {{ .Language.Lang | upper }}
-                    </a>
-                    <div
-                        class="dropdown-menu dropdown-menu-end"
-                        aria-labelledby="navbarLangDropdown"
-                    >
-                        {{ range .Site.Home.AllTranslations }}
-                        <a href="{{ .Permalink }}" class="dropdown-item"
-                            >{{ .Language.LanguageName }}</a
-                        >
-                        {{ end }}
-                    </div>
                 </div>
             </div>
         </div>
