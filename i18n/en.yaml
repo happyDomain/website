@@ -1,15 +1,16 @@
 - id: slogan
   translation: |
-    <span class="font-weight-bolder" style="color: var(--bs-plum)">All</span> your domains. <span class="font-weight-bolder" style="color: var(--bs-plum)">One</span> interface.
+    <span class="font-weight-bolder" style="color: var(--bs-primary)">All</span> your domains. <span class="font-weight-bolder" style="color: var(--bs-primary)">One</span> interface.
 
 - id: lead
-  translation: "is a free web interface that brings all your domain names together in one simple space."
+  translation: |
+    brings every DNS zone you manage — across registrars, providers and self-hosted name servers — into one calm space, clearly organized by service.
 
 - id: tryit
-  translation: "Try it online now"
+  translation: "Try it online"
 
 - id: downloadit
-  translation: "Download now"
+  translation: "Self-host it"
 
 - id: learnhow
   translation: "Learn how"

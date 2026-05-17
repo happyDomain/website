@@ -1,15 +1,16 @@
 - id: slogan
   translation: |
-    <span class="font-weight-bolder" style="color: var(--bs-plum)">Tous</span> vos domaines. <span class="font-weight-bolder" style="color: var(--bs-plum)">Une</span> interface.
+    <span class="font-weight-bolder" style="color: var(--bs-primary)">Tous</span> vos domaines. <span class="font-weight-bolder" style="color: var(--bs-primary)">Une</span> interface.
 
 - id: lead
-  translation: "est une interface web libre qui rassemble tous vos noms de domaine dans un endroit simple."
+  translation: |
+    rassemble toutes les zones DNS que vous gérez — qu'elles proviennent de bureaux d'enregistrement, de prestataires de cloud ou de serveurs de noms auto-hébergés — au sein d'un espace unique et clair, organisé clairement par service.
 
 - id: tryit
   translation: "Essayer maintenant"
 
 - id: downloadit
-  translation: "Télécharger"
+  translation: "Hébergez-le"
 
 - id: learnhow
   translation: "Découvrez comment"
