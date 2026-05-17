@@ -1,6 +1,9 @@
 <script src="/js/bootstrap.bundle.min.js"></script>
 <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 <script>
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+        document.documentElement.setAttribute('data-bs-theme', e.matches ? 'dark' : 'light');
+    });
     window.addEventListener("scroll", function () {
         if (window.scrollY > 100) {
             document.getElementById("mainnav").classList.add("scrolled");
