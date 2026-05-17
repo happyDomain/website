@@ -199,6 +199,12 @@
 - id: footer-us-button-link
   translation: "/en/who-we-are/"
 
+- id: footer-tagline
+  translation: "Free, open-source DNS management. Propagating happiness, one domain at a time."
+- id: footer-made-eu
+  translation: "Made with care in the EU"
+- id: footer-product
+  translation: "Product"
 - id: footer-happydomain-features
   translation: "Features"
 - id: footer-happydomain-testimonials
@@ -224,13 +230,17 @@
 - id: footer-resources-faq
   translation: "FAQ"
 - id: footer-company
-  translation: "Our association"
+  translation: "Project"
 - id: footer-company-about
   translation: "About us"
+- id: footer-company-license
+  translation: "License (AGPL)"
 - id: footer-company-contact
   translation: "Contact"
 - id: footer-follow
   translation: "Follow us"
+- id: footer-legal
+  translation: "Legal"
 
 - id: cta-account-title
   translation: "Ready to simplify your domain management?"

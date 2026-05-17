@@ -198,6 +198,12 @@
 - id: footer-us-button-link
   translation: "/fr/qui-sommes-nous/"
 
+- id: footer-tagline
+  translation: "Gestion DNS libre et open-source. Propager le bonheur, un domaine à la fois."
+- id: footer-made-eu
+  translation: "Fabriqué avec soin en Europe"
+- id: footer-product
+  translation: "Produit"
 - id: footer-happydomain-features
   translation: "Fonctionnalités"
 - id: footer-happydomain-testimonials
@@ -223,13 +229,17 @@
 - id: footer-resources-faq
   translation: "FAQ"
 - id: footer-company
-  translation: "L'association"
+  translation: "Projet"
 - id: footer-company-about
   translation: "À propos"
+- id: footer-company-license
+  translation: "Licence (AGPL)"
 - id: footer-company-contact
   translation: "Contact"
 - id: footer-follow
   translation: "Suivez-nous"
+- id: footer-legal
+  translation: "Légal"
 
 - id: cta-account-title
   translation: "Prêt à simplifier votre gestion de domaines ?"
