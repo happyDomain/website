@@ -175,6 +175,8 @@ module:
       target: static/fonts/jetbrains-mono
     - source: node_modules/@fontsource-variable/quicksand
       target: static/fonts/quicksand
+    - source: node_modules/bootstrap/dist/js
+      target: static/js
 
 markup:
   goldmark:

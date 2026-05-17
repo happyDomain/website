@@ -17,15 +17,13 @@
         <div class="col align-self-center font-weigth-bolder">
             <button
                 type="button"
-                class="close float-right"
+                class="btn-close btn-close-white float-end"
                 aria-label="Close"
                 onclick="
                     document.getElementById('voxppl').style.display = 'none';
                     return false;
                 "
-            >
-                <span aria-hidden="true">&times;</span>
-            </button>
+            ></button>
             <strong>{{ i18n "survey-title" | markdownify }}</strong><br />
             {{ i18n "survey-text" | markdownify }}
         </div>

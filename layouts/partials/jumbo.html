@@ -1,5 +1,5 @@
 <section
-    class="jumbotron mt-n1 mb-0"
+    class="py-5 mt-n1 mb-0"
     style="
         background: linear-gradient(
             135deg,
@@ -23,7 +23,7 @@
                         class="col col-sm-8 offset-sm-2 col-md-10 offset-md-1 col-xl-8 offset-xl-2"
                     >
                         <h2
-                            class="display-4 text-center text-dark font-weight-bold"
+                            class="display-4 text-center text-dark fw-bold"
                             style="text-wrap: balance"
                         >
                             {{ i18n "slogan" | safeHTML }}
@@ -36,17 +36,15 @@
                 </p>
                 <div class="mt-5 py-2 d-none d-md-flex justify-content-center">
                     <a
-                        class="btn btn-lg btn-primary px-4 mr-3"
+                        class="btn btn-lg btn-primary px-4 me-3"
                         data-umami-event="jumbo-tryit"
                         href="{{ .Site.Params.tryit }}?lang={{ .Language }}"
-                        style="border-radius: 2em"
                         >{{ i18n "tryit" }} &#187;</a
                     >
                     <a
-                        class="btn btn-lg btn-outline-secondary px-4 ml-3"
+                        class="btn btn-lg btn-outline-secondary px-4 ms-3"
                         data-umami-event="jumbo-downloads"
                         href="#downloads"
-                        style="border-radius: 2em"
                         >{{ i18n "downloadit" }}</a
                     >
                 </div>

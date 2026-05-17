@@ -14,7 +14,7 @@
 
         <div class="alert alert-warning my-5 d-flex">
             <div class="display-2">🏗️</div>
-            <div class="ml-2 flex-fill">
+            <div class="ms-2 flex-fill">
                 <p class="lead">{{ i18n "features-wip-lead" }}</p>
                 <p>
                     {{ i18n "features-wip-p1-start" }}
@@ -59,10 +59,10 @@
                     {{ end }}
                     <div class="card-body align-items-center">
                         <div class="d-flex flex-column justify-content-center">
-                            <h4 class="card-title font-weight-bolder">
+                            <h4 class="card-title fw-bolder">
                                 {{ index .title $.Language.Lang }}
                             </h4>
-                            <p class="card-text text-justify">
+                            <p class="card-text">
                                 {{ index .content $.Language.Lang }}
                             </p>
                             {{ if and .link .link.link }}
