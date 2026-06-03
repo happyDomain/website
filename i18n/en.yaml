@@ -255,6 +255,13 @@
 - id: cta-account-button
   translation: "Create my online space"
 
+- id: beta-alert-title
+  translation: "Online version closed, beta access only"
+- id: beta-alert-text
+  translation: "Public registrations are paused. Join the beta program to get early access."
+- id: beta-alert-button
+  translation: "Join the beta"
+
 - id: cta-newsletter-title
   translation: "Stay a step ahead!"
 - id: cta-newsletter-text

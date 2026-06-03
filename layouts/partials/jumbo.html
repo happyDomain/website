@@ -147,5 +147,40 @@
             </div>
 
         </div>
+
+        <div class="alert alert-warning mt-5 mb-0" role="alert">
+            <div class="row align-items-center g-3">
+                <div class="col-lg-7">
+                    <h5 class="alert-heading mb-1">
+                        <i class="bi bi-info-circle"></i>
+                        {{ i18n "beta-alert-title" }}
+                    </h5>
+                    <p class="mb-0">{{ i18n "beta-alert-text" }}</p>
+                </div>
+                <form
+                    class="col-lg-5 d-flex flex-column flex-sm-row gap-2"
+                    method="post"
+                    action="https://lists.happydomain.org/subscription/form"
+                >
+                    <input type="hidden" name="nonce" />
+                    <input type="hidden" name="l" value="ef8b61ad-fa7d-4f1a-a20f-bb34ac37a3bf" />
+                    <input type="hidden" name="lang" value="{{ site.LanguageCode }}" />
+                    <input
+                        type="email"
+                        name="email"
+                        required
+                        placeholder="j.postel@isi.edu"
+                        class="form-control"
+                    />
+                    <button
+                        type="submit"
+                        class="btn btn-primary text-nowrap"
+                        data-umami-event="beta-join"
+                    >
+                        {{ i18n "beta-alert-button" }}
+                    </button>
+                </form>
+            </div>
+        </div>
     </div>
 </section>

@@ -254,6 +254,13 @@
 - id: cta-account-button
   translation: "Créer mon espace en ligne"
 
+- id: beta-alert-title
+  translation: "Version en ligne fermée, accès bêta uniquement"
+- id: beta-alert-text
+  translation: "Les inscriptions publiques sont suspendues. Rejoignez le programme bêta pour un accès anticipé."
+- id: beta-alert-button
+  translation: "Rejoindre la bêta"
+
 - id: cta-newsletter-title
   translation: "Gardez une longueur d'avance !"
 - id: cta-newsletter-text
