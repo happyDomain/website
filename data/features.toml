@@ -8,12 +8,12 @@ id = "registrar"
     en = "Choose your provider"
 
   [features.title]
-  fr = "Gérer les zones hébergées chez des prestataires d'hébergement"
-  en = "Manage your zones hosted on hosting providers"
+  fr = "Gérer les zones de votre fournisseur de noms de domaine"
+  en = "Manage zones at your registrar"
 
   [features.content]
-  fr = "happyDomain peut regrouper les domaines que vous possédez dans différents bureaux d'enregistrement. Nous supportons aujourd'hui plus de 55 fournisseurs tels que OVH, Gandi, DigitalOcean, ..."
-  en = "happyDomain can group the domains you own in different registrars. We currently support 55+ providers like OVH, Gandi, DigitalOcean, ..."
+  fr = "Connectez OVH, Gandi, DigitalOcean, Cloudflare et plus de 50 autres. happyDomain lit, édite et synchronise les zones pour vous."
+  en = "Connect OVH, Gandi, DigitalOcean, Cloudflare and 50+ more. happyDomain reads, edits and synchronizes their zones for you."
 
   [features.link]
   link = "https://app.happydomain.org/providers/features"
@@ -32,16 +32,16 @@ id = "dynamicDNS"
   [features.img]
   src = "/img/screenshots/features/dyndns.png"
     [features.img.alt]
-    fr = "Une interface au dessus de votre serveur existant"
-    en = "An interface on top of your existing server"
+    fr = "Gérez votre propre serveur de noms"
+    en = "Drive your own name server"
 
   [features.title]
   fr = "Gérer les zones de vos serveurs BIND, Knot, PowerDNS, ..."
   en = "Manage your zones backed by BIND, Knot, PowerDNS, ..."
 
   [features.content]
-  fr = "happyDomain peut s'utiliser comme interface au dessus d'un serveur faisant autorité. Il utilise pour cela le Dynamic DNS (RFC 2136), implémenté dans de nombreux serveurs."
-  en = "happyDomain can be used as an interface above an authoritative name server. It uses the Dynamic DNS (RFC 2136), implemented in many server software."
+  fr = "Utilisez happyDomain comme interface conviviale devant BIND, Knot ou PowerDNS via le DNS dynamique (RFC 2136). Implémenté dans de nombreux serveurs faisant autorité."
+  en = "Use happyDomain as a friendly UI in front of BIND, Knot or PowerDNS via Dynamic DNS (RFC 2136). Implemented in many authoritative servers."
 
   [features.link]
   link = "https://help.happydomain.org/fr/deploy/"
@@ -59,12 +59,12 @@ id = "diff"
     en = "Sample diff"
 
   [features.title]
-  fr = "Visualiser clairement les changements"
-  en = "Clearly visualize changes"
+  fr = "Visualiser chaque changement"
+  en = "Visualize every change"
 
   [features.content]
-  fr = "Avant de publier vos modifications, happyDomain vous montre quels seront exactement les changements (ajouts, modifications, suppressions, ...) qui seront effectués sur la zone. C'est le bon moment pour se relire."
-  en = "Before publishing your changes, happyDomain shows you exactly what changes (additions, modifications, deletions, ...) will be made to your zone. This is a good time to reread."
+  fr = "Avant de publier, vérifiez précisément quels enregistrements seront ajoutés, modifiés ou supprimés. Vous pouvez relire attentivement les changements avant d'appuyer sur le bouton."
+  en = "Before publishing, see exactly which records will be added, modified or deleted. Read-through your zone before you press the button."
 
 
 [[features]]
@@ -77,8 +77,8 @@ id = "resolver"
     en = "DNS Resolver"
 
   [features.title]
-  fr = "Tester ou déboguer votre zone en ligne"
-  en = "Test or debug your zone online"
+  fr = "Tester et déboguer votre zone"
+  en = "Test & debug your zone"
 
   [features.content]
   fr = "happyDomain intégre un résolveur DNS simple d'utilisation, qui vous permet de vous connecter sans effort à une cinquantaine de résolveurs publics. Vous pouvez facilement voir la propagation de vos modifications."
@@ -88,29 +88,6 @@ id = "resolver"
   link = "https://app.happydomain.org/resolver"
   fr = "Je veux tester ça de suite !"
   en = "I want to test this now!"
-
-
-[[features]]
-id = "rest"
-
-  [features.img]
-  src = "/img/screenshots/features/rest.png"
-    [features.img.alt]
-    fr = "API REST"
-    en = "REST API"
-
-  [features.title]
-  fr = "Utiliser happyDomain comme API REST"
-  en = "Use happyDomain as a API REST"
-
-  [features.content]
-  fr = "happyDomain expose une API REST que vous pouvez utiliser pour automatiser des tâches de création de sous-domaine à la volée, par exemple dans votre système de déploiement continu."
-  en = "happyDomain exposes a REST API that you can use to automate sub-domain creation tasks on the fly, for example in your continuous deployment system."
-
-  [features.link]
-  link = "https://app.happydomain.org/swagger/index.html"
-  fr = "Montrez-moi l'API !"
-  en = "Show me the API!"
 
 
 [[features]]
@@ -124,8 +101,31 @@ id = "history"
 
   [features.title]
   fr = "Garder une trace des modifications"
-  en = "Keeping track of changes"
+  en = "Versioned, undoable"
 
   [features.content]
-  fr = "happyDomain ne se contente pas de vous montrer votre zone telle qu'elle est publiée. Chaque modification est enregistrée afin de garder un historique de vos changements. En cas de problème, revenez à une version précédente en 2 clics."
-  en = "happyDomain doesn't just show you your zone as it is published. Every modification is saved to keep a history of your changes. In case of problem, go back to a previous version in 2 clicks."
+  fr = "Chaque modification publiée est enregistrée. Revenez à n'importe quelle version précédente de votre zone en deux clics. Auditez qui a effectué quelles modifications."
+  en = "Every published change is saved. Roll back to any previous version of your zone in two clicks. Audit who did what."
+
+
+[[features]]
+id = "rest"
+
+  [features.img]
+  src = "/img/screenshots/features/rest.png"
+    [features.img.alt]
+    fr = "API REST"
+    en = "REST API"
+
+  [features.title]
+  fr = "API REST, scripter vos domaines"
+  en = "REST API, ready to script"
+
+  [features.content]
+  fr = "Automatisez la création de domaines à la volée : idéal pour le déploiement continu et la mise en place de locataires."
+  en = "Automate domain creation tasks on the fly: perfect for continuous deployment and tenant provisioning."
+
+  [features.link]
+  link = "https://app.happydomain.org/swagger/index.html"
+  fr = "Montrez-moi l'API !"
+  en = "Show me the API!"

@@ -45,8 +45,11 @@
 - id: press-kit
   translation: "Dossier de presse"
 
-- id: features-title
+- id: features-eyebrow
   translation: "Principales fonctionnalités"
+
+- id: features-title
+  translation: "Tout le DNS, sereinement connecté."
 
 - id: features-lead
   translation: "Découvrez comment happyDomain peut faciliter la gestion de vos noms de domaine."
@@ -119,7 +122,9 @@
 
     Vous préférez une [image Docker](https://hub.docker.com/r/happydomain/happydomain/) ? Essayez-la
 
-            docker run -e HAPPYDOMAIN_NO_AUTH=1 -p 8081:8081 happydomain/happydomain
+    ```
+    docker run -e HAPPYDOMAIN_NO_AUTH=1 -p 8081:8081 happydomain/happydomain
+    ```
 
     Les binaires précompilés sont disponibles sur <https://get.happydomain.org/>.
 
