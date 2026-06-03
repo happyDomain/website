@@ -16,7 +16,7 @@
         <a class="btn btn-primary mt-2 mx-3" data-umami-event="cta-{{ .Page.File.ContentBaseName }}-tryit" data-umami-event-lang="{{ .Page.Language.Lang }}" href="{{ .Site.Params.tryit }}">
           {{ i18n "tryit" }} &#187;
         </a>
-        <a class="btn btn-outline-secondary mt-2 mx-3" data-umami-event="cta-{{ .Page.File.ContentBaseName }}-downloads" data-umami-event-lang="{{ .Page.Language.Lang }}" href="/#downloads">
+        <a class="btn btn-outline-dark mt-2 mx-3" data-umami-event="cta-{{ .Page.File.ContentBaseName }}-downloads" data-umami-event-lang="{{ .Page.Language.Lang }}" href="/#downloads">
           {{ i18n "downloadit" }} &#187;
         </a>
       </p>
@@ -56,7 +56,7 @@
   </div>
 </div>
 
-<div class="container-fluid bg-secondary text-light text-center py-5">
+<div class="container-fluid text-center py-5" style="background: var(--hd-plum-100)">
   <div class="container my-4">
     <div class="row">
       <div class="order-0 col-md-5 offset-md-1 align-self-center text-center">
@@ -70,7 +70,7 @@
         <p>
           {{ i18n "footer-us-text-1" }}<span class="text-dark text-hilight px-1">{{ i18n "footer-us-text-hilight" }}</span>{{ i18n "footer-us-text-2" }}
         </p>
-        <a href="{{ i18n "footer-us-button-link" }}" class="btn btn-outline-light" data-umami-event="cta-{{ .Page.File.ContentBaseName }}-about">
+        <a href="{{ i18n "footer-us-button-link" }}" class="btn btn-outline-dark" data-umami-event="cta-{{ .Page.File.ContentBaseName }}-about">
           {{ i18n "footer-us-button" }}
         </a>
       </div>
