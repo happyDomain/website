@@ -16,8 +16,8 @@ De facto association "happyDNS"
 <address style="margin-left: 2em; margin-top: -.5em">
 Association happyDNS<br>
 ABS Pierre-Olivier Mercier<br>
-40 avenue Raspail<br>
-94250 GENTILLY
+8 avenue Georges Clemenceau<br>
+14000 CAEN
 </address>
 
 
