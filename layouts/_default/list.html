@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode }}" style="background-color: var(--bs-dark)">
+    {{ partial "head.html" . }}
+
+    <body>
+        <div id="all">
+            {{ partial "nav.html" . }} {{ partial "breadcrumbs.html" . }}
+
+            <div
+                id="content"
+                class="mt-5 mb-5"
+                style="min-height: calc(80vh - 152px)"
+            >
+                <div class="container">
+                    <header>
+                        <h1>{{ .Title }}</h1>
+                    </header>
+
+                    {{ with .Content }}
+                    <div>{{ . }}</div>
+                    {{ end }}
+
+                    <ul class="list-unstyled mt-4">
+                        {{ range .Pages }}
+                        <li class="mb-3">
+                            <a href="{{ .RelPermalink }}"><h3>{{ .Title }}</h3></a>
+                            {{ with .Description }}<p>{{ . }}</p>{{ end }}
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /#content -->
+        </div>
+        <!-- /#all -->
+
+        {{ partial "footer.html" . }} {{ partial "scripts.html" . }}
+    </body>
+</html>
