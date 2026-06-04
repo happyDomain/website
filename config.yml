@@ -35,7 +35,7 @@ languages:
 
       others_links:
         - text: "S'identifier"
-          href: "//app.happydomain.org/login"
+          href: "/fr/beta/"
           class: "btn btn-link text-dark"
         - text: "Essayer en ligne →"
           href: "//try.happydomain.org/"
@@ -89,7 +89,7 @@ params:
 
   others_links:
     - text: "Sign in"
-      href: "//app.happydomain.org/login"
+      href: "/en/beta/"
       class: "btn btn-link text-dark"
     - text: "Try it online →"
       href: "//try.happydomain.org/"

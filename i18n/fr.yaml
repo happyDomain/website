@@ -257,7 +257,7 @@
 - id: beta-alert-title
   translation: "Version en ligne fermée, accès bêta uniquement"
 - id: beta-alert-text
-  translation: "Les inscriptions publiques sont suspendues. Rejoignez le programme bêta pour un accès anticipé."
+  translation: 'happyDomain se transforme : bientôt, testez en continu la sécurité de vos domaines et supervisez l''ensemble des services exposés via le DNS, sans configuration. Nous déployons cette nouvelle version progressivement pour recueillir vos retours et offrir le meilleur service possible. <a href="/fr/beta/">En savoir plus</a>.'
 - id: beta-alert-button
   translation: "Rejoindre la bêta"
 

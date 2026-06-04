@@ -155,7 +155,7 @@
                         <i class="bi bi-info-circle"></i>
                         {{ i18n "beta-alert-title" }}
                     </h5>
-                    <p class="mb-0">{{ i18n "beta-alert-text" }}</p>
+                    <p class="mb-0">{{ i18n "beta-alert-text" | safeHTML }}</p>
                 </div>
                 <form
                     class="col-lg-5 d-flex flex-column flex-sm-row gap-2"
