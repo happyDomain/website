@@ -1,0 +1,9 @@
+{{ $icon := .Get "icon" }}
+{{ $title := .Get "title" }}
+<div class="col">
+  <div class="card h-100 border-0 shadow-sm p-4 text-center">
+    {{ with $icon }}<div class="display-5 mb-2 text-primary"><i class="bi bi-{{ . }}"></i></div>{{ end }}
+    <h5 class="fw-bold">{{ $title }}</h5>
+    <div class="text-muted">{{ .Inner | markdownify }}</div>
+  </div>
+</div>

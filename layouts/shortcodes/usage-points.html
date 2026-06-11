@@ -1,0 +1,9 @@
+{{ $title := .Get "title" }}
+<div class="container-fluid py-5 bg-primary-subtle">
+  <div class="container my-5 py-5">
+    {{ with $title }}<h3 class="fw-bold text-center mb-5">{{ . }}</h3>{{ end }}
+    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+      {{ .Inner }}
+    </div>
+  </div>
+</div>

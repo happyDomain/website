@@ -5,29 +5,41 @@ layout = "usage"
 +++
 
 {{< usage-lead >}}
-A <span class="text-hilight px-1">REST API and web interface</span> to centralize domain management <span class="text-hilight px-1">in the cloud, with suppliers and on premise</span>.
+A <span class="text-hilight px-1">REST API and web interface</span> to automate domain management <span class="text-hilight px-1">in the cloud, with suppliers and on premise</span>.
 {{< /usage-lead >}}
 
+{{< usage-points title="Does this sound familiar?" >}}
+{{< usage-point icon="mouse" title="ClickOps doesn't scale" >}}
+Everything in your stack is code, except DNS. Records are still changed by hand in a provider's console: unscriptable, unreviewable, unrepeatable.
+{{< /usage-point >}}
+{{< usage-point icon="plug" title="One API per provider" >}}
+Each host has its own API, its own auth, its own quirks. Your automation is a pile of fragile glue scripts that breaks every time a client changes provider.
+{{< /usage-point >}}
+{{< usage-point icon="git" title="DNS bypasses your pipeline" >}}
+Deployments are reviewed, tested and rolled back. DNS changes go straight to production with none of that.
+{{< /usage-point >}}
+{{< /usage-points >}}
+
 {{< usage-feature
-  title="All your domains' operations accessible via a REST API."
+  title="One REST API for all your domains' operations."
   image="/img/screenshots/features/rest.png"
   alt="Our REST API, commented and exposed with Swagger"
 >}}
-Everything that's done in the happy<span class="fw-bold">Domain</span> web interface can easily be done with the API, in your language of choice.
+Everything that's done in the happy<span class="fw-bold">Domain</span> web interface can be done with the API, in your language of choice. Script it once, run it everywhere.
 
-Our REST API is fully documented, and thanks to Swagger, you can browse it and easily generate a tool using it in any supported language.
+Our REST API is fully documented, and thanks to Swagger, you can browse it and generate a client in any supported language.
 
 <a href="/swagger/index.html" target="_blank">See the API documentation and try it out now!</a>
 {{< /usage-feature >}}
 
 {{< usage-feature
-  title="Forget about the complexity of each hosting company. Take advantage of our unified interface."
+  title="Forget the quirks of each provider. One abstraction for over 25 hosts."
   image="/img/screenshots/domain-abstract.webp"
-  alt="Liste des domaines, regroupés astucieusement par client"
+  alt="A zone displayed the same way, whatever the provider behind it"
   flip="true"
   bg="green"
 >}}
-Don't be afraid of discovering a new host. happy<span class="fw-bold">Domain</span> manages over 25 hosts worldwide:
+Write your automation against happy<span class="fw-bold">Domain</span> once; it speaks to every provider for you:
 
 <ul class="text-left">
   <li class="mb-1"><strong>cloud services&nbsp;:</strong> Route53, Azure DNS, Google Cloud DNS, DigitalOcean, Linode, Oracle Cloud, ...</li>
@@ -40,15 +52,17 @@ Don't be afraid of discovering a new host. happy<span class="fw-bold">Domain</sp
 {{< /usage-feature >}}
 
 {{< usage-feature
-  title="Respond to all requests with ease."
-  image="/img/screenshots/domain-services.webp"
-  alt="Liste des domaines, regroupés astucieusement par client"
+  title="Bring DNS into your review workflow."
+  image="/img/screenshots/zone-diff.webp"
+  alt="Review and confirm the changes that will be applied"
 >}}
-A new service? An urgent fix? happy<span class="fw-bold">Domain</span> uses simple terminology to stay focused.
+Before anything is published, happy<span class="fw-bold">Domain</span> shows the exact diff between the current zone and the new one, and waits for confirmation.
+
+You can even cherry-pick which changes ship now and which ones wait. It works like a pull request, for your DNS.
 {{< /usage-feature >}}
 
 {{< usage-feature
-  title="Many tools are already available for you, DevOps."
+  title="Tooling that plugs into what you already use."
   image="/img/screenshots/sdk-python.webp"
   alt="Python SDK usage"
   flip="true"
@@ -60,12 +74,22 @@ A new service? An urgent fix? happy<span class="fw-bold">Domain</span> uses simp
     <span class="text-hilight px-1 text-dark">add or modify zone records,</span>
     manage new domains through their registrar,
     manage happy<span class="fw-bold">Domain</span>'s users,
-    or deploy happy<span class="fw-bold">Domain</span> using the official Ansible collection.
+    or deploy happy<span class="fw-bold">Domain</span> itself with the official collection.
   </li>
   <li class="mb-2">
     <a href="https://pypi.org/project/happydomain/" target="_blank"><strong>Python SDK:</strong></a>
-    easily automate all aspects of your domains, with the simplicity of Python.
+    automate all aspects of your domains, with the simplicity of Python.
   </li>
   <li class="mb-2">and counting&hellip;</li>
 </ul>
+{{< /usage-feature >}}
+
+{{< usage-feature
+  title="Monitoring included, no extra stack to deploy."
+  image="/img/screenshots/checks-dashboard.webp"
+  alt="Monitoring dashboard showing the status of every check on a domain"
+>}}
+happy<span class="fw-bold">Domain</span>'s checkers continuously verify expirations, DNSSEC, delegation, certificates and service availability for every domain you manage.
+
+Each check reports a clear status and notifies you the moment it changes state, so a broken delegation never waits for a failed deployment to be noticed.
 {{< /usage-feature >}}
