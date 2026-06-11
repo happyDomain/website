@@ -1,88 +1,254 @@
 <style>
-.jumbo-hero {
-    padding: 8rem 0 5rem;
-    background: linear-gradient(135deg, var(--hd-accent-subtle, #f0fdf4) 0%, var(--hd-bg-canvas, white) 60%);
-}
-.hero-eyebrow {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: .75rem;
-    margin-bottom: 1.5rem;
-    font-size: .875rem;
-    color: var(--hd-fg-3, #6b7280);
-}
-.hero-eyebrow .badge-os {
-    display: inline-flex;
-    align-items: center;
-    gap: .35rem;
-    padding: .25em .75em;
-    background: var(--hd-accent-subtle, #f0fdf4);
-    border: 1px solid var(--hd-accent, #22c55e);
-    border-radius: 2em;
-    color: var(--hd-accent, #22c55e);
-    font-weight: 600;
-    font-size: .8rem;
-}
-.hero-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 1.5rem;
-    font-size: .875rem;
-    color: var(--hd-fg-3, #6b7280);
-}
-.hero-meta .check { color: var(--hd-accent, #22c55e); margin-right: .25rem; }
-/* Browser mockup */
-.hero-stack { position: relative; }
-.hero-stack .browser:last-child {
-    position: absolute;
-    bottom: 0; right: 0;
-    width: 86%;
-    z-index: 0;
-    opacity: .45;
-    pointer-events: none;
-}
-.hero-stack .browser:first-child { position: relative; z-index: 1; }
-.browser {
-    background: var(--hd-bg-canvas, #fff);
-    border-radius: 10px;
-    box-shadow: 0 16px 48px rgba(0,0,0,.12);
-    overflow: hidden;
-    border: 1px solid var(--hd-border, #e5e7eb);
-}
-.browser-bar {
-    display: flex;
-    align-items: center;
-    gap: .75rem;
-    padding: .55rem 1rem;
-    background: var(--hd-bg-subtle, #f9fafb);
-    border-bottom: 1px solid var(--hd-border, #e5e7eb);
-}
-.browser-dots { display: flex; gap: 5px; }
-.browser-dots span { width: 10px; height: 10px; border-radius: 50%; background: var(--hd-border, #e5e7eb); }
-.browser-url {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    gap: .01rem;
-    background: var(--hd-bg-canvas, #fff);
-    border-radius: 4px;
-    padding: .22rem .6rem;
-    font-size: .75rem;
-    color: var(--hd-fg-3, #6b7280);
-}
-.browser-url .lock { color: var(--hd-accent, #22c55e); font-size: .7rem; }
+    .jumbo-hero {
+        padding: 8rem 0 5rem;
+        background: linear-gradient(
+            135deg,
+            var(--hd-accent-subtle, #f0fdf4) 0%,
+            var(--hd-bg-canvas, white) 60%
+        );
+    }
+    .hero-eyebrow {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+        font-size: 0.875rem;
+        color: var(--hd-fg-3, #6b7280);
+    }
+    .hero-eyebrow .badge-os {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        padding: 0.25em 0.75em;
+        background: var(--hd-accent-subtle, #f0fdf4);
+        border: 1px solid var(--hd-accent, #22c55e);
+        border-radius: 2em;
+        color: var(--hd-accent, #22c55e);
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+    .hero-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1.5rem;
+        font-size: 0.875rem;
+        color: var(--hd-fg-3, #6b7280);
+    }
+    .hero-meta .check {
+        color: var(--hd-accent, #22c55e);
+        margin-right: 0.25rem;
+    }
+    /* Browser mockup */
+    .hero-stack {
+        position: relative;
+    }
+    .hero-stack .browser:last-child {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 86%;
+        z-index: 0;
+        opacity: 0.45;
+        pointer-events: none;
+    }
+    .hero-stack .browser:first-child {
+        position: relative;
+        z-index: 1;
+    }
+    .browser {
+        background: var(--hd-bg-canvas, #fff);
+        border-radius: 10px;
+        box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
+        overflow: hidden;
+        border: 1px solid var(--hd-border, #e5e7eb);
+    }
+    .browser-bar {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.55rem 1rem;
+        background: var(--hd-bg-subtle, #f9fafb);
+        border-bottom: 1px solid var(--hd-border, #e5e7eb);
+    }
+    .browser-dots {
+        display: flex;
+        gap: 5px;
+    }
+    .browser-dots span {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--hd-border, #e5e7eb);
+    }
+    .browser-url {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 0.01rem;
+        background: var(--hd-bg-canvas, #fff);
+        border-radius: 4px;
+        padding: 0.22rem 0.6rem;
+        font-size: 0.75rem;
+        color: var(--hd-fg-3, #6b7280);
+    }
+    .browser-url .lock {
+        color: var(--hd-accent, #22c55e);
+        font-size: 0.7rem;
+    }
+
+    /* ── Screenshot carousel ── */
+    .browser {
+        position: relative;
+    }
+    /* window dots double as carousel indicators */
+    .browser-dots .bdot {
+        width: 10px;
+        height: 10px;
+        padding: 0;
+        border: none;
+        border-radius: 50%;
+        background: var(--hd-border, #e5e7eb);
+        cursor: pointer;
+        transition:
+            background 0.35s ease,
+            transform 0.35s ease,
+            box-shadow 0.35s ease;
+    }
+    .browser-dots .bdot:hover {
+        transform: scale(1.18);
+    }
+    .browser-dots .bdot.active {
+        background: var(--hd-accent, #22c55e);
+        transform: scale(1.25);
+        box-shadow: 0 0 0 3px var(--hd-accent-subtle, #f0fdf4);
+    }
+    /* URL path swaps with the slide */
+    .browser-url .url-path {
+        transition: opacity 0.25s ease;
+    }
+    .browser.loading .url-path {
+        opacity: 0.35;
+    }
+    /* loading sweep, like a browser navigating */
+    .browser-load {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 2px;
+        width: 0;
+        background: var(--hd-accent, #22c55e);
+        opacity: 0;
+        z-index: 6;
+        pointer-events: none;
+        border-radius: 0 2px 2px 0;
+    }
+    .browser.loading .browser-load {
+        animation: browserLoad 0.7s ease-out;
+    }
+    @keyframes browserLoad {
+        0% {
+            width: 0;
+            opacity: 1;
+        }
+        70% {
+            width: 85%;
+            opacity: 1;
+        }
+        100% {
+            width: 100%;
+            opacity: 0;
+        }
+    }
+    /* the carousel viewport */
+    .carousel-window {
+        position: relative;
+        overflow: hidden;
+        aspect-ratio: 1920 / 980;
+        background: var(--hd-bg-subtle, #f9fafb);
+    }
+    .carousel-track {
+        position: absolute;
+        inset: 0;
+    }
+    .carousel-track .slide {
+        position: absolute;
+        inset: 0;
+        margin: 0;
+        opacity: 0;
+        transition: opacity 0.8s ease;
+        pointer-events: none;
+    }
+    .carousel-track .slide.active {
+        opacity: 1;
+        pointer-events: auto;
+        z-index: 2;
+    }
+    .carousel-track .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top left;
+        display: block;
+    }
+    /* 7s progress indicator */
+    .carousel-progress {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.06);
+        z-index: 4;
+    }
+    .carousel-progress span {
+        display: block;
+        height: 100%;
+        width: 0;
+        background: var(--hd-accent, #22c55e);
+    }
+    .carousel-progress span.run {
+        animation: carProg 7s linear forwards;
+    }
+    @keyframes carProg {
+        from {
+            width: 0;
+        }
+        to {
+            width: 100%;
+        }
+    }
+    /* pause the progress timer on hover */
+    .browser.paused .carousel-progress span {
+        animation-play-state: paused;
+    }
+    @media (prefers-reduced-motion: reduce) {
+        .carousel-track .slide {
+            transition: none;
+        }
+        .carousel-progress span.run {
+            animation: none;
+        }
+        .browser.loading .browser-load {
+            animation: none;
+        }
+    }
 </style>
 
 <section class="jumbo-hero">
     <div class="container">
         <div class="row align-items-center g-5">
-
             <!-- Copy column -->
             <div class="col-lg-5">
-                <a class="hero-eyebrow" href="https://git.happydomain.org/" target="_blank">
-                    <span class="badge-os"><i class="bi bi-git"></i> Open source</span>
+                <a
+                    class="hero-eyebrow"
+                    href="https://git.happydomain.org/"
+                    target="_blank"
+                >
+                    <span class="badge-os"
+                        ><i class="bi bi-git"></i> Open source</span
+                    >
                 </a>
 
                 <h1 class="display-4 fw-bold mb-5" style="text-wrap: balance">
@@ -111,41 +277,93 @@
                 </div>
 
                 <div class="hero-meta">
-                    <span><i class="bi bi-check2 check"></i><strong>No account</strong> needed for the demo</span>
-                    <span><i class="bi bi-check2 check"></i><strong>~30s</strong> to first zone</span>
-                    <span><i class="bi bi-check2 check"></i><strong>55+</strong> providers</span>
+                    <span
+                        ><i class="bi bi-check2 check"></i
+                        ><strong>No account</strong> needed for the demo</span
+                    >
+                    <span
+                        ><i class="bi bi-check2 check"></i
+                        ><strong>~30s</strong> to first zone</span
+                    >
+                    <span
+                        ><i class="bi bi-check2 check"></i
+                        ><strong>55+</strong> providers</span
+                    >
                 </div>
             </div>
 
             <!-- Visual column -->
             <div class="col-lg-7 d-none d-lg-block">
                 <div class="hero-stack">
-                    <!-- Front browser frame: zone editor -->
-                    <div class="browser">
+                    <!-- Front browser frame: screenshot carousel -->
+                    <div class="browser" id="hero-carousel">
+                        <span class="browser-load"></span>
                         <div class="browser-bar">
-                            <div class="browser-dots"><span></span><span></span><span></span></div>
+                            <div
+                                class="browser-dots"
+                                role="tablist"
+                                aria-label="Screenshots"
+                            >
+                                {{ range $i, $s := sort .Site.Params.jumboscreen "weight" }}
+                                <button
+                                    type="button"
+                                    class="bdot{{ if eq $i 0 }} active{{ end }}"
+                                    data-slide="{{ $i }}"
+                                    role="tab"
+                                    aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}"
+                                    aria-label="{{ $s.alt }}"
+                                ></button>
+                                {{ end }}
+                            </div>
                             <div class="browser-url">
                                 <i class="bi bi-lock-fill lock me-1"></i>
-                                <span>app.</span><strong>happydomain.org</strong><span>/zone/happydomain.org</span>
+                                <span>app.</span><strong>happydomain.org</strong
+                                ><span class="url-path"
+                                    >{{ with index (sort .Site.Params.jumboscreen "weight") 0 }}{{ .path }}{{ end }}</span
+                                >
                             </div>
                         </div>
-                        <img
-                            src="/img/screenshots/domain-abstract.webp"
-                            alt="happyDomain zone editor"
-                            style="width:100%;display:block"
-                        />
+                        <div class="carousel-window">
+                            <div class="carousel-track">
+                                {{ range $i, $s := sort .Site.Params.jumboscreen "weight" }}
+                                <figure
+                                    class="slide{{ if eq $i 0 }} active{{ end }}"
+                                    data-path="{{ $s.path }}"
+                                >
+                                    <img
+                                        src="{{ $s.image }}"
+                                        alt="{{ $s.alt }}"
+                                        loading="lazy"
+                                        decoding="async"
+                                    />
+                                </figure>
+                                {{ end }}
+                            </div>
+                            <div class="carousel-progress"><span></span></div>
+                        </div>
                     </div>
                     <!-- Back browser frame, peeking -->
                     <div class="browser" aria-hidden="true">
                         <div class="browser-bar">
-                            <div class="browser-dots"><span></span><span></span><span></span></div>
-                            <div class="browser-url"><i class="bi bi-lock-fill lock"></i><span>try.</span><strong>happydomain.org</strong></div>
+                            <div class="browser-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="browser-url">
+                                <i class="bi bi-lock-fill lock"></i
+                                ><span>try.</span
+                                ><strong>happydomain.org</strong>
+                            </div>
                         </div>
-                        <div style="padding:14px 16px;height:120px;background:var(--hd-bg-subtle,#f9fafb)"></div>
+                        <div
+                            style="
+                                padding: 14px 16px;
+                                height: 120px;
+                                background: var(--hd-bg-subtle, #f9fafb);
+                            "
+                        ></div>
                     </div>
                 </div>
             </div>
-
         </div>
 
         <div class="alert alert-warning mt-5 mb-0" role="alert">
@@ -188,3 +406,86 @@
         </div>
     </div>
 </section>
+
+<script>
+    (function () {
+        var root = document.getElementById("hero-carousel");
+        if (!root) return;
+
+        var slides = Array.prototype.slice.call(
+            root.querySelectorAll(".slide"),
+        );
+        var dots = Array.prototype.slice.call(root.querySelectorAll(".bdot"));
+        var pathEl = root.querySelector(".url-path");
+        var prog = root.querySelector(".carousel-progress span");
+        var paths = slides.map(function (slide) {
+            return slide.getAttribute("data-path");
+        });
+
+        var DURATION = 7000;
+        var i = 0,
+            timer = null;
+        var reduce =
+            window.matchMedia &&
+            window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        function restartProgress() {
+            if (!prog || reduce) return;
+            prog.classList.remove("run");
+            void prog.offsetWidth; // force reflow so the animation restarts
+            prog.classList.add("run");
+        }
+
+        function go(n) {
+            n = ((n % slides.length) + slides.length) % slides.length;
+            if (n === i) return;
+
+            // mimic a real page navigation: brief loading sweep + dimmed URL
+            root.classList.add("loading");
+            window.setTimeout(function () {
+                root.classList.remove("loading");
+            }, 700);
+
+            slides[i].classList.remove("active");
+            dots[i].classList.remove("active");
+            dots[i].setAttribute("aria-selected", "false");
+
+            i = n;
+
+            slides[i].classList.add("active");
+            dots[i].classList.add("active");
+            dots[i].setAttribute("aria-selected", "true");
+            if (pathEl) pathEl.textContent = paths[i];
+
+            restartProgress();
+        }
+
+        function schedule() {
+            window.clearInterval(timer);
+            if (reduce) return;
+            timer = window.setInterval(function () {
+                go(i + 1);
+            }, DURATION);
+        }
+
+        dots.forEach(function (dot, idx) {
+            dot.addEventListener("click", function () {
+                go(idx);
+                schedule(); // reset the timer so the chosen slide gets its full 7s
+            });
+        });
+
+        // Pause while the visitor is inspecting a screenshot.
+        root.addEventListener("mouseenter", function () {
+            root.classList.add("paused");
+            window.clearInterval(timer);
+        });
+        root.addEventListener("mouseleave", function () {
+            root.classList.remove("paused");
+            schedule();
+        });
+
+        restartProgress();
+        schedule();
+    })();
+</script>

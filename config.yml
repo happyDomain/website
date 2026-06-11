@@ -71,12 +71,12 @@ languages:
           image: "/img/screenshots/domain-logs.webp"
 
         - title: "domain-abstract-list"
-          description: "Une zone simplifiée, sous forme de liste, plus rapide à modifier"
-          image: "/img/screenshots/domain-abstract-list.webp"
+          description: "Les enregistrements bruts de la zone"
+          image: "/img/screenshots/domain-abstract-records.webp"
 
         - title: "sources"
-          description: "Liste des hébergeurs existantes où récupérer les domaines"
-          image: "/img/screenshots/sources.png"
+          description: "Liste des hébergeurs existants où récupérer les domaines"
+          image: "/img/screenshots/providers-list.webp"
 
 params:
   author:
@@ -86,6 +86,28 @@ params:
   DefaultDescription: "Finally an interface that makes you happy to manage your domain names."
   survey: "https://feedback.happydomain.org/"
   tryit: "https://try.happydomain.org/"
+
+  # Screenshots cycled in the hero browser mockup (jumbo partial).
+  jumboscreen:
+    - image: "/img/screenshots/domains-list.webp"
+      path: "/domains"
+      alt: "List of your domains in happyDomain"
+      weight: 10
+
+    - image: "/img/screenshots/checks-dashboard.webp"
+      path: "/domains/happydomain.org"
+      alt: "Each domain has extensive checks"
+      weight: 20
+
+    - image: "/img/screenshots/domain-abstract.webp"
+      path: "/domains/happydomain.org/editor"
+      alt: "A zone organized by service"
+      weight: 30
+
+    - image: "/img/screenshots/zone-diff.webp"
+      path: "/zone/happydomain.org/records"
+      alt: "Reviewing changes before applying them"
+      weight: 40
 
   others_links:
     - text: "Sign in"
@@ -125,12 +147,12 @@ params:
       image: "/img/screenshots/domain-logs.webp"
 
     - title: "domain-abstract-list"
-      description: "Simplified zone in list, for quicker editing"
-      image: "/img/screenshots/domain-abstract-list.webp"
+      description: "Raw records of the zone"
+      image: "/img/screenshots/domain-abstract-records.webp"
 
     - title: "sources"
       description: "Existing name service providers where pull domains"
-      image: "/img/screenshots/sources.png"
+      image: "/img/screenshots/providers-list.webp"
 
 menu:
   main:
