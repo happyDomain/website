@@ -1,0 +1,36 @@
+{{ $image := .Get "image" }}
+{{ $alt := .Get "alt" | default "" }}
+{{ $title := .Get "title" }}
+{{ $flip := eq (.Get "flip") "true" }}
+{{ $bg := .Get "bg" | default "" }}
+{{ $comingSoon := eq (.Get "coming_soon") "true" }}
+
+{{ $style := "" }}
+{{ if eq $bg "green" }}{{ $style = "background: var(--hd-green-50)" }}{{ end }}
+{{ if eq $bg "plum" }}{{ $style = "background: var(--hd-plum-100)" }}{{ end }}
+
+<div class="container-fluid py-5"{{ with $style }} style="{{ . }}"{{ end }}>
+  <div class="container my-5">
+    <div class="row">
+      {{ if $flip }}
+      <div class="order-1 order-md-0 col-md-7 align-self-center">
+        <img class="rounded img-thumbnail" src="{{ $image }}" alt="{{ $alt }}">
+      </div>
+      <div class="order-0 order-md-1 col-md-5 align-self-center text-center">
+      {{ else }}
+      <div class="order-0 col-md-5 align-self-center text-center">
+      {{ end }}
+        <h4 class="fw-bold">
+          {{ $title }}{{ if $comingSoon }} <small class="text-muted">(coming soon)</small>{{ end }}
+        </h4>
+        <hr class="bg-light mx-5">
+        {{ .Inner | markdownify }}
+      </div>
+      {{ if not $flip }}
+      <div class="order-1 col-md-7 py-2 align-self-center">
+        <img class="rounded img-thumbnail" src="{{ $image }}" alt="{{ $alt }}">
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
