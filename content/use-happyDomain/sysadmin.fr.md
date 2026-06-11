@@ -23,6 +23,7 @@ Vous êtes la seule personne de confiance pour toucher au DNS, alors chaque dema
 {{< usage-feature
   title="Éditez toutes vos zones au même endroit, internes et publiques."
   image="/img/screenshots/domain-abstract.webp"
+  url="app.happydomain.org/domains/example.com"
   alt="Une zone affichée de la même manière claire, quel que soit l'hébergeur"
 >}}
 Quel que soit l'hébergeur de vos zones, happy<span class="fw-bold">Domain</span> les affiche de la même manière claire, pour limiter les erreurs.
@@ -33,6 +34,7 @@ Installez happy<span class="fw-bold">Domain</span> à côté de votre Bind ou Po
 {{< usage-feature
   title="Visualisez vos modifications avant de les appliquer."
   image="/img/screenshots/zone-diff.webp"
+  url="app.happydomain.org/domains/example.com/diff"
   alt="Relisez puis confirmez les modifications qui seront appliquées"
   flip="true"
   bg="green"
@@ -45,6 +47,7 @@ Vous pouvez même sélectionner les changements qui partent maintenant et ceux q
 {{< usage-feature
   title="Historique complet, retour arrière instantané."
   image="/img/screenshots/domain-history.webp"
+  url="app.happydomain.org/domains/example.com/logs"
   alt="Historique de chaque version d'une zone"
 >}}
 Chaque version de chaque zone est conservée, avec qui a changé quoi et quand.
@@ -55,6 +58,7 @@ Quand quelque chose casse, vous ne reconstruisez pas l'état précédent à part
 {{< usage-feature
   title="Détectez les problèmes avant qu'ils ne deviennent des pannes."
   image="/img/screenshots/checks-dashboard.webp"
+  url="app.happydomain.org/domains/example.com/checks"
   alt="Tableau de bord de supervision affichant l'état de chaque vérification d'un domaine"
   flip="true"
   bg="plum"
@@ -67,6 +71,7 @@ Chaque vérification est évaluée selon des règles claires et reportée en <sp
 {{< usage-feature
   title="Partagez la gestion de la zone avec vos équipes."
   image="/img/screenshots/domain-abstract-records.webp"
+  url="app.happydomain.org/domains/example.com"
   alt="Gestion de zone partagée entre les équipes"
   coming_soon="true"
 >}}
@@ -78,6 +83,7 @@ Déléguez tout ou seulement une partie d'une zone, jusqu'à un seul enregistrem
 {{< usage-feature
   title="Gérez simplement, même les zones spéciales."
   image="/img/screenshots/service-caa.webp"
+  url="app.happydomain.org/domains/example.com/services"
   alt="Édition d'un service DNS avancé via un formulaire guidé"
   flip="true"
   bg="green"

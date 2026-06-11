@@ -24,6 +24,7 @@ An expired domain, a broken delegation, a forgotten subdomain still pointing at 
   title="See your entire domain portfolio in one place."
   image="/img/screenshots/domains-list.webp"
   alt="List of domains from several providers, grouped by need"
+  url="app.happydomain.org/domains"
 >}}
 happy<span class="fw-bold">Domain</span> connects to more than 25 hosting providers worldwide: registrars, cloud DNS, CDNs and your on-premise servers.
 
@@ -34,6 +35,7 @@ Import a provider in one click and get a single, always up-to-date inventory of 
   title="Catch incidents before your users do."
   image="/img/screenshots/checks-dashboard.webp"
   alt="Monitoring dashboard showing the status of every check on a domain"
+  url="app.happydomain.org/domains/example.com/checks"
   flip="true"
   bg="green"
 >}}
@@ -46,6 +48,7 @@ Your teams are notified the moment something changes state. Silent failures beco
   title="Review every change before it reaches production."
   image="/img/screenshots/zone-diff.webp"
   alt="Review and confirm the changes that will be applied"
+  url="app.happydomain.org/domains/example.com/diff"
 >}}
 No change is applied blindly: happy<span class="fw-bold">Domain</span> shows the exact difference between the current zone and the new one, and asks for confirmation.
 
@@ -56,6 +59,7 @@ A typo in a record no longer takes a service down. Your team sees what will chan
   title="A full audit trail, and a way back."
   image="/img/screenshots/domain-logs.webp"
   alt="Domain logs showing change history"
+  url="app.happydomain.org/domains/example.com/logs"
   flip="true"
   bg="plum"
 >}}
@@ -68,6 +72,7 @@ And because the entire history is kept, you can roll any zone back to a previous
   title="Delegate to your teams, without losing control."
   image="/img/screenshots/domain-abstract.webp"
   alt="Zone management shared between teams"
+  url="app.happydomain.org/domains/example.com"
   coming_soon="true"
 >}}
 Let each team manage the records related to its own projects, internal or public, instead of queuing tickets to a central admin.
@@ -79,6 +84,7 @@ happy<span class="fw-bold">Domain</span>'s fine-grained access control lets you 
   title="No more forgotten subdomains."
   image="/img/screenshots/domain-services.webp"
   alt="Services attached to a domain, each with a clear purpose"
+  url="app.happydomain.org/domains/example.com/services"
   flip="true"
   bg="green"
   coming_soon="true"

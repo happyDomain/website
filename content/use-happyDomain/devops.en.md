@@ -23,6 +23,7 @@ Deployments are reviewed, tested and rolled back. DNS changes go straight to pro
 {{< usage-feature
   title="One REST API for all your domains' operations."
   image="/img/screenshots/features/rest.png"
+  url="app.happydomain.org/swagger/index.html"
   alt="Our REST API, commented and exposed with Swagger"
 >}}
 Everything that's done in the happy<span class="fw-bold">Domain</span> web interface can be done with the API, in your language of choice. Script it once, run it everywhere.
@@ -35,6 +36,7 @@ Our REST API is fully documented, and thanks to Swagger, you can browse it and g
 {{< usage-feature
   title="Forget the quirks of each provider. One abstraction for over 25 hosts."
   image="/img/screenshots/domain-abstract.webp"
+  url="app.happydomain.org/domains/example.com"
   alt="A zone displayed the same way, whatever the provider behind it"
   flip="true"
   bg="green"
@@ -54,6 +56,7 @@ Write your automation against happy<span class="fw-bold">Domain</span> once; it 
 {{< usage-feature
   title="Bring DNS into your review workflow."
   image="/img/screenshots/zone-diff.webp"
+  url="app.happydomain.org/domains/example.com/diff"
   alt="Review and confirm the changes that will be applied"
 >}}
 Before anything is published, happy<span class="fw-bold">Domain</span> shows the exact diff between the current zone and the new one, and waits for confirmation.
@@ -64,6 +67,7 @@ You can even cherry-pick which changes ship now and which ones wait. It works li
 {{< usage-feature
   title="Tooling that plugs into what you already use."
   image="/img/screenshots/sdk-python.webp"
+  url="pypi.org/project/happydomain"
   alt="Python SDK usage"
   flip="true"
   bg="plum"
@@ -87,6 +91,7 @@ You can even cherry-pick which changes ship now and which ones wait. It works li
 {{< usage-feature
   title="Monitoring included, no extra stack to deploy."
   image="/img/screenshots/checks-dashboard.webp"
+  url="app.happydomain.org/domains/example.com/checks"
   alt="Monitoring dashboard showing the status of every check on a domain"
 >}}
 happy<span class="fw-bold">Domain</span>'s checkers continuously verify expirations, DNSSEC, delegation, certificates and service availability for every domain you manage.

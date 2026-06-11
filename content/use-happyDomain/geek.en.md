@@ -23,6 +23,7 @@ Each registrar's interface decides what you can do and how. Moving your zones el
 {{< usage-feature
   title="A simple and clear interface, whatever the host."
   image="/img/screenshots/domain-abstract.webp"
+  url="app.happydomain.org/domains/example.com"
   alt="A zone displayed in a clear, human-readable way"
 >}}
 Whether your zones live at a registrar or on your own servers, happy<span class="fw-bold">Domain</span> displays them the same clear way, limiting errors.
@@ -34,6 +35,7 @@ Install happy<span class="fw-bold">Domain</span> next to your Bind or PowerDNS a
 {{< usage-feature
   title="Self-hosting made easy, even for DNS."
   image="/img/screenshots/providers-list.webp"
+  url="app.happydomain.org/providers"
   alt="List of supported providers, from cloud services to self-hosted servers"
   flip="true"
   bg="green"
@@ -48,6 +50,7 @@ happy<span class="fw-bold">Domain</span> is open source, needs very few resource
 {{< usage-feature
   title="Tinker without fear: preview, history, rollback."
   image="/img/screenshots/zone-diff.webp"
+  url="app.happydomain.org/domains/example.com/diff"
   alt="Review and confirm the changes that will be applied"
 >}}
 Before any change is published, happy<span class="fw-bold">Domain</span> shows you exactly what will be modified and asks for confirmation. No more silent typos.
@@ -58,6 +61,7 @@ And since every version of your zone is kept in history, you can experiment free
 {{< usage-feature
   title="Set up any service in all simplicity."
   image="/img/screenshots/domain-services.webp"
+  url="app.happydomain.org/domains/example.com/services"
   alt="Services attached to a domain, described in plain words"
   flip="true"
   bg="plum"
@@ -70,6 +74,7 @@ We are committed to providing the latest in DNS registration and services, so yo
 {{< usage-feature
   title="Manage easily, even special zones."
   image="/img/screenshots/service-caa.webp"
+  url="app.happydomain.org/domains/example.com/services"
   alt="Editing an advanced DNS service through a guided form"
   coming_soon="true"
 >}}

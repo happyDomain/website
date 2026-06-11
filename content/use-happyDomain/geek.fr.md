@@ -23,6 +23,7 @@ L'interface de chaque registrar décide de ce que vous pouvez faire et comment. 
 {{< usage-feature
   title="Une interface simple et claire, quel que soit l'hébergeur."
   image="/img/screenshots/domain-abstract.webp"
+  url="app.happydomain.org/domains/example.com"
   alt="Une zone affichée de manière claire et lisible"
 >}}
 Que vos zones soient chez un registrar ou sur vos propres serveurs, happy<span class="fw-bold">Domain</span> les affiche de la même manière claire, pour limiter les erreurs.
@@ -34,6 +35,7 @@ Installez happy<span class="fw-bold">Domain</span> à côté de votre Bind ou Po
 {{< usage-feature
   title="L'auto-hébergement facilité, même pour le DNS."
   image="/img/screenshots/providers-list.webp"
+  url="app.happydomain.org/providers"
   alt="Liste des fournisseurs pris en charge, des services cloud aux serveurs auto-hébergés"
   flip="true"
   bg="green"
@@ -48,6 +50,7 @@ happy<span class="fw-bold">Domain</span> est open source, n'a besoin que de trè
 {{< usage-feature
   title="Bidouillez sans crainte : aperçu, historique, retour arrière."
   image="/img/screenshots/zone-diff.webp"
+  url="app.happydomain.org/domains/example.com/diff"
   alt="Vérifiez et confirmez les modifications qui seront appliquées"
 >}}
 Avant la publication de toute modification, happy<span class="fw-bold">Domain</span> vous montre exactement ce qui va changer et demande confirmation. Fini les fautes de frappe silencieuses.
@@ -58,6 +61,7 @@ Et comme chaque version de votre zone est conservée dans l'historique, vous pou
 {{< usage-feature
   title="Répondez à tous vos besoins en toute simplicité."
   image="/img/screenshots/domain-services.webp"
+  url="app.happydomain.org/domains/example.com/services"
   alt="Services rattachés à un domaine, décrits en mots simples"
   flip="true"
   bg="plum"
@@ -70,6 +74,7 @@ Nous avons à cœur de mettre à disposition les dernières nouveautés en terme
 {{< usage-feature
   title="Gérez simplement, même les zones spéciales."
   image="/img/screenshots/service-caa.webp"
+  url="app.happydomain.org/domains/example.com/services"
   alt="Édition d'un service DNS avancé via un formulaire guidé"
   coming_soon="true"
 >}}

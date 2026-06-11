@@ -23,6 +23,7 @@ Un domaine expiré, une délégation cassée, un sous-domaine oublié qui pointe
 {{< usage-feature
   title="Visualisez tout votre portefeuille de domaines au même endroit."
   image="/img/screenshots/domains-list.webp"
+  url="app.happydomain.org/domains"
   alt="Liste des domaines de plusieurs hébergeurs, regroupés selon vos besoins"
 >}}
 happy<span class="fw-bold">Domain</span> se connecte à plus de 25 hébergeurs à travers le monde : registrars, DNS cloud, CDN et vos serveurs internes.
@@ -33,6 +34,7 @@ Importez un hébergeur en un clic et obtenez un inventaire unique et toujours à
 {{< usage-feature
   title="Détectez les incidents avant vos utilisateurs."
   image="/img/screenshots/checks-dashboard.webp"
+  url="app.happydomain.org/domains/example.com/checks"
   alt="Tableau de bord de supervision affichant l'état de chaque vérification d'un domaine"
   flip="true"
   bg="green"
@@ -45,6 +47,7 @@ Vos équipes sont notifiées dès qu'un état change. Les pannes silencieuses de
 {{< usage-feature
   title="Relisez chaque modification avant qu'elle n'atteigne la production."
   image="/img/screenshots/zone-diff.webp"
+  url="app.happydomain.org/domains/example.com/diff"
   alt="Relisez puis confirmez les modifications qui seront appliquées"
 >}}
 Aucune modification n'est appliquée à l'aveugle : happy<span class="fw-bold">Domain</span> affiche la différence exacte entre la zone actuelle et la nouvelle, et demande confirmation.
@@ -55,6 +58,7 @@ Une faute de frappe dans un enregistrement ne met plus un service à terre. Votr
 {{< usage-feature
   title="Une piste d'audit complète, et un retour en arrière possible."
   image="/img/screenshots/domain-logs.webp"
+  url="app.happydomain.org/domains/example.com/logs"
   alt="Historique des modifications d'un domaine"
   flip="true"
   bg="plum"
@@ -67,6 +71,7 @@ Et puisque tout l'historique est conservé, vous pouvez restaurer n'importe quel
 {{< usage-feature
   title="Déléguez à vos équipes, sans perdre le contrôle."
   image="/img/screenshots/domain-abstract.webp"
+  url="app.happydomain.org/domains/example.com"
   alt="Gestion d'une zone partagée entre les équipes"
   coming_soon="true"
 >}}
@@ -78,6 +83,7 @@ Le contrôle d'accès fin de happy<span class="fw-bold">Domain</span> vous perme
 {{< usage-feature
   title="Fini les sous-domaines oubliés."
   image="/img/screenshots/domain-services.webp"
+  url="app.happydomain.org/domains/example.com/services"
   alt="Services rattachés à un domaine, chacun avec un objectif clair"
   flip="true"
   bg="green"

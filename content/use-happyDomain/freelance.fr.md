@@ -23,6 +23,7 @@ Un domaine expiré, un mail en panne, un certificat invalide. Trop souvent, celu
 {{< usage-feature
   title="Tous les domaines de vos clients, regroupés par client."
   image="/img/screenshots/domains-list.webp"
+  url="app.happydomain.org/domains"
   alt="Liste des domaines, regroupés astucieusement par client"
 >}}
 Quel que soit le nombre de clients que vous suivez, happy<span class="fw-bold">Domain</span> vous donne un aperçu clair de chaque domaine dont vous êtes responsable, organisé à votre façon.
@@ -33,6 +34,7 @@ Un seul login, un seul inventaire, fini de fouiller dans les gestionnaires de mo
 {{< usage-feature
   title="Une seule interface, quel que soit l'hébergeur de votre client."
   image="/img/screenshots/domain-abstract.webp"
+  url="app.happydomain.org/domains/example.com"
   alt="Une zone affichée de la même façon, quel que soit l'hébergeur derrière"
   flip="true"
   bg="green"
@@ -45,6 +47,7 @@ Chaque zone s'affiche et s'édite de la même façon, ainsi un nouveau client av
 {{< usage-feature
   title="Corrigez les problèmes avant même que votre client ne s'en aperçoive."
   image="/img/screenshots/checks-dashboard.webp"
+  url="app.happydomain.org/domains/example.com/checks"
   alt="Tableau de bord de supervision affichant l'état de chaque vérification d'un domaine client"
 >}}
 Les vérificateurs intégrés de happy<span class="fw-bold">Domain</span> veillent sur chaque domaine client : dates d'expiration, DNSSEC, disponibilité des services mail et web, certificats TLS et plus encore, le tout reporté avec un statut clair <span class="fw-bold">OK</span> / <span class="fw-bold">Avertissement</span> / <span class="fw-bold">Critique</span>.
@@ -55,6 +58,7 @@ Soyez notifié dès qu'un changement survient, corrigez-le discrètement, et aff
 {{< usage-feature
   title="Répondez à toutes les demandes en toute simplicité."
   image="/img/screenshots/domain-services.webp"
+  url="app.happydomain.org/domains/example.com/services"
   alt="Services attachés à un domaine, décrits avec des mots simples"
   flip="true"
   bg="plum"
@@ -67,6 +71,7 @@ Moins de temps à décoder les types d'enregistrements, plus de temps à livrer.
 {{< usage-feature
   title="Collaborez sur une zone avec votre client ou votre équipe."
   image="/img/screenshots/domain-abstract.webp"
+  url="app.happydomain.org/domains/example.com"
   alt="Gestion de zone partagée avec les clients et les collaborateurs"
   coming_soon="true"
 >}}

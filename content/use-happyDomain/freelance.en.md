@@ -23,6 +23,7 @@ An expired domain, broken mail, an invalid certificate. Too often, the person wh
 {{< usage-feature
   title="All your clients' domains, grouped by client."
   image="/img/screenshots/domains-list.webp"
+  url="app.happydomain.org/domains"
   alt="List of domain names, cleverly grouped by client"
 >}}
 No matter how many clients you follow, happy<span class="fw-bold">Domain</span> gives you a clear overview of every domain you are responsible for, organized your way.
@@ -33,6 +34,7 @@ One login, one inventory, no more digging through password managers to answer a 
 {{< usage-feature
   title="One interface, whatever your client's provider."
   image="/img/screenshots/domain-abstract.webp"
+  url="app.happydomain.org/domains/example.com"
   alt="A zone displayed the same way, whatever the provider behind it"
   flip="true"
   bg="green"
@@ -45,6 +47,7 @@ Every zone is displayed and edited the same way, so a new client with an exotic 
 {{< usage-feature
   title="Fix issues before your client even notices."
   image="/img/screenshots/checks-dashboard.webp"
+  url="app.happydomain.org/domains/example.com/checks"
   alt="Monitoring dashboard showing the status of every check on a client domain"
 >}}
 happy<span class="fw-bold">Domain</span>'s built-in checkers keep watch over every client domain: expiry dates, DNSSEC, mail and web service availability, TLS certificates and more, all reported with a clear <span class="fw-bold">OK</span> / <span class="fw-bold">Warning</span> / <span class="fw-bold">Critical</span> status.
@@ -55,6 +58,7 @@ Get notified the moment something changes, fix it quietly, and show up looking l
 {{< usage-feature
   title="Respond to every request with ease."
   image="/img/screenshots/domain-services.webp"
+  url="app.happydomain.org/domains/example.com/services"
   alt="Services attached to a domain, described in plain words"
   flip="true"
   bg="plum"
@@ -67,6 +71,7 @@ Less time decoding record types, more time delivering.
 {{< usage-feature
   title="Collaborate on a zone with your client or your team."
   image="/img/screenshots/domain-abstract.webp"
+  url="app.happydomain.org/domains/example.com"
   alt="Zone management shared with clients and collaborators"
   coming_soon="true"
 >}}

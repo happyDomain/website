@@ -23,6 +23,7 @@ You're the only one trusted to touch DNS, so every record request becomes a tick
 {{< usage-feature
   title="Edit all your zones in one place, internal and public."
   image="/img/screenshots/domain-abstract.webp"
+  url="app.happydomain.org/domains/example.com"
   alt="A zone displayed the same clear way, whatever the host"
 >}}
 Whatever the host of your zones, happy<span class="fw-bold">Domain</span> displays them in the same clear way, limiting errors.
@@ -33,6 +34,7 @@ Install happy<span class="fw-bold">Domain</span> next to your Bind or PowerDNS a
 {{< usage-feature
   title="View your changes before applying them."
   image="/img/screenshots/zone-diff.webp"
+  url="app.happydomain.org/domains/example.com/diff"
   alt="Review and confirm the changes that will be applied"
   flip="true"
   bg="green"
@@ -45,6 +47,7 @@ You can even select which changes go out now and which ones should wait.
 {{< usage-feature
   title="Full history, instant rollback."
   image="/img/screenshots/domain-history.webp"
+  url="app.happydomain.org/domains/example.com/logs"
   alt="History of every version of a zone"
 >}}
 Every version of every zone is kept, with who changed what and when.
@@ -55,6 +58,7 @@ When something breaks, you don't reconstruct the previous state from backups: yo
 {{< usage-feature
   title="Catch problems before they become outages."
   image="/img/screenshots/checks-dashboard.webp"
+  url="app.happydomain.org/domains/example.com/checks"
   alt="Monitoring dashboard showing the status of every check on a domain"
   flip="true"
   bg="plum"
@@ -67,6 +71,7 @@ Each check is evaluated against clear rules and reported as <span class="fw-bold
 {{< usage-feature
   title="Share zone management with your teams."
   image="/img/screenshots/domain-abstract-records.webp"
+  url="app.happydomain.org/domains/example.com"
   alt="Zone management shared between teams"
   coming_soon="true"
 >}}
@@ -78,6 +83,7 @@ Delegate all or only part of a zone, down to a single record. The routine reques
 {{< usage-feature
   title="Manage simply, even the special zones."
   image="/img/screenshots/service-caa.webp"
+  url="app.happydomain.org/domains/example.com/services"
   alt="Editing an advanced DNS service through a guided form"
   flip="true"
   bg="green"

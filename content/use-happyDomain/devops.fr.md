@@ -23,6 +23,7 @@ Les déploiements sont relus, testés et réversibles. Les changements DNS parte
 {{< usage-feature
   title="Une seule API REST pour toutes les opérations sur vos domaines."
   image="/img/screenshots/features/rest.png"
+  url="app.happydomain.org/swagger/index.html"
   alt="Notre API REST, commentée et exposée avec Swagger"
 >}}
 Tout ce qui se fait dans l'interface web d'happy<span class="fw-bold">Domain</span> peut se faire avec l'API, dans votre langage de prédilection. Scriptez-le une fois, exécutez-le partout.
@@ -35,6 +36,7 @@ Notre API REST est entièrement documentée et grâce à Swagger, vous pouvez la
 {{< usage-feature
   title="Oubliez les particularités de chaque hébergeur. Une seule abstraction pour plus de 25 hébergeurs."
   image="/img/screenshots/domain-abstract.webp"
+  url="app.happydomain.org/domains/example.com"
   alt="Une zone affichée de la même façon, quel que soit le fournisseur derrière"
   flip="true"
   bg="green"
@@ -54,6 +56,7 @@ Notre API REST est entièrement documentée et grâce à Swagger, vous pouvez la
 {{< usage-feature
   title="Intégrez le DNS dans votre workflow de relecture."
   image="/img/screenshots/zone-diff.webp"
+  url="app.happydomain.org/domains/example.com/diff"
   alt="Relisez et confirmez les changements qui seront appliqués"
 >}}
 Avant toute publication, happy<span class="fw-bold">Domain</span> affiche le diff exact entre la zone actuelle et la nouvelle, et attend votre confirmation.
@@ -64,6 +67,7 @@ Vous pouvez même choisir quels changements partent maintenant et lesquels atten
 {{< usage-feature
   title="Des outils qui s'intègrent à ce que vous utilisez déjà."
   image="/img/screenshots/sdk-python.webp"
+  url="pypi.org/project/happydomain"
   alt="Utilisation du SDK Python"
   flip="true"
   bg="plum"
@@ -87,6 +91,7 @@ Vous pouvez même choisir quels changements partent maintenant et lesquels atten
 {{< usage-feature
   title="Supervision incluse, aucune stack supplémentaire à déployer."
   image="/img/screenshots/checks-dashboard.webp"
+  url="app.happydomain.org/domains/example.com/checks"
   alt="Tableau de bord de supervision affichant l'état de chaque vérification d'un domaine"
 >}}
 Les vérificateurs d'happy<span class="fw-bold">Domain</span> contrôlent en continu les expirations, le DNSSEC, la délégation, les certificats et la disponibilité des services pour chaque domaine que vous gérez.

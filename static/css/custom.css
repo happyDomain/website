@@ -1,3 +1,65 @@
+/* Fake browser frame wrapping usage screenshots (see partials/usage-browser.html) */
+.usage-browser {
+    background: var(--hd-bg-canvas);
+    border: 1px solid var(--hd-border-1);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 12px 32px -12px rgba(0, 0, 0, 0.25);
+}
+
+.usage-browser .browser-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 12px;
+    background: var(--hd-bg-subtle);
+    border-bottom: 1px solid var(--hd-border-1);
+}
+
+.usage-browser .browser-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.usage-browser .browser-dots span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--hd-border-2);
+}
+
+.usage-browser .browser-url {
+    flex: 1;
+    font-family: var(--hd-font-mono, monospace);
+    font-size: 11px;
+    background: var(--hd-bg-canvas);
+    border: 1px solid var(--hd-border-1);
+    border-radius: 5px;
+    padding: 4px 10px;
+    color: var(--hd-fg-3);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.usage-browser .browser-url .lock {
+    color: var(--hd-accent);
+    font-size: 10px;
+}
+
+.usage-browser .browser-body {
+    display: block;
+}
+
+.usage-browser .browser-body img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 nav.navbar {
     background: var(--hd-bg-canvas);
     box-shadow: 0 0px 3px 0 var(--hd-accent);
