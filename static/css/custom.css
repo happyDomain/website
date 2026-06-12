@@ -256,6 +256,10 @@ img {
 
 footer {
     border-top: 3px solid var(--hd-plum-400);
+    /* Footer is always a dark band (all child text is hardcoded white),
+       so pin its colors instead of using the theme-reactive .bg-dark/.text-light. */
+    background-color: #212529;
+    color: #f8f9fa;
 }
 
 .footer-tagline {
