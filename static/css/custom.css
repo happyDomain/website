@@ -61,6 +61,15 @@
 }
 
 nav.navbar {
+    /* Bootstrap bakes the navbar text to a fixed dark color, so it stays dark
+       on the dark background in dark mode. Drive it from the theme-reactive
+       --hd-fg-* vars so the text flips light when the background goes dark. */
+    --bs-navbar-color: var(--hd-fg-2);
+    --bs-navbar-hover-color: var(--hd-fg-1);
+    --bs-navbar-active-color: var(--hd-fg-1);
+    --bs-navbar-brand-color: var(--hd-fg-1);
+    --bs-navbar-brand-hover-color: var(--hd-fg-1);
+    color: var(--hd-fg-2);
     background: var(--hd-bg-canvas);
     box-shadow: 0 0px 3px 0 var(--hd-accent);
     border-bottom: 1px solid var(--hd-accent);
@@ -69,7 +78,11 @@ nav.navbar {
 }
 nav.navbar.beginscroll {
     background:
-        linear-gradient(90deg, var(--hd-accent-subtle) 0%, white 100%),
+        linear-gradient(
+            90deg,
+            var(--hd-accent-subtle) 0%,
+            var(--hd-bg-canvas) 100%
+        ),
         var(--hd-accent-subtle);
     box-shadow: none;
     border-bottom: none;

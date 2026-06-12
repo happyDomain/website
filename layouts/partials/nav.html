@@ -38,9 +38,9 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         {{ range .Children }}
-                        <a href="{{ .URL }}" class="dropdown-item"
-                            >{{ .Name }}</a
-                        >
+                        <a href="{{ .URL }}" class="dropdown-item">
+                            {{ .Name }}
+                        </a>
                         {{ end }}
                     </div>
                     {{ else }}
