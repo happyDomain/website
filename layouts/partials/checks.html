@@ -1,0 +1,136 @@
+<section id="checks" class="section">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow"
+                ><span class="dot"></span>{{ i18n "checks-eyebrow" }}</span
+            >
+            <h2 class="h2">{{ i18n "checks-title" }}</h2>
+            <p class="lede">{{ i18n "checks-lead" }}</p>
+        </div>
+
+        {{ $base := printf "https://help.happydomain.org/%s/reference/checkers" .Site.Language.Lang }}
+        <div class="checks-grid">
+            <div class="checks-col">
+                <div class="idea-tag">{{ i18n "checks-domain-tag" }}</div>
+                <h3>{{ i18n "checks-domain-title" }}</h3>
+                <p>{{ i18n "checks-domain-text" }}</p>
+                <ul class="check-list list-unstyled">
+                    <li>
+                        <a href="{{ $base }}/domain-expiry/" target="_blank" rel="noopener" data-umami-event="checks-docs-domain-expiry">
+                            <span class="check-name">{{ i18n "checks-item-expiration" }}</span>
+                            <span class="check-arrow" aria-hidden="true">&rarr;</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ $base }}/domain-lock/" target="_blank" rel="noopener" data-umami-event="checks-docs-domain-lock">
+                            <span class="check-name">{{ i18n "checks-item-transferlock" }}</span>
+                            <span class="check-arrow" aria-hidden="true">&rarr;</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ $base }}/domain-availability/" target="_blank" rel="noopener" data-umami-event="checks-docs-domain-availability">
+                            <span class="check-name">{{ i18n "checks-item-registration" }}</span>
+                            <span class="check-arrow" aria-hidden="true">&rarr;</span>
+                        </a>
+                    </li>
+                    <li class="check-more">
+                        <a href="{{ $base }}/" target="_blank" rel="noopener" data-umami-event="checks-docs-more-domain">
+                            <span class="check-name">{{ i18n "checks-more" (dict "Count" 3) }}</span>
+                            <span class="check-arrow" aria-hidden="true">&rarr;</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="checks-col">
+                <div class="idea-tag">{{ i18n "checks-zone-tag" }}</div>
+                <h3>{{ i18n "checks-zone-title" }}</h3>
+                <p>{{ i18n "checks-zone-text" }}</p>
+                <ul class="check-list list-unstyled">
+                    <li>
+                        <a href="{{ $base }}/dnssec/" target="_blank" rel="noopener" data-umami-event="checks-docs-dnssec">
+                            <span class="check-name">{{ i18n "checks-item-dnssec" }}</span>
+                            <span class="check-arrow" aria-hidden="true">&rarr;</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ $base }}/delegation/" target="_blank" rel="noopener" data-umami-event="checks-docs-delegation">
+                            <span class="check-name">{{ i18n "checks-item-delegation" }}</span>
+                            <span class="check-arrow" aria-hidden="true">&rarr;</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ $base }}/resolver-propagation/" target="_blank" rel="noopener" data-umami-event="checks-docs-resolver-propagation">
+                            <span class="check-name">{{ i18n "checks-item-responsetime" }}</span>
+                            <span class="check-arrow" aria-hidden="true">&rarr;</span>
+                        </a>
+                    </li>
+                    <li class="check-more">
+                        <a href="{{ $base }}/" target="_blank" rel="noopener" data-umami-event="checks-docs-more-zone">
+                            <span class="check-name">{{ i18n "checks-more" (dict "Count" 10) }}</span>
+                            <span class="check-arrow" aria-hidden="true">&rarr;</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="checks-col">
+                <div class="idea-tag">{{ i18n "checks-services-tag" }}</div>
+                <h3>{{ i18n "checks-services-title" }}</h3>
+                <p>{{ i18n "checks-services-text" }}</p>
+                <ul class="check-list list-unstyled">
+                    <li>
+                        <a href="{{ $base }}/tls/" target="_blank" rel="noopener" data-umami-event="checks-docs-tls">
+                            <span class="check-name">{{ i18n "checks-item-tls" }}</span>
+                            <span class="check-arrow" aria-hidden="true">&rarr;</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ $base }}/http/" target="_blank" rel="noopener" data-umami-event="checks-docs-http">
+                            <span class="check-name">{{ i18n "checks-item-http" }}</span>
+                            <span class="check-arrow" aria-hidden="true">&rarr;</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ $base }}/ping/" target="_blank" rel="noopener" data-umami-event="checks-docs-ping">
+                            <span class="check-name">{{ i18n "checks-item-ping" }}</span>
+                            <span class="check-arrow" aria-hidden="true">&rarr;</span>
+                        </a>
+                    </li>
+                    <li class="check-more">
+                        <a href="{{ $base }}/" target="_blank" rel="noopener" data-umami-event="checks-docs-more-services">
+                            <span class="check-name">{{ i18n "checks-more" (dict "Count" 13) }}</span>
+                            <span class="check-arrow" aria-hidden="true">&rarr;</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="checks-spotlight" id="dangling-records" style="scroll-margin-top: 5em">
+            <div class="spotlight-copy">
+                <div class="idea-tag idea-tag-danger">{{ i18n "checks-dangling-tag" }}</div>
+                <h3>{{ i18n "checks-dangling-title" }}</h3>
+                <p>{{ i18n "checks-dangling-text" }}</p>
+                <p>{{ i18n "checks-dangling-text2" | safeHTML }}</p>
+                <a class="spotlight-cta" href="{{ $base }}/dangling-records/" target="_blank" rel="noopener" data-umami-event="checks-docs-dangling">
+                    {{ i18n "checks-dangling-link" }}
+                    <span aria-hidden="true">&rarr;</span>
+                </a>
+            </div>
+            <figure class="spotlight-demo">
+                <img src="/img/screenshots/dangling-record.webp" alt="{{ i18n "checks-dangling-caption" }}" loading="lazy">
+                <figcaption>{{ i18n "checks-dangling-caption" }}</figcaption>
+            </figure>
+        </div>
+
+        <p class="checks-footer">
+            {{ i18n "checks-footer" }}
+            <a
+                href="{{ $base }}/"
+                target="_blank"
+                rel="noopener"
+                data-umami-event="checks-docs"
+                >{{ i18n "checks-footer-link" }}</a
+            >
+        </p>
+    </div>
+</section>

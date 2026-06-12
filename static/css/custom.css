@@ -416,6 +416,244 @@ img {
     }
 }
 
+/* ── Checks deep-dive (#checks) ──
+   Three scope columns sharing one bordered surface, each ending with a
+   mock check-list whose rows echo the .svc rows of the big-idea section. */
+.checks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid var(--hd-border-1);
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--hd-bg-canvas);
+}
+
+.checks-col {
+    display: flex;
+    flex-direction: column;
+    padding: 28px 28px 24px;
+}
+
+.checks-col + .checks-col {
+    border-left: 1px solid var(--hd-border-1);
+}
+
+.checks-col h3 {
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: var(--hd-fg-1);
+    letter-spacing: -0.015em;
+    margin: 0 0 10px;
+}
+
+.checks-col > p {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--hd-fg-3);
+    margin: 0 0 18px;
+}
+
+.check-list {
+    margin: auto 0 0;
+    border: 1px solid var(--hd-border-1);
+    border-radius: 8px;
+    background: var(--hd-bg-subtle);
+    overflow: hidden;
+}
+
+.check-list li + li {
+    border-top: 1px solid var(--hd-border-1);
+}
+
+.check-list li > a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 9px 12px;
+    text-decoration: none;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+.check-list li > a:hover,
+.check-list li > a:focus-visible {
+    background: var(--hd-accent-subtle);
+}
+
+[data-bs-theme="dark"] .check-list li > a:hover,
+[data-bs-theme="dark"] .check-list li > a:focus-visible {
+    background: var(--hd-accent-muted);
+}
+
+.check-name {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: var(--hd-fg-2);
+}
+
+.check-arrow {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--hd-fg-4, var(--hd-fg-3));
+    transform: translateX(-2px);
+    opacity: 0;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.check-list li > a:hover .check-name,
+.check-list li > a:focus-visible .check-name,
+.check-list li > a:hover .check-arrow,
+.check-list li > a:focus-visible .check-arrow {
+    color: var(--hd-accent);
+}
+
+.check-list li > a:hover .check-arrow,
+.check-list li > a:focus-visible .check-arrow {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.check-list li.check-more {
+    background: var(--hd-bg-canvas);
+}
+
+.check-list li.check-more .check-name {
+    color: var(--hd-accent);
+    font-weight: 700;
+}
+
+.check-list li.check-more .check-arrow {
+    color: var(--hd-accent);
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Dangling-records case study: copy on the left, mock check report on the
+   right, sharing the same bordered surface language as .checks-grid. */
+.checks-spotlight {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 36px;
+    align-items: center;
+    margin-top: 24px;
+    padding: 32px;
+    border: 1px solid var(--hd-border-1);
+    border-radius: 12px;
+    background: var(--hd-bg-canvas);
+}
+
+.idea-tag-danger {
+    color: var(--hd-danger);
+}
+
+.spotlight-copy h3 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--hd-fg-1);
+    letter-spacing: -0.015em;
+    margin: 0 0 12px;
+}
+
+.spotlight-copy p {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--hd-fg-3);
+    margin: 0 0 14px;
+}
+
+.spotlight-sources-label {
+    font-weight: 700;
+    color: var(--hd-fg-2);
+    margin-bottom: 6px;
+}
+
+.spotlight-sources {
+    margin: 0 0 18px;
+}
+
+.spotlight-sources li {
+    font-size: 0.875rem;
+    line-height: 1.7;
+}
+
+.spotlight-sources a {
+    color: var(--hd-fg-2);
+    text-decoration: underline;
+    text-decoration-color: var(--hd-border-3);
+    text-underline-offset: 3px;
+}
+
+.spotlight-sources a:hover,
+.spotlight-sources a:focus-visible {
+    color: var(--hd-accent);
+    text-decoration-color: var(--hd-accent);
+}
+
+.spotlight-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--hd-accent);
+    text-decoration: none;
+}
+
+.spotlight-cta:hover,
+.spotlight-cta:focus-visible {
+    text-decoration: underline;
+}
+
+.spotlight-demo {
+    margin: 0;
+}
+
+.spotlight-demo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--hd-border-1);
+    border-radius: 10px;
+    box-shadow: 0 12px 32px -12px rgba(0, 0, 0, 0.25);
+}
+
+.spotlight-demo figcaption {
+    margin-top: 10px;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    color: var(--hd-fg-4);
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    .checks-spotlight {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 24px;
+    }
+}
+
+.checks-footer {
+    margin: 24px 0 0;
+    font-size: 0.9375rem;
+    color: var(--hd-fg-3);
+}
+
+.checks-footer a {
+    color: var(--hd-accent);
+    font-weight: 600;
+}
+
+@media (max-width: 767px) {
+    .checks-grid {
+        grid-template-columns: 1fr;
+    }
+    .checks-col + .checks-col {
+        border-left: none;
+        border-top: 1px solid var(--hd-border-1);
+    }
+}
+
 /* ── Personas (#personas) ── */
 .personas-grid {
     display: grid;

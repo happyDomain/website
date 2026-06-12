@@ -91,7 +91,71 @@
 - id: discover-2-tag
   translation: "Surveillance"
 - id: discover-3-tag
-  translation: "Optionnel"
+  translation: "Profitez"
+
+- id: checks-eyebrow
+  translation: "Surveillance"
+- id: checks-title
+  translation: "Des vérifications approfondies sur tout ce que votre domaine expose"
+- id: checks-lead
+  translation: "Dès qu'un domaine rejoint happyDomain, nos testeurs l'inspectent depuis l'extérieur, exactement comme le reste du monde le voit. De l'enregistrement jusqu'à chaque service en ligne, toutes les couches sont couvertes."
+- id: checks-domain-tag
+  translation: "Domaine"
+- id: checks-domain-title
+  translation: "Votre enregistrement"
+- id: checks-domain-text
+  translation: "Date d'expiration, verrou de transfert, statut auprès du registre : le volet administratif de votre domaine, surveillé en continu."
+- id: checks-zone-tag
+  translation: "Zone"
+- id: checks-zone-title
+  translation: "Votre zone DNS"
+- id: checks-zone-text
+  translation: "Validité DNSSEC, cohérence de la délégation, réponse des serveurs : les fondations techniques, vérifiées de bout en bout."
+- id: checks-services-tag
+  translation: "Services"
+- id: checks-services-title
+  translation: "Vos services en ligne"
+- id: checks-services-text
+  translation: "Sites web, certificats, courriel : chaque service vers lequel pointe votre domaine, sondé comme le ferait un vrai visiteur."
+- id: checks-item-expiration
+  translation: "Expiration"
+- id: checks-item-expiration-detail
+  translation: "dans 23 jours"
+- id: checks-item-transferlock
+  translation: "Verrou de transfert"
+- id: checks-item-registration
+  translation: "Statut d'enregistrement"
+- id: checks-item-dnssec
+  translation: "Chaîne DNSSEC"
+- id: checks-item-delegation
+  translation: "Délégation"
+- id: checks-item-responsetime
+  translation: "Temps de réponse"
+- id: checks-item-tls
+  translation: "Certificat TLS"
+- id: checks-item-http
+  translation: "Disponibilité HTTP"
+- id: checks-item-ping
+  translation: "Ping"
+- id: checks-dangling-tag
+  translation: "Étude de cas"
+- id: checks-dangling-title
+  translation: "Enregistrements orphelins : le détournement que personne ne voit venir"
+- id: checks-dangling-text
+  translation: "Quand un enregistrement CNAME, MX, NS ou SRV continue de pointer vers une ressource que vous ne contrôlez plus (un SaaS décommissionné, un domaine expiré, un serveur de noms mal orthographié), n'importe qui peut récupérer cette cible et publier du contenu, intercepter vos mails ou obtenir des certificats valides en votre nom."
+- id: checks-dangling-text2
+  translation: |
+    Le risque n'est pas théorique. L'<a href="https://shhaos.github.io/papers/ccs16-dares.pdf" target="_blank">étude de référence sur le sujet</a>, <a href="https://youtube.com/watch?v=2OQ5yysJPlI" target="_blank">présentée à l'ACM CCS 2016</a>, a recensé 467 enregistrements orphelins exploitables dans 277 domaines du top 10 000 Alexa et 52 zones .edu. Depuis, <a href="https://arstechnica.com/security/2026/04/why-are-top-university-websites-serving-porn-it-comes-down-to-shoddy-housekeeping/" target="_blank">de grandes universités ont été surprises à servir du porno via des CNAME oubliés (avril 2026)</a>, et <a href="https://krebsonsecurity.com/2025/01/mastercard-dns-error-went-unnoticed-for-years/" target="_blank">une faute de frappe dans l'un des serveurs de noms de MasterCard est passée inaperçue pendant près de cinq ans (janvier 2025)</a>. Le testeur dangling-records de happyDomain parcourt chaque pointeur de votre zone, résout sa cible et vérifie son enregistrement, pour que ces enregistrements oubliés remontent avant que quelqu'un d'autre ne les trouve.
+- id: checks-dangling-link
+  translation: "Découvrir notre testeur dangling-records"
+- id: checks-dangling-caption
+  translation: "La vérification des enregistrements orphelins de happyDomain en action : un CNAME oublié signalé avant que quelqu'un ne puisse le récupérer."
+- id: checks-footer
+  translation: "Chaque vérification rapporte un statut clair, et vous êtes notifié dès que l'un d'eux change."
+- id: checks-footer-link
+  translation: "Découvrez tous les testeurs dans la documentation"
+- id: checks-more
+  translation: "+{{ .Count }} autres testeurs"
 
 - id: personas-eyebrow
   translation: "Pour tout le monde"
@@ -105,13 +169,13 @@
 - id: discover-1-text
   translation: "Reliez votre bureau d'enregistrement, votre hébergeur DNS ou votre serveur faisant autorité en quelques clics. Vos domaines restent exactement là où ils sont : pas de transfert, pas de changement de propriétaire."
 - id: discover-2-title
-  translation: "Profitez de vérifications instantanées"
+  translation: "Des vérifications immédiates"
 - id: discover-2-text
-  translation: "Dès la première minute, happyDomain effectue des vérifications approfondies sur chaque domaine : expiration, DNSSEC, temps de réponse et bien plus. Rien à configurer, et vous êtes notifié dès qu'un état change."
+  translation: "Dès la première minute, happyDomain effectue des vérifications approfondies sur chaque domaine : expiration, DNSSEC, certificats, temps de réponse et bien plus. Rien à installer, rien à configurer."
 - id: discover-3-title
-  translation: "Modifiez quand vous le souhaitez"
+  translation: "Profitez l'esprit tranquille"
 - id: discover-3-text
-  translation: "La console de votre hébergeur continue de fonctionner comme avant. Quand vous êtes prêt, formulaires guidés, aperçu des changements et retour arrière en un clic rendent chaque modification plus sûre. C'est une aide, jamais une obligation."
+  translation: "happyDomain vous prévient dès qu'un problème touche la configuration de votre domaine ou l'un des services découvrables via le DNS. Et quand il faut agir, l'édition guidée et le retour arrière en un clic sont là pour vous aider."
 
 - id: discover-assurances-title
   translation: "Nos promesses"
