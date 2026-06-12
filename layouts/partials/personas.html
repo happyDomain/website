@@ -1,0 +1,34 @@
+<section id="personas" class="section">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow"
+                ><span class="dot"></span>{{ i18n "personas-eyebrow" }}</span
+            >
+            <h2 class="h2">{{ i18n "personas-title" }}</h2>
+            <p class="lede">{{ i18n "personas-lead" }}</p>
+        </div>
+
+        <div class="personas-grid">
+            <a href="{{ ref . "/use-happyDomain/freelance" }}" class="persona-card" data-umami-event="learnmore-freelance">
+                <img src="/img/screenshots/users/freelance.webp" alt="" loading="lazy">
+                <span class="persona-name">{{ i18n "freelance" }}</span>
+            </a>
+            <a href="{{ ref . "/use-happyDomain/sysadmin" }}" class="persona-card" data-umami-event="learnmore-sysadmin">
+                <img src="/img/screenshots/users/sysadmin.webp" alt="" loading="lazy">
+                <span class="persona-name">{{ i18n "sysadmin" }}</span>
+            </a>
+            <a href="{{ ref . "/use-happyDomain/devops" }}" class="persona-card" data-umami-event="learnmore-devops">
+                <img src="/img/screenshots/users/devops.webp" alt="" loading="lazy">
+                <span class="persona-name">{{ i18n "devops" }}</span>
+            </a>
+            <a href="{{ ref . "/use-happyDomain/cio" }}" class="persona-card" data-umami-event="learnmore-cio">
+                <img src="/img/screenshots/users/cio.webp" alt="" loading="lazy">
+                <span class="persona-name">{{ i18n "cio" }}</span>
+            </a>
+            <a href="{{ ref . "/use-happyDomain/geek" }}" class="persona-card" data-umami-event="learnmore-geek">
+                <img src="/img/screenshots/users/geek.webp" alt="" loading="lazy">
+                <span class="persona-name">{{ i18n "geek" }}</span>
+            </a>
+        </div>
+    </div>
+</section>

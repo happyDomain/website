@@ -79,23 +79,58 @@
 - id: features-grid-footer
   translation: Et nous avons encore bien d'autres fonctionnalités en préparation...
 
-- id: discover-title
+- id: discover-eyebrow
   translation: "Comment ça marche"
+- id: discover-title
+  translation: "Trois étapes, zéro engagement"
 - id: discover-lead
-  translation: "Une approche simple pour une gestion de domaine efficace."
+  translation: "Connectez un domaine et happyDomain commence à veiller dessus. Pas de migration, pas de configuration, et rien ne change de votre côté."
+
+- id: discover-1-tag
+  translation: "Connexion"
+- id: discover-2-tag
+  translation: "Surveillance"
+- id: discover-3-tag
+  translation: "Optionnel"
+
+- id: personas-eyebrow
+  translation: "Pour tout le monde"
+- id: personas-title
+  translation: "Conçu pour votre façon de travailler"
+- id: personas-lead
+  translation: "Un domaine ou un millier, expert DNS ou débutant : happyDomain s'adapte à votre réalité. Choisissez le profil qui vous ressemble et découvrez ce que ça change au quotidien."
 
 - id: discover-1-title
-  translation: "Connectez vos comptes"
+  translation: "Connectez vos domaines"
 - id: discover-1-text
-  translation: "Ajoutez vos informations d'accès aux différents bureaux d'enregistrement et hébergeurs DNS."
+  translation: "Reliez votre bureau d'enregistrement, votre hébergeur DNS ou votre serveur faisant autorité en quelques clics. Vos domaines restent exactement là où ils sont : pas de transfert, pas de changement de propriétaire."
 - id: discover-2-title
-  translation: "Importez vos domaines"
+  translation: "Profitez de vérifications instantanées"
 - id: discover-2-text
-  translation: "Importez automatiquement tous vos noms de domaine et leurs configurations dans happyDomain."
+  translation: "Dès la première minute, happyDomain effectue des vérifications approfondies sur chaque domaine : expiration, DNSSEC, temps de réponse et bien plus. Rien à configurer, et vous êtes notifié dès qu'un état change."
 - id: discover-3-title
-  translation: "Gérez efficacement"
+  translation: "Modifiez quand vous le souhaitez"
 - id: discover-3-text
-  translation: "Modifiez, ajoutez et synchronisez tous vos enregistrements DNS depuis une seule interface."
+  translation: "La console de votre hébergeur continue de fonctionner comme avant. Quand vous êtes prêt, formulaires guidés, aperçu des changements et retour arrière en un clic rendent chaque modification plus sûre. C'est une aide, jamais une obligation."
+
+- id: discover-assurances-title
+  translation: "Nos promesses"
+- id: discover-assurance-1-title
+  translation: "Vos données restent chez votre hébergeur"
+- id: discover-assurance-1-text
+  translation: "happyDomain se connecte à votre hébergeur actuel. Rien n'est déplacé, rien n'est verrouillé."
+- id: discover-assurance-2-title
+  translation: "Aucune migration nécessaire"
+- id: discover-assurance-2-text
+  translation: "Amenez vos domaines tels qu'ils sont aujourd'hui, et repartez quand vous voulez."
+- id: discover-assurance-3-title
+  translation: "Votre console habituelle fonctionne toujours"
+- id: discover-assurance-3-text
+  translation: "Continuez d'utiliser l'interface de votre hébergeur en parallèle de happyDomain, sans aucun conflit."
+- id: discover-assurance-4-title
+  translation: "Tout est optionnel"
+- id: discover-assurance-4-text
+  translation: "La surveillance fonctionne immédiatement. Utilisez l'éditeur, l'historique et l'API seulement si vous en avez besoin, quand vous en avez besoin."
 
 - id: downloads-title
   translation: |
