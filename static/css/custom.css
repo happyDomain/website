@@ -93,6 +93,153 @@ nav.navbar.scrolled {
     border-bottom: 1px solid var(--hd-accent);
 }
 
+/* ── Page breadcrumb band ──
+   Sits directly under the fixed navbar (64px tall) and gives pages a proper
+   header strip: a soft brand-tinted band with a clickable trail. */
+.hd-breadcrumb {
+    position: relative;
+    padding-top: calc(64px + 30px);
+    padding-bottom: 26px;
+    background:
+        radial-gradient(
+            120% 160% at 0% 0%,
+            var(--hd-accent-subtle) 0%,
+            transparent 52%
+        ),
+        linear-gradient(
+            180deg,
+            var(--hd-bg-subtle) 0%,
+            var(--hd-bg-canvas) 100%
+        );
+    border-bottom: 1px solid var(--hd-border-1);
+    overflow: hidden;
+}
+
+/* Thin accent rule along the bottom edge */
+.hd-breadcrumb::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 180px;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        var(--hd-accent) 0%,
+        var(--hd-brand-dark) 100%
+    );
+}
+
+.hd-breadcrumb__trail {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.8125rem;
+    line-height: 1;
+}
+
+.hd-breadcrumb__trail li {
+    display: inline-flex;
+    align-items: center;
+}
+
+.hd-breadcrumb__trail li + li::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    margin: 0 6px;
+    border-right: 1.5px solid var(--hd-border-3);
+    border-bottom: 1.5px solid var(--hd-border-3);
+    transform: rotate(-45deg);
+}
+
+.hd-breadcrumb__trail a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--hd-fg-3);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 4px 9px;
+    border-radius: var(--hd-radius);
+    transition:
+        color 0.15s,
+        background-color 0.15s;
+}
+
+.hd-breadcrumb__trail a:hover {
+    color: var(--hd-accent);
+    background: var(--hd-accent-subtle);
+}
+
+.hd-breadcrumb__trail .bi {
+    font-size: 0.875rem;
+}
+
+.hd-breadcrumb__trail .current {
+    color: var(--hd-fg-1);
+    font-weight: 600;
+    padding: 4px 2px;
+}
+
+/* ── Usage / persona breadcrumb band (row of persona pills) ── */
+.hd-breadcrumb--usage .hd-breadcrumb__row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px 18px;
+}
+
+.hd-breadcrumb__lead {
+    font-size: 0.9375rem;
+    color: var(--hd-fg-2);
+    margin: 0;
+}
+
+.hd-breadcrumb__lead .brand {
+    font-family: var(--hd-font-brand);
+    color: var(--hd-fg-1);
+}
+
+.hd-breadcrumb__personas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hd-breadcrumb__personas a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--hd-fg-2);
+    text-decoration: none;
+    padding: 6px 13px;
+    background: var(--hd-bg-canvas);
+    border: 1px solid var(--hd-border-1);
+    border-radius: var(--hd-radius-full);
+    transition:
+        color 0.15s,
+        border-color 0.15s,
+        background-color 0.15s,
+        transform 0.15s;
+}
+
+.hd-breadcrumb__personas a:hover {
+    color: var(--hd-accent);
+    border-color: var(--hd-accent-border);
+    background: var(--hd-accent-subtle);
+    transform: translateY(-1px);
+}
+
 a.card {
     background: var(--hd-bg-subtle);
     transition: transform 250ms;
@@ -143,6 +290,7 @@ a.card:hover {
 
 .text-hilight {
     background-color: yellow;
+    color: black !important;
 }
 
 #voxppl {

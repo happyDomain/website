@@ -1,14 +1,36 @@
-<nav aria-label="breadcrumb" style="background-color: #e9ecef; padding-top: 64px">
-    <div class="container d-flex gap-1">
-        <div class="align-self-center">
-            {{ i18n "usage-discover-pre" }} <span style="font-family: var(--hd-font-brand)">happy<strong>Domain</strong></span> {{ i18n "usage-discover-post" }}
-        </div>
-        <ol class="breadcrumb mb-0">
-            <li class="breadcrumb-item"><a href="{{ ref . "/use-happyDomain/freelance" }}">{{ i18n "freelance" }}</a></li>
-            <li class="breadcrumb-item"><a href="{{ ref . "/use-happyDomain/sysadmin" }}">{{ i18n "sysadmin" }}</a></li>
-            <li class="breadcrumb-item"><a href="{{ ref . "/use-happyDomain/devops" }}">{{ i18n "devops" }}</a></li>
-            <li class="breadcrumb-item"><a href="{{ ref . "/use-happyDomain/cio" }}">{{ i18n "cio" }}</a></li>
-            <li class="breadcrumb-item"><a href="{{ ref . "/use-happyDomain/geek" }}">{{ i18n "geek" }}</a></li>
-        </ol>
+<nav class="hd-breadcrumb hd-breadcrumb--usage" aria-label="breadcrumb">
+    <div class="hd-breadcrumb__row container">
+        <p class="hd-breadcrumb__lead">
+            {{ i18n "usage-discover-pre" }}
+            <span class="brand">happy<strong>Domain</strong></span>
+            {{ i18n "usage-discover-post" }}
+        </p>
+        <ul class="hd-breadcrumb__personas">
+            <li>
+                <a href="{{ ref . "/use-happyDomain/freelance" }}">
+                    <i class="bi bi-person-workspace"></i> {{ i18n "freelance" }}
+                </a>
+            </li>
+            <li>
+                <a href="{{ ref . "/use-happyDomain/sysadmin" }}">
+                    <i class="bi bi-hdd-rack"></i> {{ i18n "sysadmin" }}
+                </a>
+            </li>
+            <li>
+                <a href="{{ ref . "/use-happyDomain/devops" }}">
+                    <i class="bi bi-infinity"></i> {{ i18n "devops" }}
+                </a>
+            </li>
+            <li>
+                <a href="{{ ref . "/use-happyDomain/cio" }}">
+                    <i class="bi bi-building"></i> {{ i18n "cio" }}
+                </a>
+            </li>
+            <li>
+                <a href="{{ ref . "/use-happyDomain/geek" }}">
+                    <i class="bi bi-controller"></i> {{ i18n "geek" }}
+                </a>
+            </li>
+        </ul>
     </div>
 </nav>
