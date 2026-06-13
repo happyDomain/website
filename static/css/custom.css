@@ -773,6 +773,79 @@ img {
     max-width: 700px;
 }
 
+/* "About us" closing band.
+   The plum-* scale is only defined for the light theme, so a hardcoded
+   var(--hd-plum-100) background stayed pale lavender in dark mode while
+   btn-outline-dark / text-dark inverted to light and became unreadable.
+   Drive every color from scoped band-* tokens that flip with the theme. */
+.footer-us-band {
+    --band-bg: linear-gradient(160deg, var(--hd-plum-50) 0%, var(--hd-plum-100) 100%);
+    --band-fg: var(--hd-plum-700);
+    --band-fg-strong: var(--hd-plum-800);
+    --band-btn-fg: var(--hd-plum-700);
+    --band-btn-border: var(--hd-plum-300);
+    --band-btn-hover-bg: var(--hd-plum-700);
+    --band-btn-hover-fg: var(--hd-plum-50);
+    --band-hilight-bg: var(--hd-plum-300);
+    --band-hilight-fg: var(--hd-plum-900);
+    background: var(--band-bg);
+    color: var(--band-fg);
+}
+
+[data-bs-theme="dark"] .footer-us-band {
+    --band-bg: linear-gradient(160deg, #1c0d26 0%, var(--hd-plum-900) 100%);
+    --band-fg: var(--hd-plum-200);
+    --band-fg-strong: var(--hd-plum-50);
+    --band-btn-fg: var(--hd-plum-100);
+    --band-btn-border: var(--hd-plum-400);
+    --band-btn-hover-bg: var(--hd-plum-200);
+    --band-btn-hover-fg: var(--hd-plum-900);
+    --band-hilight-bg: var(--hd-plum-600);
+    --band-hilight-fg: var(--hd-plum-50);
+}
+
+.footer-us-band h3,
+.footer-us-band h4 {
+    color: var(--band-fg-strong);
+}
+
+.footer-us-band .band-hilight {
+    background-color: var(--band-hilight-bg);
+    color: var(--band-hilight-fg);
+    border-radius: var(--hd-radius-sm, 4px);
+}
+
+.footer-us-band .band-btn {
+    color: var(--band-btn-fg);
+    border: 1px solid var(--band-btn-border);
+    background-color: transparent;
+    transition: background-color 0.15s ease, color 0.15s ease,
+        border-color 0.15s ease;
+}
+.footer-us-band .band-btn:hover,
+.footer-us-band .band-btn:focus-visible {
+    background-color: var(--band-btn-hover-bg);
+    color: var(--band-btn-hover-fg);
+    border-color: var(--band-btn-hover-bg);
+}
+
+/* Theme-aware neutral outline button.
+   Bootstrap's .btn-outline-dark is compiled with a fixed dark gray, so it
+   turns invisible on the dark body in dark mode. This flips with the theme. */
+.btn-outline-soft {
+    color: var(--hd-fg-1);
+    border: 1px solid var(--hd-border-2);
+    background-color: transparent;
+    transition: background-color 0.15s ease, color 0.15s ease,
+        border-color 0.15s ease;
+}
+.btn-outline-soft:hover,
+.btn-outline-soft:focus-visible {
+    color: var(--hd-fg-1);
+    background-color: var(--hd-bg-inset);
+    border-color: var(--hd-border-3);
+}
+
 footer {
     border-top: 3px solid var(--hd-plum-400);
     /* Footer is always a dark band (all child text is hardcoded white),
