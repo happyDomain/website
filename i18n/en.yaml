@@ -357,7 +357,7 @@
 - id: beta-alert-title
   translation: "Online version closed, beta access only"
 - id: beta-alert-text
-  translation: 'happyDomain is evolving: soon, continuously test your domains'' security and monitor every service exposed through DNS — with zero configuration. We''re rolling out this new version progressively to gather feedback and deliver the best possible service. <a href="/en/beta/">Learn more</a>.'
+  translation: 'happyDomain is evolving: soon, continuously test your domains'' security and monitor every service exposed through DNS, with zero configuration. We''re rolling out this new version progressively to gather feedback and deliver the best possible service. <a href="/en/beta/">Learn more</a>.'
 - id: beta-alert-button
   translation: "Join the beta"
 
