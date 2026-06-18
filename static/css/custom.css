@@ -429,13 +429,57 @@ img {
 }
 
 .checks-col {
+    --col-c: var(--hd-accent);
+    --col-bg: var(--hd-accent-subtle);
+    --col-muted: var(--hd-accent-muted);
+    position: relative;
     display: flex;
     flex-direction: column;
     padding: 28px 28px 24px;
 }
 
+/* A faint colored wash that fades into the canvas, so the three scopes read
+   as distinct and lively. */
+.checks-col::after {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 120px;
+    background: linear-gradient(var(--col-bg), transparent);
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Per-column hues: Domain → green (brand), Zone → blue, Services → plum. */
+.checks-col:nth-child(2) {
+    --col-c: var(--hd-info);
+    --col-bg: var(--hd-info-bg);
+    --col-muted: var(--hd-info-bg);
+}
+
+.checks-col:nth-child(3) {
+    --col-c: var(--hd-plum-500);
+    --col-bg: var(--hd-plum-50);
+    --col-muted: var(--hd-plum-100);
+}
+
+[data-bs-theme="dark"] .checks-col:nth-child(3) {
+    --col-c: var(--hd-plum-300);
+    --col-bg: var(--hd-plum-800);
+    --col-muted: var(--hd-plum-700);
+}
+
+/* Keep column content above the decorative wash. */
+.checks-col > * {
+    position: relative;
+}
+
 .checks-col + .checks-col {
     border-left: 1px solid var(--hd-border-1);
+}
+
+.checks-col .idea-tag {
+    color: var(--col-c);
 }
 
 .checks-col h3 {
@@ -472,17 +516,19 @@ img {
     gap: 10px;
     padding: 9px 12px;
     text-decoration: none;
-    transition: background 0.15s ease, color 0.15s ease;
+    transition:
+        background 0.15s ease,
+        color 0.15s ease;
 }
 
 .check-list li > a:hover,
 .check-list li > a:focus-visible {
-    background: var(--hd-accent-subtle);
+    background: var(--col-bg);
 }
 
 [data-bs-theme="dark"] .check-list li > a:hover,
 [data-bs-theme="dark"] .check-list li > a:focus-visible {
-    background: var(--hd-accent-muted);
+    background: var(--col-muted);
 }
 
 .check-name {
@@ -497,14 +543,16 @@ img {
     color: var(--hd-fg-4, var(--hd-fg-3));
     transform: translateX(-2px);
     opacity: 0;
-    transition: transform 0.15s ease, opacity 0.15s ease;
+    transition:
+        transform 0.15s ease,
+        opacity 0.15s ease;
 }
 
 .check-list li > a:hover .check-name,
 .check-list li > a:focus-visible .check-name,
 .check-list li > a:hover .check-arrow,
 .check-list li > a:focus-visible .check-arrow {
-    color: var(--hd-accent);
+    color: var(--col-c);
 }
 
 .check-list li > a:hover .check-arrow,
@@ -514,16 +562,16 @@ img {
 }
 
 .check-list li.check-more {
-    background: var(--hd-bg-canvas);
+    background: var(--col-bg);
 }
 
 .check-list li.check-more .check-name {
-    color: var(--hd-accent);
+    color: var(--col-c);
     font-weight: 700;
 }
 
 .check-list li.check-more .check-arrow {
-    color: var(--hd-accent);
+    color: var(--col-c);
     opacity: 1;
     transform: translateX(0);
 }
@@ -539,7 +587,7 @@ img {
     padding: 32px;
     border: 1px solid var(--hd-border-1);
     border-radius: 12px;
-    background: var(--hd-bg-canvas);
+    background-color: var(--hd-bg-canvas);
 }
 
 .idea-tag-danger {
@@ -779,7 +827,11 @@ img {
    btn-outline-dark / text-dark inverted to light and became unreadable.
    Drive every color from scoped band-* tokens that flip with the theme. */
 .footer-us-band {
-    --band-bg: linear-gradient(160deg, var(--hd-plum-50) 0%, var(--hd-plum-100) 100%);
+    --band-bg: linear-gradient(
+        160deg,
+        var(--hd-plum-50) 0%,
+        var(--hd-plum-100) 100%
+    );
     --band-fg: var(--hd-plum-700);
     --band-fg-strong: var(--hd-plum-800);
     --band-btn-fg: var(--hd-plum-700);
@@ -819,7 +871,9 @@ img {
     color: var(--band-btn-fg);
     border: 1px solid var(--band-btn-border);
     background-color: transparent;
-    transition: background-color 0.15s ease, color 0.15s ease,
+    transition:
+        background-color 0.15s ease,
+        color 0.15s ease,
         border-color 0.15s ease;
 }
 .footer-us-band .band-btn:hover,
@@ -836,7 +890,9 @@ img {
     color: var(--hd-fg-1);
     border: 1px solid var(--hd-border-2);
     background-color: transparent;
-    transition: background-color 0.15s ease, color 0.15s ease,
+    transition:
+        background-color 0.15s ease,
+        color 0.15s ease,
         border-color 0.15s ease;
 }
 .btn-outline-soft:hover,
