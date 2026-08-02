@@ -902,6 +902,21 @@ img {
     border-color: var(--hd-border-3);
 }
 
+/* Text on surfaces that stay dark in *both* themes (the plum bands, the photo
+   CTA, the survey popover). Bootstrap's .text-light is driven by
+   --bs-light-rgb, which this theme deliberately inverts to a near-black in
+   dark mode, so it flips the wrong way on top of a permanently dark surface.
+   --hd-brand-dark-fg is defined once and stays light in both themes. */
+.text-on-dark,
+.text-on-dark h1,
+.text-on-dark h2,
+.text-on-dark h3,
+.text-on-dark h4,
+.text-on-dark h5,
+.text-on-dark h6 {
+    color: var(--hd-brand-dark-fg);
+}
+
 footer {
     border-top: 3px solid var(--hd-plum-400);
     /* Footer is always a dark band (all child text is hardcoded white),

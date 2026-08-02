@@ -6,7 +6,9 @@
                 {{ i18n "cta-account-title" }}
             </h2>
             <div class="d-flex justify-content-center mb-4">
-                <p class="lead text-light">{{ i18n "cta-account-text" }}</p>
+                <!-- No .text-light: #cta already pins its own light color, and
+                     .text-light would flip to near-black in dark mode. -->
+                <p class="lead">{{ i18n "cta-account-text" }}</p>
             </div>
             <a
                 href="/{{ .Site.Language.Lang }}/beta/"
