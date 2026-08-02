@@ -778,8 +778,8 @@ img {
     background:
         linear-gradient(
             135deg,
-            rgba(54, 11, 72, 0.65) 0%,
-            rgba(28, 180, 135, 0.55) 100%
+            rgba(54, 11, 72, 0.6) 0%,
+            rgba(28, 180, 135, 0.5) 100%
         ),
         url("/img/screenshots/home.webp");
     background-size: cover;
@@ -815,6 +815,50 @@ img {
 .cta-content {
     position: relative;
     z-index: 2;
+}
+
+/* Frosted panel behind the CTA copy.
+   The section background is a screenshot of the app, which is itself full of
+   text: putting the headline straight on top of it made text sit on text.
+   The blurred glass turns the area under the copy into an abstract wash while
+   the screenshot stays sharp and recognizable all around the card. */
+.cta-glass {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 3rem 2.5rem;
+    border-radius: 1.75rem;
+    background: linear-gradient(
+        160deg,
+        rgba(255, 255, 255, 0.16) 0%,
+        rgba(255, 255, 255, 0.06) 100%
+    );
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(16px) saturate(1.2);
+    -webkit-backdrop-filter: blur(16px) saturate(1.2);
+    box-shadow:
+        0 1.5rem 3rem rgba(20, 6, 30, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+/* Without backdrop-filter the panel would be a barely tinted window onto the
+   screenshot, i.e. the original problem. Fall back to an opaque plum panel. */
+@supports not (
+    (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))
+) {
+    .cta-glass {
+        background: linear-gradient(
+            160deg,
+            rgba(45, 12, 62, 0.88) 0%,
+            rgba(20, 60, 55, 0.88) 100%
+        );
+    }
+}
+
+@media (max-width: 575.98px) {
+    .cta-glass {
+        padding: 2rem 1.25rem;
+        border-radius: 1.25rem;
+    }
 }
 
 #cta p {
