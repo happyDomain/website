@@ -902,6 +902,23 @@ img {
     border-color: var(--hd-border-3);
 }
 
+/* Language switcher in the navbar.
+   .btn-outline-plum is generated from the $theme-colors "plum" entry, so its
+   colors are baked to plum-500 at build time while the navbar background is
+   theme-reactive. Lift it to a lighter plum in dark mode. */
+[data-bs-theme="dark"] .btn-outline-plum {
+    --bs-btn-color: var(--hd-plum-200);
+    --bs-btn-border-color: var(--hd-plum-400);
+    --bs-btn-hover-color: var(--hd-plum-900);
+    --bs-btn-hover-bg: var(--hd-plum-200);
+    --bs-btn-hover-border-color: var(--hd-plum-200);
+    --bs-btn-active-color: var(--hd-plum-900);
+    --bs-btn-active-bg: var(--hd-plum-300);
+    --bs-btn-active-border-color: var(--hd-plum-300);
+    --bs-btn-disabled-color: var(--hd-plum-400);
+    --bs-btn-disabled-border-color: var(--hd-plum-600);
+}
+
 /* Text on surfaces that stay dark in *both* themes (the plum bands, the photo
    CTA, the survey popover). Bootstrap's .text-light is driven by
    --bs-light-rgb, which this theme deliberately inverts to a near-black in
