@@ -186,18 +186,35 @@ nav.navbar.scrolled {
     padding: 4px 2px;
 }
 
-/* ── Usage / persona breadcrumb band (row of persona pills) ── */
+/* ── Usage / persona breadcrumb band ──
+   A segmented control rather than a loose row of links: the personas sit in a
+   single inset track, and the one matching the current page is filled in. The
+   grouping is what tells the reader these are alternatives they can switch
+   between, and the filled pill tells them where they currently are. */
+.hd-breadcrumb--usage {
+    padding-bottom: 22px;
+}
+
 .hd-breadcrumb--usage .hd-breadcrumb__row {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 14px 18px;
+    gap: 10px 16px;
 }
 
 .hd-breadcrumb__lead {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     font-size: 0.9375rem;
+    font-weight: 500;
     color: var(--hd-fg-2);
     margin: 0;
+}
+
+.hd-breadcrumb__lead .bi {
+    color: var(--hd-accent);
+    font-size: 1rem;
 }
 
 .hd-breadcrumb__lead .brand {
@@ -206,38 +223,65 @@ nav.navbar.scrolled {
 }
 
 .hd-breadcrumb__personas {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
+    display: inline-flex;
+    gap: 4px;
+    max-width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 5px;
     list-style: none;
+    background: var(--hd-bg-inset);
+    border: 1px solid var(--hd-border-1);
+    border-radius: var(--hd-radius-full);
+    box-shadow: var(--hd-shadow-inset);
 }
 
 .hd-breadcrumb__personas a {
     display: inline-flex;
     align-items: center;
     gap: 6px;
+    white-space: nowrap;
     font-size: 0.8125rem;
     font-weight: 600;
     color: var(--hd-fg-2);
     text-decoration: none;
-    padding: 6px 13px;
-    background: var(--hd-bg-canvas);
-    border: 1px solid var(--hd-border-1);
+    padding: 7px 15px;
+    background: transparent;
+    border: 1px solid transparent;
     border-radius: var(--hd-radius-full);
     transition:
         color 0.15s,
         border-color 0.15s,
         background-color 0.15s,
-        transform 0.15s;
+        box-shadow 0.15s;
 }
 
 .hd-breadcrumb__personas a:hover {
     color: var(--hd-accent);
-    border-color: var(--hd-accent-border);
-    background: var(--hd-accent-subtle);
-    transform: translateY(-1px);
+    border-color: var(--hd-border-1);
+    background: var(--hd-bg-canvas);
+}
+
+.hd-breadcrumb__personas a:focus-visible {
+    outline: none;
+    box-shadow: var(--hd-shadow-focus);
+}
+
+/* Current persona: filled pill, so the page you are on is unmistakable. */
+.hd-breadcrumb__personas a.is-active,
+.hd-breadcrumb__personas a.is-active:hover {
+    color: var(--hd-accent-fg);
+    background: var(--hd-accent);
+    border-color: transparent;
+    box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.35);
+}
+
+/* Below the tablet breakpoint the track would overflow, so let it wrap into a
+   rounded block instead of scrolling out of sight. */
+@media (max-width: 767.98px) {
+    .hd-breadcrumb__personas {
+        flex-wrap: wrap;
+        border-radius: var(--hd-radius-lg);
+    }
 }
 
 a.card {

@@ -385,3 +385,7 @@
   translation: "Discover"
 - id: usage-discover-post
   translation: "for:"
+- id: usage-switch-aria
+  translation: "Choose a usage profile"
+- id: usage-current-page
+  translation: "profile shown"

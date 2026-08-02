@@ -384,3 +384,7 @@
   translation: "Découvrez"
 - id: usage-discover-post
   translation: "pour :"
+- id: usage-switch-aria
+  translation: "Choisir un profil d'utilisation"
+- id: usage-current-page
+  translation: "profil affiché"

@@ -1,36 +1,30 @@
-<nav class="hd-breadcrumb hd-breadcrumb--usage" aria-label="breadcrumb">
-    <div class="hd-breadcrumb__row container">
-        <p class="hd-breadcrumb__lead">
+{{- $personas := slice
+    (dict "path" "/use-happyDomain/freelance" "icon" "bi-person-workspace" "key" "freelance")
+    (dict "path" "/use-happyDomain/sysadmin" "icon" "bi-hdd-rack" "key" "sysadmin")
+    (dict "path" "/use-happyDomain/devops" "icon" "bi-infinity" "key" "devops")
+    (dict "path" "/use-happyDomain/cio" "icon" "bi-building" "key" "cio")
+    (dict "path" "/use-happyDomain/geek" "icon" "bi-controller" "key" "geek")
+-}}
+<nav class="hd-breadcrumb hd-breadcrumb--usage" aria-label="{{ i18n "usage-switch-aria" }}">
+    <div class="hd-breadcrumb__row container d-flex justify-content-center">
+        <p class="hd-breadcrumb__lead" id="hd-persona-label">
+            <i class="bi bi-people-fill" aria-hidden="true"></i>
             {{ i18n "usage-discover-pre" }}
             <span class="brand">happy<strong>Domain</strong></span>
             {{ i18n "usage-discover-post" }}
         </p>
-        <ul class="hd-breadcrumb__personas">
+        <ul class="hd-breadcrumb__personas d-flex justify-content-center" aria-labelledby="hd-persona-label">
+            {{- range $personas }}
+            {{- $url := relref $ .path }}
+            {{- $active := eq (strings.TrimSuffix "/" $.RelPermalink) (strings.TrimSuffix "/" $url) }}
             <li>
-                <a href="{{ ref . "/use-happyDomain/freelance" }}">
-                    <i class="bi bi-person-workspace"></i> {{ i18n "freelance" }}
+                <a href="{{ $url }}"{{ if $active }} class="is-active" aria-current="page"{{ end }}>
+                    <i class="bi {{ .icon }}" aria-hidden="true"></i>
+                    <span>{{ i18n .key }}</span>
+                    {{- if $active }}<span class="visually-hidden"> ({{ i18n "usage-current-page" }})</span>{{ end }}
                 </a>
             </li>
-            <li>
-                <a href="{{ ref . "/use-happyDomain/sysadmin" }}">
-                    <i class="bi bi-hdd-rack"></i> {{ i18n "sysadmin" }}
-                </a>
-            </li>
-            <li>
-                <a href="{{ ref . "/use-happyDomain/devops" }}">
-                    <i class="bi bi-infinity"></i> {{ i18n "devops" }}
-                </a>
-            </li>
-            <li>
-                <a href="{{ ref . "/use-happyDomain/cio" }}">
-                    <i class="bi bi-building"></i> {{ i18n "cio" }}
-                </a>
-            </li>
-            <li>
-                <a href="{{ ref . "/use-happyDomain/geek" }}">
-                    <i class="bi bi-controller"></i> {{ i18n "geek" }}
-                </a>
-            </li>
+            {{- end }}
         </ul>
     </div>
 </nav>
