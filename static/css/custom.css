@@ -315,23 +315,62 @@ img {
 }
 
 /* ── How it works (#discover) ──
-   Same flat language as the big-idea section: one bordered surface,
-   columns split by hairlines, mono step tags. */
+   A numbered journey rather than three neutral columns: accent pucks sit on a
+   dashed rail that ties the steps together, so the 1-2-3 order reads first. */
 #discover .steps-grid {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     border: 1px solid var(--hd-border-1);
     border-radius: 12px;
-    overflow: hidden;
     background: var(--hd-bg-canvas);
+    margin: 0;
+}
+
+/* The rail: one dashed line crossing the whole surface, level with the pucks
+   (28px of column padding + half of the 32px puck). */
+#discover .steps-grid::before {
+    content: "";
+    position: absolute;
+    top: 44px;
+    left: 44px;
+    /* Stops on the third puck's centre instead of running to the edge. */
+    right: calc(33.3333% - 44px);
+    border-top: 1px dashed var(--hd-border-2);
 }
 
 #discover .step-col {
+    position: relative;
     padding: 28px 28px 24px;
 }
 
-#discover .step-col + .step-col {
-    border-left: 1px solid var(--hd-border-1);
+#discover .step-num {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 14px;
+    border-radius: 50%;
+    background: var(--hd-accent);
+    color: var(--hd-accent-fg);
+    font-family: var(--hd-font-mono, monospace);
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1;
+    /* Masks the rail on both sides of the puck. */
+    box-shadow: 0 0 0 6px var(--hd-bg-canvas);
+}
+
+#discover .step-tag {
+    font-family: var(--hd-font-mono, monospace);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--hd-accent);
+    margin-bottom: 8px;
 }
 
 #discover .step-col h3 {
@@ -407,9 +446,35 @@ img {
     #discover .steps-grid {
         grid-template-columns: 1fr;
     }
-    #discover .step-col + .step-col {
-        border-left: none;
-        border-top: 1px solid var(--hd-border-1);
+    /* Stacked: the rail turns vertical, each step linking down to the next.
+       Columns share the same padding so a puck centre always sits 40px from
+       the top of its column, which is where the segments start and end. */
+    #discover .steps-grid::before {
+        display: none;
+    }
+    /* The puck leaves the flow and the copy is indented past the rail, so no
+       text ever sits on top of the dashes. */
+    #discover .step-col {
+        padding: 24px 24px 24px 72px;
+    }
+    #discover .step-num {
+        position: absolute;
+        top: 24px;
+        left: 28px;
+        margin-bottom: 0;
+    }
+    /* 32px line-height centres the tag on the puck it sits next to. */
+    #discover .step-tag {
+        line-height: 32px;
+        margin-bottom: 4px;
+    }
+    #discover .step-col:not(:last-child)::before {
+        content: "";
+        position: absolute;
+        top: 40px;
+        bottom: -40px;
+        left: 44px;
+        border-left: 1px dashed var(--hd-border-2);
     }
     #discover .assurances {
         grid-template-columns: 1fr;
