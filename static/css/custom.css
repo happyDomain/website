@@ -864,12 +864,34 @@ img {
     box-shadow: 0 10px 24px -14px rgba(0, 0, 0, 0.35);
 }
 
+/* The persona illustrations are transparent PNG-alpha WebPs, so the card gives
+   them a tinted gradient to sit on rather than bare canvas. The angle is
+   rotated per card so the row reads as five portraits, not one repeated tile. */
 .persona-card img {
     display: block;
     width: 100%;
     height: auto;
     aspect-ratio: 4 / 3;
     object-fit: cover;
+    background: linear-gradient(
+        var(--persona-angle, 160deg),
+        var(--hd-accent-subtle) 0%,
+        var(--hd-accent-muted) 45%,
+        var(--hd-bg-subtle) 100%
+    );
+}
+
+.persona-card:nth-child(2) img {
+    --persona-angle: 200deg;
+}
+.persona-card:nth-child(3) img {
+    --persona-angle: 130deg;
+}
+.persona-card:nth-child(4) img {
+    --persona-angle: 220deg;
+}
+.persona-card:nth-child(5) img {
+    --persona-angle: 145deg;
 }
 
 .persona-card .persona-name {
