@@ -46,7 +46,7 @@
 }
 
 .usage-browser .browser-url .lock {
-    color: var(--hd-accent);
+    color: var(--hd-accent-text);
     font-size: 10px;
 }
 
@@ -172,7 +172,7 @@ nav.navbar.scrolled {
 }
 
 .hd-breadcrumb__trail a:hover {
-    color: var(--hd-accent);
+    color: var(--hd-accent-text);
     background: var(--hd-accent-subtle);
 }
 
@@ -213,7 +213,7 @@ nav.navbar.scrolled {
 }
 
 .hd-breadcrumb__lead .bi {
-    color: var(--hd-accent);
+    color: var(--hd-accent-text);
     font-size: 1rem;
 }
 
@@ -256,7 +256,7 @@ nav.navbar.scrolled {
 }
 
 .hd-breadcrumb__personas a:hover {
-    color: var(--hd-accent);
+    color: var(--hd-accent-text);
     border-color: var(--hd-border-1);
     background: var(--hd-bg-canvas);
 }
@@ -321,7 +321,7 @@ a.card:hover {
     font-size: 1.5rem;
 }
 .link-rounded:hover {
-    background-color: var(--hd-green-800);
+    background-color: var(--hd-accent-hover);
 }
 .link-rounded:hover > div {
     color: var(--hd-accent-fg);
@@ -429,7 +429,7 @@ img {
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: var(--hd-accent);
+    color: var(--hd-accent-text);
 }
 
 #discover .step-col h3 {
@@ -473,7 +473,7 @@ img {
     border-radius: 6px;
     background: var(--hd-accent-subtle);
     border: 1px solid var(--hd-accent-border);
-    color: var(--hd-accent);
+    color: var(--hd-accent-text);
     font-size: 11px;
     font-weight: 700;
 }
@@ -548,7 +548,7 @@ img {
 }
 
 .checks-col {
-    --col-c: var(--hd-accent);
+    --col-c: var(--hd-accent-text);
     --col-bg: var(--hd-accent-subtle);
     --col-muted: var(--hd-accent-muted);
     position: relative;
@@ -752,8 +752,8 @@ img {
 
 .spotlight-sources a:hover,
 .spotlight-sources a:focus-visible {
-    color: var(--hd-accent);
-    text-decoration-color: var(--hd-accent);
+    color: var(--hd-accent-text);
+    text-decoration-color: var(--hd-accent-text);
 }
 
 .spotlight-cta {
@@ -762,7 +762,7 @@ img {
     gap: 6px;
     font-size: 0.9375rem;
     font-weight: 600;
-    color: var(--hd-accent);
+    color: var(--hd-accent-text);
     text-decoration: none;
 }
 
@@ -808,7 +808,7 @@ img {
 }
 
 .checks-footer a {
-    color: var(--hd-accent);
+    color: var(--hd-accent-text);
     font-weight: 600;
 }
 
@@ -877,7 +877,7 @@ img {
 }
 
 .persona-card:hover .persona-name::after {
-    color: var(--hd-accent);
+    color: var(--hd-accent-text);
     transform: translateX(3px);
 }
 
@@ -1289,7 +1289,9 @@ footer {
 }
 
 .cta-content h2 {
-    color: var(--bs-light);
+    /* The CTA band stays dark in both themes, but --bs-light inverts to a
+       near-black in dark mode. Pin the always-light brand foreground. */
+    color: var(--hd-brand-dark-fg);
 }
 
 .lede {
@@ -1381,7 +1383,7 @@ footer {
     color: var(--hd-fg-4);
 }
 .zone-pre .a {
-    color: var(--hd-accent);
+    color: var(--hd-accent-text);
 }
 
 .svc {
@@ -1418,7 +1420,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--hd-accent);
+    color: var(--hd-accent-text);
     font-size: 13px;
     flex-shrink: 0;
 }
@@ -1457,7 +1459,7 @@ footer {
 .svc-ok {
     font-size: 10px;
     font-weight: 600;
-    color: var(--hd-accent);
+    color: var(--hd-accent-text);
     display: flex;
     align-items: center;
     gap: 3px;
