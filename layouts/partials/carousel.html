@@ -19,7 +19,7 @@
         "
     >
         {{ range sort .Site.Params.carousel "weight" }}
-        <figure class="my-5 me-5 text-center" style="min-width: 65vw">
+        <figure class="carousel-figure my-5 me-5 text-center" style="min-width: 65vw">
             <a href="{{ .image }}">
                 <img
                     class="rounded img-thumbnail"
@@ -29,7 +29,7 @@
                     style="max-height: 80vh"
                 />
             </a>
-            <figcaption class="mt-2 text-center">
+            <figcaption class="carousel-caption-inset">
                 {{ .description | markdownify }}
             </figcaption>
         </figure>
@@ -47,6 +47,57 @@
 </div>
 
 <style>
+    .carousel-figure {
+        position: relative;
+    }
+
+    .carousel-figure a {
+        display: block;
+    }
+
+    .carousel-figure img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Légende incrustée dans le bas de l'image : ambre (complémentaire du
+       violet de marque) pour se détacher aussi bien des captures claires
+       que du fond prune. */
+    .carousel-figure .carousel-caption-inset {
+        position: absolute;
+        left: 50%;
+        bottom: 1rem;
+        transform: translateX(-50%);
+        max-width: min(90%, 46ch);
+        margin: 0;
+        padding: 0.5rem 1rem;
+        background: #f2c744;
+        color: var(--hd-plum-800, #240630);
+        border-radius: var(--hd-radius, 6px);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+        font-size: 0.9375rem;
+        line-height: 1.4;
+        text-align: center;
+        text-wrap: balance;
+    }
+
+    .carousel-figure .carousel-caption-inset :last-child {
+        margin-bottom: 0;
+    }
+
+    .carousel-figure .carousel-caption-inset a {
+        display: inline;
+        color: inherit;
+    }
+
+    @media (max-width: 575.98px) {
+        .carousel-figure .carousel-caption-inset {
+            bottom: 0.5rem;
+            padding: 0.375rem 0.75rem;
+            font-size: 0.8125rem;
+        }
+    }
+
     .carousel-wrap .carousel-btn {
         position: absolute;
         top: 50%;
