@@ -173,7 +173,7 @@
   translation: "happyDomain notifies you as soon as a problem affects your domain's configuration or any service discoverable through DNS. And when action is needed, guided editing and one-click rollback are there to help."
 
 - id: discover-assurances-title
-  translation: "Our promises"
+  translation: "Zero commitment"
 - id: discover-assurance-1-title
   translation: "Your data stays at your provider"
 - id: discover-assurance-1-text

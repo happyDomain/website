@@ -447,13 +447,28 @@ img {
     margin: 0;
 }
 
+/* The promises hang under their own rule, headed by a small label so the
+   four answers read as one block rather than four loose reassurances. */
+#discover .assurances-block {
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 1px solid var(--hd-border-1);
+}
+
+#discover .assurances-title {
+    margin: 0 0 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--hd-accent-text);
+}
+
 #discover .assurances {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px 28px;
-    margin: 40px 0 0;
-    padding-top: 32px;
-    border-top: 1px solid var(--hd-border-1);
+    margin: 0;
 }
 
 #discover .assurance {

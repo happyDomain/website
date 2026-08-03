@@ -172,7 +172,7 @@
   translation: "happyDomain vous prévient dès qu'un problème touche la configuration de votre domaine ou l'un des services découvrables via le DNS. Et quand il faut agir, l'édition guidée et le retour arrière en un clic sont là pour vous aider."
 
 - id: discover-assurances-title
-  translation: "Nos promesses"
+  translation: "Zéro engagement"
 - id: discover-assurance-1-title
   translation: "Vos données restent chez votre hébergeur"
 - id: discover-assurance-1-text
