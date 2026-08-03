@@ -686,6 +686,22 @@ $theme-colors: map-merge($theme-colors, $custom-theme-colors);
     letter-spacing: -0.02em;
 }
 
+// Body-copy links must not rely on colour alone (WCAG 2.2 AA, 1.4.1 Use of
+// Color): the accessible green (#0b6349) is dark enough to read as plain text
+// for low-vision users, so underline every unstyled link sitting in a
+// paragraph. Component links (buttons, cards, nav, CTAs) carry a class and keep
+// their own treatment.
+p a:not([class]) {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+}
+
+p a:not([class]):hover,
+p a:not([class]):focus-visible {
+    text-decoration-thickness: 2px;
+}
+
 // Green text utilities: the interactive fill fails 4.5:1 as text on light
 // surfaces, so route them through the accessible green-as-text token (#0b6349
 // in light mode, the bright green on dark surfaces). Buttons use the fill
